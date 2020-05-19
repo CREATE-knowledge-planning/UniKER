@@ -1,0 +1,35 @@
+2020-05-19 14:54:31 INFO     Model: TransE
+2020-05-19 14:54:31 INFO     Data Path: ./data/kinship/
+2020-05-19 14:54:31 INFO     #entity: 3007
+2020-05-19 14:54:31 INFO     #relation: 12
+2020-05-19 14:54:31 INFO     #train: 19845
+2020-05-19 14:54:31 INFO     #valid: 2830
+2020-05-19 14:54:31 INFO     #test: 5681
+2020-05-19 14:54:31 INFO     Model Parameter Configuration:
+2020-05-19 14:54:31 INFO     Parameter gamma: torch.Size([1]), require_grad = False
+2020-05-19 14:54:31 INFO     Parameter embedding_range: torch.Size([1]), require_grad = False
+2020-05-19 14:54:31 INFO     Parameter entity_embedding: torch.Size([3007, 100]), require_grad = True
+2020-05-19 14:54:31 INFO     Parameter relation_embedding: torch.Size([12, 100]), require_grad = True
+2020-05-19 14:54:33 INFO     Ramdomly Initializing TransE Model...
+2020-05-19 14:54:33 INFO     Start Training...
+2020-05-19 14:54:33 INFO     init_step = 0
+2020-05-19 14:54:33 INFO     batch_size = 1024
+2020-05-19 14:54:33 INFO     negative_adversarial_sampling = 1
+2020-05-19 14:54:33 INFO     hidden_dim = 100
+2020-05-19 14:54:33 INFO     gamma = 24.000000
+2020-05-19 14:54:33 INFO     negative_adversarial_sampling = True
+2020-05-19 14:54:33 INFO     adversarial_temperature = 1.000000
+2020-05-19 14:54:33 INFO     learning_rate = 0
+2020-05-19 14:55:30 INFO     Training average positive_sample_loss at step 0: 0.120750
+2020-05-19 14:55:30 INFO     Training average negative_sample_loss at step 0: 4.846159
+2020-05-19 14:55:30 INFO     Training average loss at step 0: 2.483454
+2020-05-19 14:55:30 INFO     Evaluating on Valid Dataset...
+2020-05-19 14:55:45 INFO     Evaluating the model... (0/354)
+2020-05-19 14:56:33 INFO     Valid MRR at step 0: 0.002469
+2020-05-19 14:56:33 INFO     Valid MR at step 0: 1529.466431
+2020-05-19 14:56:33 INFO     Valid HITS@1 at step 0: 0.000000
+2020-05-19 14:56:33 INFO     Valid HITS@3 at step 0: 0.000530
+2020-05-19 14:56:33 INFO     Valid HITS@10 at step 0: 0.003180
+2020-05-19 15:02:49 INFO     Training average positive_sample_loss at step 100: 0.826727
+2020-05-19 15:02:49 INFO     Training average negative_sample_loss at step 100: 2.296637
+2020-05-19 15:02:49 INFO     Training average loss at step 100: 1.561682
