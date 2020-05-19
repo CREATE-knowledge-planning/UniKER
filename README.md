@@ -1,4 +1,4 @@
-# Reasoning Over KG
+# UniKER
 <br>
 We proposed UniKER to combine logical rule and KG embedding to conduct reasoning over KG.
 
