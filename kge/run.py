@@ -15,10 +15,10 @@ import torch
 
 from torch.utils.data import DataLoader
 
-from model import KGEModel
+from .model import KGEModel
 
-from dataloader import TrainDataset
-from dataloader import BidirectionalOneShotIterator
+from .dataloader import TrainDataset
+from .dataloader import BidirectionalOneShotIterator
 
 def parse_args(args=None):
     parser = argparse.ArgumentParser(
@@ -163,7 +163,11 @@ def log_metrics(mode, step, metrics):
     '''
     for metric in metrics:
         logging.info('%s %s at step %d: %f' % (mode, metric, step, metrics[metric]))
-        
+
+
+def simulator_main(args):
+    main(parse_args(args))
+
         
 def main(args):
     if (not args.do_train) and (not args.do_valid) and (not args.do_test) and (not args.do_eval):
@@ -221,15 +225,19 @@ def main(args):
     logging.info('#entity: %d' % nentity)
     logging.info('#relation: %d' % nrelation)
 
-    train_triples = read_triple(os.path.join(args.train_path), entity2id, relation2id)
-    logging.info('#train: %d' % len(train_triples))
-    valid_triples = read_triple(os.path.join(args.data_path, 'valid.txt'), entity2id, relation2id)
-    logging.info('#valid: %d' % len(valid_triples))
-    test_triples = read_triple(os.path.join(args.data_path, 'test.txt'), entity2id, relation2id)
-    logging.info('#test: %d' % len(test_triples))
-    
-    #All true triples
-    all_true_triples = train_triples + valid_triples + test_triples
+    all_true_triples = []
+    if args.do_train:
+        train_triples = read_triple(os.path.join(args.train_path), entity2id, relation2id)
+        logging.info('#train: %d' % len(train_triples))
+        all_true_triples += train_triples
+    if args.do_valid:
+        valid_triples = read_triple(os.path.join(args.data_path, 'valid.txt'), entity2id, relation2id)
+        logging.info('#valid: %d' % len(valid_triples))
+        all_true_triples += valid_triples
+    if args.do_test:
+        test_triples = read_triple(os.path.join(args.data_path, 'test.txt'), entity2id, relation2id)
+        logging.info('#test: %d' % len(test_triples))
+        all_true_triples += test_triples
     
     kge_model = KGEModel(
         model_name=args.model,
@@ -373,6 +381,7 @@ def main(args):
     if args.do_eval:
         logging.info('Evaluating on Training Dataset...')
         kge_model.evaluate_step(kge_model, train_triples, id2entity, id2relation, args)
+
 
 if __name__ == '__main__':
     main(parse_args())

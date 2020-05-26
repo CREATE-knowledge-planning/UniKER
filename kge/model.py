@@ -17,7 +17,8 @@ from sklearn.metrics import average_precision_score
 
 from torch.utils.data import DataLoader
 
-from dataloader import TestDataset
+from .dataloader import TestDataset
+
 
 class KGEModel(nn.Module):
     def __init__(self, model_name, nentity, nrelation, hidden_dim, gamma, 
@@ -128,7 +129,7 @@ class KGEModel(nn.Module):
                 self.entity_embedding, 
                 dim=0, 
                 # index=head_part.view(-1)
-                index=head_part.type(torch.LongTensor).view(-1)
+                index=head_part.long().view(-1)
             ).view(batch_size, negative_sample_size, -1)
             
             relation = torch.index_select(
@@ -163,7 +164,7 @@ class KGEModel(nn.Module):
                 self.entity_embedding, 
                 dim=0, 
                 # index=tail_part.view(-1)
-                index=tail_part.type(torch.LongTensor).view(-1)
+                index=tail_part.long().view(-1)
             ).view(batch_size, negative_sample_size, -1)
             
         else:
