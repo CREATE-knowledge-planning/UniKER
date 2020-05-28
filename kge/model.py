@@ -5,7 +5,7 @@ from __future__ import division
 from __future__ import print_function
 
 import logging
-
+import os
 import numpy as np
 import math
 
@@ -127,8 +127,7 @@ class KGEModel(nn.Module):
             head = torch.index_select(
                 self.entity_embedding, 
                 dim=0, 
-                # index=head_part.view(-1)
-                index=head_part.type(torch.LongTensor).view(-1)
+                index=head_part.view(-1)
             ).view(batch_size, negative_sample_size, -1)
             
             relation = torch.index_select(
@@ -162,8 +161,7 @@ class KGEModel(nn.Module):
             tail = torch.index_select(
                 self.entity_embedding, 
                 dim=0, 
-                # index=tail_part.view(-1)
-                index=tail_part.type(torch.LongTensor).view(-1)
+                index=tail_part.view(-1)
             ).view(batch_size, negative_sample_size, -1)
             
         else:
@@ -396,6 +394,7 @@ class KGEModel(nn.Module):
             test_dataset_list = [test_dataloader_head, test_dataloader_tail]
             
             logs = []
+            logs_for_ranks = []
 
             step = 0
             total_steps = sum([len(dataset) for dataset in test_dataset_list])
@@ -416,6 +415,8 @@ class KGEModel(nn.Module):
                         #Explicitly sort all the entities to ensure that there is no test exposure bias
                         argsort = torch.argsort(score, dim = 1, descending=True)
 
+                        logs_for_ranks.append(argsort)
+
                         if mode == 'head-batch':
                             positive_arg = positive_sample[:, 0]
                         elif mode == 'tail-batch':
@@ -424,7 +425,7 @@ class KGEModel(nn.Module):
                             raise ValueError('mode %s not supported' % mode)
 
                         for i in range(batch_size):
-                            #Notice that argsort is not ranking
+                            # Notice that argsort is not ranking
                             ranking = (argsort[i, :] == positive_arg[i]).nonzero()
                             assert ranking.size(0) == 1
 
@@ -446,6 +447,10 @@ class KGEModel(nn.Module):
             metrics = {}
             for metric in logs[0].keys():
                 metrics[metric] = sum([log[metric] for log in logs])/len(logs)
+
+            if args.do_save_ranks and args.is_test_step:
+                logs_for_ranks = np.vstack(logs_for_ranks)
+                np.save(os.path.join(args.logs_for_ranks_path, 'ranks.npy'), logs_for_ranks)
 
         return metrics
 
