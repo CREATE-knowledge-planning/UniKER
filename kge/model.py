@@ -416,7 +416,7 @@ class KGEModel(nn.Module):
                         #Explicitly sort all the entities to ensure that there is no test exposure bias
                         argsort = torch.argsort(score, dim = 1, descending=True)
 
-                        logs_for_ranks.append(argsort)
+                        logs_for_ranks.append(argsort.cpu())
 
                         if mode == 'head-batch':
                             positive_arg = positive_sample[:, 0]
