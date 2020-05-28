@@ -74,7 +74,9 @@ def parse_args(args=None):
     parser.add_argument('--eliminate_noise_path', default='./record/kinship/0/new_train.txt', type=str, help='where to store the triples without noise')
     parser.add_argument('--save_name', default='TransE_kinship_0', type=str,
                         help='Saved model name')
-
+    parser.add_argument('--do_save_ranks', action='store_true')
+    parser.add_argument('--is_test_step', default=False, type=bool)
+    parser.add_argument('--logs_for_ranks_path', default='./ranks', type=str, help='where to store the ranking of all candidate entities')
     return parser.parse_args(args)
 
 def override_config(args):
@@ -185,7 +187,10 @@ def main(args):
     
     if args.save_path and not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
-    
+
+    if args.do_save_ranks and not os.path.exists(args.logs_for_ranks_path):
+        os.makedirs(args.logs_for_ranks_path)
+
     # Write logs to checkpoint and console
     set_logger(args)
     
@@ -369,10 +374,11 @@ def main(args):
         log_metrics('Valid', step, metrics)
     
     if args.do_test:
+        args.is_test_step = True
         logging.info('Evaluating on Test Dataset...')
         metrics = kge_model.test_step(kge_model, test_triples, all_true_triples, args)
         log_metrics('Test', step, metrics)
-
+        args.is_test_step= False
     if args.evaluate_train:
         logging.info('Evaluating on Training Dataset...')
         metrics = kge_model.test_step(kge_model, train_triples, all_true_triples, args)
