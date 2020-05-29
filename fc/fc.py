@@ -2,7 +2,7 @@ import sys
 import numpy as np
 from scipy import sparse
 import time
-
+import  os
 
 class ForwardChain(object):
     def __init__(self, dict_path, train_path, save_path, rule_name):
@@ -32,7 +32,12 @@ class ForwardChain(object):
 
         self.test_set = set()
 
+        self.unknown_rel2id = {}
+        self.unknown_id2rel = {}
+
         self.load_data()
+
+
 
     def load_data(self):
         # load relation and entity dictionary
@@ -96,11 +101,17 @@ class ForwardChain(object):
                 splits = line.strip().split('\t')
                 rule_weight = float(splits[0])
                 cnt += 1
-                if splits[1] not in self.rel2id.keys() or splits[2] not in self.rel2id.keys():
+                if splits[2] not in self.rel2id.keys():
                     print('Rule not appliable: '+str(cnt) + line.strip())
                     continue
+                if splits[1] in self.rel2id:
+                    head_id = self.rel2id[splits[1]]
+                else:
+                    size = len(self.unknown_rel2id)
+                    self.unknown_rel2id[splits[1]] = -(size+1)
+                    self.unknown_id2rel[-(size+1)] = splits[1]
+                    head_id = -(size+1)
 
-                head_id = self.rel2id[splits[1]]
                 if len(splits) == 3:
                     body1_id = self.rel2id[splits[2]]
                     self.rule_list.append([head_id, body1_id, rule_weight])
@@ -111,13 +122,23 @@ class ForwardChain(object):
                     body1_id = self.rel2id[splits[2]]
                     body2_id = self.rel2id[splits[3]]
                     self.rule_list.append([head_id, body1_id, body2_id, rule_weight])
+                elif len(splits) > 4:
+                    body_ids = []
+                    rule = []
+                    rule.append(head_id)
+                    for i in range(2, len(splits)):
+                        body_ids.append(self.rel2id[splits[i]])
+                    rule.extend(body_ids)
+                    rule.append(rule_weight)
+                    self.rule_list.append(rule)
+
         self.rule_num = len(self.rule_list)
 
     def get_2N(self, head_id, tail_id):
-        head_adj = self.rel2adj[head_id]
+        # head_adj = self.rel2adj[head_id]
         body_adj = self.rel2adj[tail_id]
 
-        head_idx = np.array(head_adj.nonzero()).transpose()
+        # head_idx = np.array(head_adj.nonzero()).transpose()
         body_idx = np.array(body_adj.nonzero()).transpose()
 
         for idx in body_idx:
@@ -128,19 +149,37 @@ class ForwardChain(object):
 
 
     def get_3N(self, head_id, body1_id, body2_id):
-        head_adj = self.rel2adj[head_id]
+        # head_adj = self.rel2adj[head_id]
         body1_adj = self.rel2adj[body1_id].tocsr()
         body2_adj = self.rel2adj[body2_id].tocsr()
 
         body_adj = body1_adj * body2_adj
 
-        head_idx = np.array(head_adj.nonzero()).transpose()
+        # head_idx = np.array(head_adj.nonzero()).transpose()
         body_idx = np.array(body_adj.nonzero()).transpose()
 
         for idx in body_idx:
             x, y = idx
             if (x, head_id, y) not in self.true_set:
                 self.infer_set.add((x, head_id, y))
+
+    def get_multipleN(self, head_id, body_ids):
+        # head_adj = self.rel2adj[head_id]
+        body_adj = np.eye(self.n_entity, dtype=int)
+        for body in body_ids:
+            body_adj = body_adj * self.rel2adj[body].tocsr()
+
+        # head_idx = np.array(head_adj.nonzero()).transpose()
+        body_idx = np.array(body_adj.nonzero()).transpose()
+        if head_id < 0:
+            for idx in body_idx:
+                x, y = idx
+                self.infer_set.add((x, head_id, y))
+        else:
+            for idx in body_idx:
+                x, y = idx
+                if (x, head_id, y) not in self.true_set:
+                    self.infer_set.add((x, head_id, y))
 
     def eval(self, infer_triples):
         acc = float(len(self.test_set & infer_triples)) / float(len(self.test_set))
@@ -156,36 +195,64 @@ class ForwardChain(object):
             elif len(rule) == 4:
                 h, b1, b2 = rule[:3]
                 self.get_3N(h, b1, b2)
+
+            else:
+                h= rule[0]
+                body_ids = rule[1:len(rule)-1]
+                self.get_multipleN(h, body_ids)
+
+
         print('This hop inferred %d triples.' %(len(self.infer_set)))
         self.eval(self.infer_set)
         with open(self.save_path, 'w') as w:
             for h, r, t in self.infer_set:
                 hh = self.id2ent[h]
-                rr = self.id2rel[r]
                 tt = self.id2ent[t]
+                if r < 0:
+                    rr =self.unknown_id2rel[r]
+                else:
+                    rr = self.id2rel[r]
                 w.write(str(hh) + '\t' +str(rr) + '\t' + str(tt) + '\n')
 
 
     def save_infer(self):
         with open(self.save_path, 'w') as w:
-            for h, r, t in self.all_inferred_set:
+            for h, r, t in self.infer_set:
                 hh = self.id2ent[h]
-                rr = self.id2rel[r]
                 tt = self.id2ent[t]
-                w.write(str(rr) + '(' + str(hh) + ', ' + str(tt) + ')\n')
+                if r < 0:
+                    rr =self.unknown_id2rel[r]
+                else:
+                    rr = self.id2rel[r]
+                w.write(str(hh) + '\t' +str(rr) + '\t' + str(tt) + '\n')
 
 
 if __name__ == '__main__':
-    start_time = time.time()
+    # start_time = time.time()
+    #
+    # dataset = sys.argv[1]
+    # data_path = './data/' + dataset
+    # ourmln = ForwardChain(data_path)
+    #
+    #
+    # ourmln.run()
+    # end_time = time.time()
+    # #ourmln.save_infer()
+    #
+    # print('Time used: ' + str(end_time - start_time) + ' seconds.')
+    # ourmln.save_infer()
 
-    dataset = sys.argv[1]
-    data_path = './data/' + dataset
-    ourmln = ForwardChain(data_path)
 
-
-    ourmln.run()
-    end_time = time.time()
-    #ourmln.save_infer()
-
-    print('Time used: ' + str(end_time - start_time) + ' seconds.')
-    ourmln.save_infer()
+    # start_time = time.time()
+    #
+    # # dataset = sys.argv[1]
+    # data_path = 'C:/Users/vivia/Desktop/UniKER-robust/UniKER-robust/data/kinship'
+    # ourmln = ForwardChain(data_path, train_path=data_path+"/train.txt", rule_name = "MLN_test.txt",save_path = data_path+'/infer_test.txt')
+    #
+    #
+    # ourmln.run()
+    # end_time = time.time()
+    # # ourmln.save_infer()
+    #
+    # print('Time used: ' + str(end_time - start_time) + ' seconds.')
+    # # ourmln.save_infer()
