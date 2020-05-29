@@ -1,7 +1,8 @@
 import sys
 import os
 import numpy as np
-import fc.fc as fc
+
+from .fc import fc
 
 
 def check_path(path):
@@ -50,9 +51,11 @@ def run_kge(path, k, model, model_name, use_cuda=True, from_scratch=False):
 
     os.system(cmd)
 
+
 def run_fc(workspace_path, train_file_name, save_name):
-    FC = fc.ForwardChain(data_path, workspace_path+train_file_name, workspace_path+save_name, 'MLN_rule.txt')
+    FC = fc.ForwardChain(workspace_path, os.path.join(workspace_path, train_file_name), os.path.join(workspace_path, save_name), 'MLN_rule.txt')
     FC.run()
+
 
 def eval_and_eliminate(path, k, model, model_name, train_name, save_name, noise_threshold=0.1, use_cuda=True):
     # read train.txt, write new_train.txt
