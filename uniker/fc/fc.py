@@ -2,7 +2,7 @@ import sys
 import numpy as np
 from scipy import sparse
 import time
-import  os
+import os
 
 class ForwardChain(object):
     def __init__(self, dict_path, train_path, save_path, rule_name):
@@ -228,6 +228,7 @@ class ForwardChain(object):
 
 
 if __name__ == '__main__':
+    pass
     # start_time = time.time()
     #
     # dataset = sys.argv[1]

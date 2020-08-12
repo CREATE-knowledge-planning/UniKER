@@ -2,7 +2,7 @@ import sys
 import os
 import numpy as np
 
-from .fc import fc
+from fc import fc
 
 
 def check_path(path):
@@ -52,8 +52,8 @@ def run_kge(path, k, model, model_name, use_cuda=True, from_scratch=False):
     os.system(cmd)
 
 
-def run_fc(workspace_path, train_file_name, save_name):
-    FC = fc.ForwardChain(workspace_path, os.path.join(workspace_path, train_file_name), os.path.join(workspace_path, save_name), 'MLN_rule.txt')
+def run_fc(workspace_path, train_file_name, save_name, mln_rules):
+    FC = fc.ForwardChain(workspace_path, os.path.join(workspace_path, train_file_name), os.path.join(workspace_path, save_name), mln_rules)
     FC.run()
 
 
