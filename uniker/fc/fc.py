@@ -4,13 +4,14 @@ from scipy import sparse
 import time
 import os
 
+
 class ForwardChain(object):
     def __init__(self, dict_path, train_path, save_path, rule_name):
         self.train_path = train_path
-        self.ent_path = dict_path + '/entities.dict'
-        self.rel_path = dict_path + '/relations.dict'
-        self.test_path = dict_path + '/test.txt'
-        self.rule_path = dict_path + '/' + rule_name
+        self.ent_path = dict_path / 'entities.dict'
+        self.rel_path = dict_path / 'relations.dict'
+        self.test_path = dict_path / 'test.txt'
+        self.rule_path = dict_path / rule_name
 
         self.save_path = save_path
 

@@ -1,9 +1,7 @@
 import sys
 import os
 import numpy as np
-
-from fc import fc
-
+from uniker.fc import fc
 
 def check_path(path):
     if not os.path.exists(path):
