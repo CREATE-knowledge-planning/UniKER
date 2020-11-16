@@ -33,12 +33,15 @@ def parse_args(args=None):
     parser.add_argument('--do_test', action='store_true')
     parser.add_argument('--evaluate_train', action='store_true', help='Evaluate on training data')
     parser.add_argument('--do_eval', action='store_true')
+    parser.add_argument('--do_score_calculation', action='store_true')
+    parser.add_argument('--do_pred_score', action='store_true')
 
     parser.add_argument('--countries', action='store_true', help='Use Countries S1/S2/S3 datasets')
     parser.add_argument('--regions', type=int, nargs='+', default=None, 
                         help='Region Id for Countries S1/S2/S3 datasets, DO NOT MANUALLY SET')
     
     parser.add_argument('--data_path', type=str, default='./data/kinship')
+    parser.add_argument('--hidden_triples_path', type=str, default=None)
     parser.add_argument('--model', default='TransE', type=str)
     parser.add_argument('-de', '--double_entity_embedding', action='store_true')
     parser.add_argument('-dr', '--double_relation_embedding', action='store_true')
@@ -53,7 +56,7 @@ def parse_args(args=None):
     parser.add_argument('--test_batch_size', default=4, type=int, help='valid/test batch size')
     parser.add_argument('--uni_weight', action='store_true', 
                         help='Otherwise use subsampling weighting like in word2vec')
-    
+    parser.add_argument('--top_k_percent', type=float, default=0.1)
     parser.add_argument('-lr', '--learning_rate', default=0.0001, type=float)
     parser.add_argument('-cpu', '--cpu_num', default=10, type=int)
     parser.add_argument('-init', '--init_checkpoint', default=None, type=str)
@@ -69,14 +72,13 @@ def parse_args(args=None):
     parser.add_argument('--nentity', type=int, default=0, help='DO NOT MANUALLY SET')
     parser.add_argument('--nrelation', type=int, default=0, help='DO NOT MANUALLY SET')
 
-    parser.add_argument('--train_path', default= './data/kinship/train.txt', type=str, help='UniKER: use pre-defined file to train')
+    parser.add_argument('--train_path', default= 'NOTSET', type=str, help='Please defined your training file path')
     parser.add_argument('--noise_threshold', default=1.0, type=float, help='Eliminate noise')
     parser.add_argument('--eliminate_noise_path', default='./record/kinship/0/new_train.txt', type=str, help='where to store the triples without noise')
+    parser.add_argument('--pred_score_path', default='./experiments/pred_score.txt', type=str, help='where to store the triples with pred scores')
     parser.add_argument('--save_name', default='TransE_kinship_0', type=str,
                         help='Saved model name')
-    parser.add_argument('--do_save_ranks', action='store_true')
-    parser.add_argument('--is_test_step', default=False, type=bool)
-    parser.add_argument('--logs_for_ranks_path', default='./ranks', type=str, help='where to store the ranking of all candidate entities')
+
     return parser.parse_args(args)
 
 def override_config(args):
@@ -132,7 +134,7 @@ def read_triple(file_path, entity2id, relation2id):
     triples = []
     with open(file_path) as fin:
         for line in fin:
-            h, r, t = line.strip().split('\t')
+            h, r, t = line.strip().split('\t')[:3]
             triples.append((entity2id[h], relation2id[r], entity2id[t]))
     return triples
 
@@ -168,13 +170,16 @@ def log_metrics(mode, step, metrics):
         
         
 def main(args):
-    if (not args.do_train) and (not args.do_valid) and (not args.do_test) and (not args.do_eval):
-        raise ValueError('one of train/val/test mode must be choosed.')
+    if (not args.do_train) and (not args.do_valid) \
+            and (not args.do_test) and (not args.do_eval) \
+            and (not args.do_score_calculation) \
+            and (not args.do_pred_score):
+        raise ValueError('one of train/val/test/eval/score/pred_score mode must be choosed.')
     
     if args.init_checkpoint:
         # print('before init: ', args.train_path)
         override_config(args)
-        print('after init: ', args.train_path)
+        # print('train_path: ', args.train_path)
     elif args.data_path is None:
         raise ValueError('one of init_checkpoint/data_path must be choosed.')
 
@@ -183,10 +188,7 @@ def main(args):
     
     if args.save_path and not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
-
-    if args.do_save_ranks and not os.path.exists(args.logs_for_ranks_path):
-        os.makedirs(args.logs_for_ranks_path)
-
+    
     # Write logs to checkpoint and console
     set_logger(args)
     
@@ -220,22 +222,24 @@ def main(args):
     
     args.nentity = nentity
     args.nrelation = nrelation
+
+    if args.train_path == 'NOTSET':
+        args.train_path=os.path.join(args.data_path, 'train.txt')
     
     logging.info('Model: %s' % args.model)
     logging.info('Data Path: %s' % args.data_path)
     logging.info('#entity: %d' % nentity)
     logging.info('#relation: %d' % nrelation)
-
-    train_triples = read_triple(os.path.join(args.train_path), entity2id, relation2id)
+    # train_triples = read_triple(os.path.join(args.data_path, 'train.txt'), entity2id, relation2id)
+    train_triples = read_triple(args.train_path, entity2id, relation2id)
     logging.info('#train: %d' % len(train_triples))
     valid_triples = read_triple(os.path.join(args.data_path, 'valid.txt'), entity2id, relation2id)
     logging.info('#valid: %d' % len(valid_triples))
     test_triples = read_triple(os.path.join(args.data_path, 'test.txt'), entity2id, relation2id)
     logging.info('#test: %d' % len(test_triples))
     
-    #All true triples
+    #All true triplesm
     all_true_triples = train_triples + valid_triples + test_triples
-    
     kge_model = KGEModel(
         model_name=args.model,
         nentity=nentity,
@@ -243,9 +247,8 @@ def main(args):
         hidden_dim=args.hidden_dim,
         gamma=args.gamma,
         double_entity_embedding=args.double_entity_embedding,
-        double_relation_embedding=args.double_relation_embedding
+        double_relation_embedding=args.double_relation_embedding,
     )
-    
     logging.info('Model Parameter Configuration:')
     for name, param in kge_model.named_parameters():
         logging.info('Parameter %s: %s, require_grad = %s' % (name, str(param.size()), str(param.requires_grad)))
@@ -297,7 +300,7 @@ def main(args):
     else:
         logging.info('Ramdomly Initializing %s Model...' % args.model)
         init_step = 0
-    
+
     step = init_step
     
     logging.info('Start Training...')
@@ -366,11 +369,10 @@ def main(args):
         log_metrics('Valid', step, metrics)
     
     if args.do_test:
-        args.is_test_step = True
         logging.info('Evaluating on Test Dataset...')
         metrics = kge_model.test_step(kge_model, test_triples, all_true_triples, args)
         log_metrics('Test', step, metrics)
-        args.is_test_step= False
+
     if args.evaluate_train:
         logging.info('Evaluating on Training Dataset...')
         metrics = kge_model.test_step(kge_model, train_triples, all_true_triples, args)
@@ -379,6 +381,18 @@ def main(args):
     if args.do_eval:
         logging.info('Evaluating on Training Dataset...')
         kge_model.evaluate_step(kge_model, train_triples, id2entity, id2relation, args)
+
+    if args.do_pred_score:
+        logging.info('Evaluating on Training Path File and Predicting Scores...')
+        kge_model.pred_score_step(kge_model, train_triples, id2entity, id2relation, args)
+
+    if args.do_score_calculation:
+        logging.info('Loading Hidden Triples...')
+        hidden_triples = read_triple(os.path.join(args.hidden_triples_path, 'hidden.txt'), entity2id, relation2id)
+        logging.info('#hidden triples: %d' % len(hidden_triples))
+
+        logging.info('Selecting Hidden Triples...')
+        kge_model.select_hidden_triples(kge_model, test_triples, hidden_triples, id2entity, id2relation, args)
 
 if __name__ == '__main__':
     main(parse_args())
