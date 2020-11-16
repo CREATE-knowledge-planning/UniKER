@@ -2,51 +2,31 @@ import sys
 import os
 import numpy as np
 import fc.fc as fc
-
+import fc.potential_useful_triples as pt
 
 def check_path(path):
     if not os.path.exists(path):
         os.makedirs(path)
 
 
-def run_kge(path, k, model, model_name, use_cuda=True, from_scratch=False):
-    workspace_path = path + '/' + str(k) + '/'
+def run_kge(path, train_file_path, model='TransE', model_name='kge_model', kge_iters=10000, use_cuda=True):
+    if use_cuda:
 
-    if not from_scratch:
-        if use_cuda:
-            if k > 0:
-                print('run_kge with init')
-                init_path = path + '/' + str(k - 1) + '/'
-                cmd = 'CUDA_VISIBLE_DEVICES={} python kge/run.py --cuda --do_train --do_valid --do_test --model {} --data_path {} -b {} -n {} -d {} -g {} -a {} -adv -lr {} --max_steps {} --test_batch_size {} -save {} -init {} --train_path {}'.format(
-                    cuda, model, data_path, kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters * (k + 1),
-                    kge_tbatch, workspace_path + '/' + model_name, init_path + model_name, workspace_path + '/train.txt')
-
-            else:
-                cmd = 'CUDA_VISIBLE_DEVICES={} python kge/run.py --cuda --do_train --do_valid --do_test --model {} --data_path {} -b {} -n {} -d {} -g {} -a {} -adv -lr {} --max_steps {} --test_batch_size {} -save {} --train_path {}'.format(
-                    cuda, model, data_path, kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, kge_tbatch,
-                    workspace_path + '/' + model_name, workspace_path + '/train.txt')
-        else:
-            if k > 0:
-                print('run_kge with init')
-                init_path = path + '/' + str(k-1) + '/'
-                cmd = 'python kge/run.py --do_train --do_valid --do_test --model {} --data_path {} -b {} -n {} -d {} -g {} -a {} -adv -lr {} --max_steps {} --test_batch_size {} -save {} -init {} --train_path {}'.format(
-                    model, data_path, kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters * (k+1), kge_tbatch,
-                    workspace_path + '/' + model_name, init_path + model_name, workspace_path + '/train.txt')
-
-            else:
-                cmd = 'python kge/run.py --do_train --do_valid --do_test --model {} --data_path {} -b {} -n {} -d {} -g {} -a {} -adv -lr {} --max_steps {} --test_batch_size {} -save {} --train_path {}'.format(
-                model, data_path, kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, kge_tbatch,
-                workspace_path + '/' + model_name, workspace_path + '/train.txt')
+        cmd = 'CUDA_VISIBLE_DEVICES={} python kge/run.py --cuda --do_train --do_valid --do_test ' \
+              '--model {} --data_path {} -b {} -n {} -d {} -g {} ' \
+              '-a {} -adv -lr {} --max_steps {} --test_batch_size {} ' \
+              '-save {} --train_path {}'.format(
+            cuda, model, data_path, kge_batch, kge_neg, kge_dim, kge_gamma,
+            kge_alpha, kge_lr, kge_iters, kge_tbatch,
+            path + '/' + model_name, train_file_path)
     else:
-        if use_cuda:
-            cmd = 'CUDA_VISIBLE_DEVICES={} python kge/run.py --cuda --do_train --do_valid --do_test --model {} --data_path {} -b {} -n {} -d {} -g {} -a {} -adv -lr {} --max_steps {} --test_batch_size {} -save {} --train_path {}'.format(
-                cuda, model, data_path, kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, final_kge_iters,
-                kge_tbatch,
-                workspace_path + '/' + model_name, workspace_path + '/train.txt')
-        else:
-            cmd = 'python kge/run.py --do_train --do_valid --do_test --model {} --data_path {} -b {} -n {} -d {} -g {} -a {} -adv -lr {} --max_steps {} --test_batch_size {} -save {} --train_path {}'.format(
-                model, data_path, kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, final_kge_iters, kge_tbatch,
-                workspace_path + '/' + model_name, workspace_path + '/train.txt')
+        cmd = 'python kge/run.py --do_train --do_valid --do_test ' \
+              '--model {} --data_path {} -b {} -n {} -d {} -g {} ' \
+              '-a {} -adv -lr {} --max_steps {} --test_batch_size {} ' \
+              '-save {} --train_path {}'.format(
+            model, data_path, kge_batch, kge_neg, kge_dim, kge_gamma,
+            kge_alpha, kge_lr, kge_iters, kge_tbatch,
+            path + '/' + model_name, train_file_path)
 
     os.system(cmd)
 
@@ -58,20 +38,43 @@ def eval_and_eliminate(path, k, model, model_name, train_name, save_name, noise_
     # read train.txt, write new_train.txt
     # read infer.txt, write new_infer.txt
 
-    print('eval_and_eliminate')
+    # print('eval_and_eliminate')
     workspace_path = path + '/' + str(k) + '/'
+    
 
-    if use_cuda:
-        cmd = 'CUDA_VISIBLE_DEVICES={} python -u kge/run.py --cuda --do_eval --model {} -init {} --train_path {} --noise_threshold {}  --eliminate_noise_path {} --data_path {}'.format(
-            cuda, model, workspace_path + '/' + model_name, workspace_path + '/' + train_name, noise_threshold,
-                   workspace_path + '/' + save_name, data_path)
+    if noise_threshold==0:
+        cmd = 'cp {}/{} {}/{}'.format(workspace_path, train_name, workspace_path, save_name)
     else:
-        cmd = 'python -u kge/run.py --do_eval --model {} -init {} --train_path {} --noise_threshold {}  --eliminate_noise_path {} --data_path {}'.format(
-            model, workspace_path + '/' + model_name, workspace_path + '/' + train_name, noise_threshold,
-            workspace_path + '/' + save_name, data_path)
+        if use_cuda:
+            cmd = 'CUDA_VISIBLE_DEVICES={} python -u kge/run.py --cuda --do_eval ' \
+                  '--model {} -init {} --train_path {} --noise_threshold {}  ' \
+                  '--eliminate_noise_path {} --data_path {}'.format(
+                cuda, model, path + '/' + model_name, workspace_path + '/' + train_name,
+                noise_threshold, workspace_path + '/' + save_name, data_path)
+        else:
+            cmd = 'python -u kge/run.py --do_eval --model {} -init {} --train_path {} ' \
+                  '--noise_threshold {}  --eliminate_noise_path {} --data_path {}'.format(
+                model, path + '/' + model_name, workspace_path + '/' + train_name,
+                noise_threshold, workspace_path + '/' + save_name, data_path)
 
 
     os.system(cmd)
+
+def run_potential(workspace_path, data_path='./data/kinship',
+                  train_path='./data/kinship/train.txt', rule_name='MLN_rule.txt',
+                  top_k_threshold = 0.1,
+                  use_cuda=True, cuda=2):
+    workspace_path=workspace_path
+
+
+    model = pt.SelectHiddenTriples(data_path, train_path,
+                                   hidden_triples_path=workspace_path,
+                                   rule_name=rule_name)
+
+    model.run(threshold=50)  # find all hidden triple # threshold (50)：randomly sample 50 col and row
+
+    # model.eval(use_cuda, cuda, model_path=workspace_path+'/kge_model/')
+    model.eval(use_cuda, cuda, model_path=path+'/kge_model/', top_k_threshold=top_k_threshold)
 
 
 if __name__ == '__main__':
@@ -88,14 +91,19 @@ if __name__ == '__main__':
     path = './record/' + record_name + '/'
     check_path(path)
 
-    if len(sys.argv) == 5:
-        kge_model = sys.argv[4]
-    else:
-        kge_model = 'TransE'
+    kge_model = sys.argv[4]
+    
 
     iterations = int(sys.argv[5])
 
     noise_threshold = float(sys.argv[6])
+
+    top_k_threshold = float(sys.argv[7])
+
+    if len(sys.argv) > 8:
+        is_init = int(sys.argv[8])
+    else:
+        is_init = 0
 
     kge_batch = 512
     kge_neg = 128
@@ -103,94 +111,70 @@ if __name__ == '__main__':
     kge_gamma = 6.0
     kge_alpha = 0.5
     kge_lr = 0.0005
-    kge_iters = 5000
-    final_kge_iters = 80000
+    kge_iters = 50000
+    # final_kge_iters = 80000
     kge_tbatch = 8
     kge_reg = 0.000001
 
-    # data=wn18rr, TransE
-    # kge_batch = 512
-    # kge_neg = 1024
-    # kge_dim = 1000
-    # kge_gamma = 6.0
-    # kge_alpha = 0.5
-    # kge_lr = 0.0001
-    # kge_iters = 5000
-    # final_kge_iters = 80000
-    # kge_tbatch = 8
-    # kge_reg = 0.0
-
-    tag = sys.argv[7]
-
     if dataset == 'kinship':
         if kge_model == 'TransE':
-            kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 1024, 256, 100, 24, 1, 0.001, 5000, 50000, 16, 0.0
+            # kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 1024, 256, 100, 24, 1, 0.001, 80000, 50000, 16, 0.0
+            kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, kge_tbatch, kge_reg = 1024, 256, 100, 24, 1, 0.001, 50000, 16, 0.0
         if kge_model == 'DistMult':
-            kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 1024, 256, 1000, 24, 1, 0.001, 5000, 50000, 16, 0.0
-    elif dataset == 'noise_kinship':
-        if kge_model == 'TransE':
-            kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 1024, 256, 100, 24, 1, 0.001, 5000, 50000, 16, 0.0
-        if kge_model == 'DistMult':
-            kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 1024, 256, 1000, 24, 1, 0.001, 5000, 50000, 16, 0.0
-    elif dataset == 'FB15k-237':
-        if kge_model == 'TransE':
-            kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 1024, 256, 1000, 9.0, 1, 0.001, 5000, 100000, 16, 0.00005
-        if kge_model == 'DistMult':
-            kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 1024, 256, 2000, 200.0, 1, 0.001, 5000, 100000, 16, 0.00001
-    elif dataset == 'wn18rr':
-        if kge_model == 'TransE':
-            if tag == '0':
-                kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 512, 1024, 1000, 6.0, 0.5, 0.00001, 5000, 80000, 8, 0.0
-            elif tag == '1':
-                kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 512, 1024, 1000, 6.0, 0.5, 0.00005, 5000, 80000, 8, 0.0
-            elif tag == '2':
-                kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 512, 1024, 1000, 6.0, 0.5, 0.0001, 5000, 80000, 8, 0.0
-            elif tag == '3':
-                kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 512, 1024, 1000, 6.0, 0.5, 0.00005, 5000, 80000, 8, 0.000005
-            elif tag == '4':
-                kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 512, 1024, 1000, 6.0, 0.5, 0.0001, 5000, 80000, 8, 0.000005
+            # kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 1024, 256, 1000, 24, 1, 0.001, 50000, 50000, 16, 0.0
+            kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, kge_tbatch, kge_reg = 1024, 256, 1000, 24, 1, 0.001, 50000, 16, 0.0
 
-        if kge_model == 'DistMult':
-            if tag == '0':
-                kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 512, 1024, 1000, 200.0, 1, 0.002, 5000, 90000, 8, 0.000005
-            elif tag == '1':
-                kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 512, 1024, 2000, 200.0, 1, 0.002, 5000, 90000, 8, 0.000005
-            elif tag == '2':
-                kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 512, 1024, 1000, 200.0, 1, 0.001, 5000, 90000, 8, 0.000005
-            elif tag == '3':
-                kge_batch, kge_neg, kge_dim, kge_gamma, kge_alpha, kge_lr, kge_iters, final_kge_iters, kge_tbatch, kge_reg = 512, 1024, 2000, 200.0, 1, 0.001, 5000, 90000, 8, 0.000005
 
     check_path(path + '/0/')
-    os.system('cp {}/train.txt {}/train.txt'.format(data_path, path+'/0/'))
+    os.system('cp {}/train.txt {}/fc_train.txt'.format(data_path, path+'/0/'))
+
+    kge_data_path=path+'/kge_data/'
+    check_path(kge_data_path)
 
     for k in range(iterations):
 
         workspace_path = path + '/' + str(k) + '/'
         check_path(workspace_path)
 
-        run_kge(path, k, kge_model, 'mymodel', use_cuda=use_cuda)
-        eval_and_eliminate(path, k, kge_model, 'mymodel', 'train.txt', 'new_train.txt', noise_threshold=noise_threshold, use_cuda=use_cuda)
-
-        if k == 0:
-            os.system('cp {}/train.txt {}/fc_train.txt'.format(data_path, workspace_path))
-        else:
-            prev_workspace_path = path + '/' + str(k - 1) + '/'
-            os.system(
-                'cat {}/fc_train.txt {}/new_train.txt >> {}/fc_train.txt'.format(prev_workspace_path, workspace_path,
-                                                                                 workspace_path))
         print('Start Foward Chaining...')
         run_fc(workspace_path, 'fc_train.txt', 'infer.txt')
-        eval_and_eliminate(path, k, kge_model, 'mymodel', 'infer.txt', 'new_infer.txt', noise_threshold=noise_threshold, use_cuda=use_cuda)
+        os.system(
+            'cat {}/fc_train.txt {}/infer.txt >> {}/observed.txt'.format(workspace_path, workspace_path,
+                                                                             workspace_path))
 
-        check_path(path + '/' + str(k+1) + '/')
-        os.system('cp {}/new_infer.txt  {}/train.txt'.format(workspace_path, path + '/' + str(k + 1) + '/'))
+        if k==0 and is_init==0:
+            print('Start KGE Training...')
+            os.system(
+            'cat {}/fc_train.txt {}/infer.txt >> {}/kge_train.txt'.format(workspace_path, workspace_path,
+                                                                             kge_data_path))
+            run_kge(path, kge_data_path+'/kge_train.txt', kge_model, 'kge_model', kge_iters=kge_iters, use_cuda=use_cuda)
+
+
+        print('Start Eval and Eliminating...')
+        eval_and_eliminate(path, k, kge_model, 'kge_model', 'observed.txt', 'new_observed.txt',
+                           noise_threshold=noise_threshold, use_cuda=use_cuda)
+
+        print('Start Finding Potential Useful Triples...')
+        run_potential(workspace_path=workspace_path, data_path=data_path,
+                      train_path=workspace_path+'new_observed.txt', rule_name='MLN_rule.txt', 
+                      top_k_threshold = top_k_threshold,
+                      use_cuda=use_cuda, cuda=cuda)
+
+        next_workspace_path = path + '/' + str(k+1) + '/'
+        check_path(next_workspace_path)
+        os.system('cat {}/new_observed.txt  {}/selected_triples.txt >> {}/fc_train.txt'.format(
+        	workspace_path, workspace_path, next_workspace_path))
+
+
     workspace_path = path + '/' + str(iterations) + '/'
-    for k in range(iterations):
-        tmp_path = path + '/' + str(k) + '/'
-        os.system('cat {}/train.txt {}/new_train.txt >> {}/train.txt'.format(workspace_path, tmp_path, workspace_path))
-    # if dataset == 'wn18rr':
-    #     tmp_path = path + '/0/'
-    #     os.system('cat {}/train.txt {}/new_train.txt >> {}/train.txt'.format(workspace_path, tmp_path, workspace_path))
+    # run_kge(path, workspace_path+'/fc_train.txt', model=kge_model, model_name='final_model',
+    # 	kge_iters=kge_iters, use_cuda=use_cuda)
 
-    run_kge(path, iterations, kge_model, 'final_model', use_cuda=use_cuda, from_scratch=True)
-
+    final_path = path + '/final/'
+    check_path(final_path)
+    print('Start Foward Chaining...')
+    print (data_path+'final_rules/fc_observation.txt')
+    FC1 = fc.ForwardChain(data_path, workspace_path+'fc_train.txt', final_path+'inferred_obs.txt', 'final_rules/fc_observation.txt')
+    FC1.run()
+    FC2 = fc.ForwardChain(data_path, workspace_path+'fc_train.txt', final_path+'inferred_vis.txt', 'final_rules/fc_visibility.txt')
+    FC2.run()
