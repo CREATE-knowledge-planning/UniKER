@@ -111,7 +111,7 @@ if __name__ == '__main__':
     kge_gamma = 6.0
     kge_alpha = 0.5
     kge_lr = 0.0005
-    kge_iters = 50000
+    kge_iters = 5000
     # final_kge_iters = 80000
     kge_tbatch = 8
     kge_reg = 0.000001
