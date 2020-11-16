@@ -4,4 +4,5 @@ We proposed UniKER to combine logical rule and KG embedding to conduct reasoning
 
 ## Quick Start
 python run.py DATASET CUDA SAVE_MODEL_NAME BASIC_KGE_MODEL INTER NOISE_THRESHOLD TOP_K_THRESHOLD IS_INIT
-python run.py create 2 create_model TransE 2 0.0 0.2 0
+
+e.g., python run.py create 2 create_model TransE 2 0.0 0.2 0
