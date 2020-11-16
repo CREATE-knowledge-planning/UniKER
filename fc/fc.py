@@ -117,6 +117,7 @@ class ForwardChain(object):
                     self.rule_list.append([head_id, body1_id, rule_weight])
                 elif len(splits) == 4:
                     if splits[3] not in self.rel2id.keys():
+                        print ("Relation is not in dictionary")
                         print(str(cnt) + line.strip())
                         continue
                     body1_id = self.rel2id[splits[2]]
@@ -227,7 +228,7 @@ class ForwardChain(object):
                 w.write(str(hh) + '\t' +str(rr) + '\t' + str(tt) + '\n')
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
     # start_time = time.time()
     #
     # dataset = sys.argv[1]
