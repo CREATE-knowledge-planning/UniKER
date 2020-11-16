@@ -80,33 +80,14 @@ def run_potential(workspace_path, data_path='./data/kinship',
     model.eval(use_cuda, cuda, model_path=path+'/kge_model/', top_k_threshold=top_k_threshold)
 
 
-if __name__ == '__main__':
-    dataset = sys.argv[1]
+def train(dataset,cuda,record_name,kge_model,iterations,noise_threshold,top_k_threshold,is_init):
     data_path = './data/' + sys.argv[1] + '/'
-
-    cuda = sys.argv[2]
     if cuda == '-1':
         use_cuda = False
     else:
         use_cuda = True
-
-    record_name = sys.argv[3]
     path = './record/' + record_name + '/'
     check_path(path)
-
-    kge_model = sys.argv[4]
-    
-
-    iterations = int(sys.argv[5])
-
-    noise_threshold = float(sys.argv[6])
-
-    top_k_threshold = float(sys.argv[7])
-
-    if len(sys.argv) > 8:
-        is_init = int(sys.argv[8])
-    else:
-        is_init = 0
 
     kge_batch = 512
     kge_neg = 128
@@ -181,3 +162,4 @@ if __name__ == '__main__':
     FC1.run()
     FC2 = fc.ForwardChain(data_path, workspace_path+'fc_train.txt', final_path+'inferred_vis.txt', 'final_rules/fc_visibility.txt')
     FC2.run()
+    return final_path
