@@ -1,0 +1,89 @@
+RCM-1	canParticipate	Mission 1 - Active Volcano Monitoring
+Meteor-M N2-2	canParticipate	Mission 1 - Active Volcano Monitoring
+Metop-A	canParticipate	Mission 1 - Active Volcano Monitoring
+Metop-C	canParticipate	Mission 1 - Active Volcano Monitoring
+COSMO-SkyMed 3	canParticipate	Mission 1 - Active Volcano Monitoring
+NOAA-18	canParticipate	Mission 1 - Active Volcano Monitoring
+INSAT-3D	canParticipate	Mission 1 - Active Volcano Monitoring
+GCOM-C	canParticipate	Mission 1 - Active Volcano Monitoring
+KOMPSAT-5	canParticipate	Mission 1 - Active Volcano Monitoring
+Elektro-L N3	canParticipate	Mission 1 - Active Volcano Monitoring
+Elektro-L N2	canParticipate	Mission 1 - Active Volcano Monitoring
+GF-3	canParticipate	Mission 1 - Active Volcano Monitoring
+Pleiades 1B	canParticipate	Mission 1 - Active Volcano Monitoring
+GOES-16	canParticipate	Mission 1 - Active Volcano Monitoring
+KOMPSAT-2	canParticipate	Mission 1 - Active Volcano Monitoring
+ICESat-2	canParticipate	Mission 1 - Active Volcano Monitoring
+Sentinel-3 A	canParticipate	Mission 1 - Active Volcano Monitoring
+FY-3B	canParticipate	Mission 1 - Active Volcano Monitoring
+Resurs-P N3	canParticipate	Mission 1 - Active Volcano Monitoring
+SAOCOM 1A	canParticipate	Mission 1 - Active Volcano Monitoring
+GOES-13	canParticipate	Mission 1 - Active Volcano Monitoring
+COMS	canParticipate	Mission 1 - Active Volcano Monitoring
+Aqua	canParticipate	Mission 1 - Active Volcano Monitoring
+Meteosat-10	canParticipate	Mission 1 - Active Volcano Monitoring
+DMSP F-16	canParticipate	Mission 1 - Active Volcano Monitoring
+COSMO-SkyMed 4	canParticipate	Mission 1 - Active Volcano Monitoring
+CSG-1	canParticipate	Mission 1 - Active Volcano Monitoring
+RCM-2	canParticipate	Mission 1 - Active Volcano Monitoring
+DMSP F-15	canParticipate	Mission 1 - Active Volcano Monitoring
+Jason-3	canParticipate	Mission 1 - Active Volcano Monitoring
+CARTOSAT-2	canParticipate	Mission 1 - Active Volcano Monitoring
+INSAT-3DR	canParticipate	Mission 1 - Active Volcano Monitoring
+Sentinel-1 B	canParticipate	Mission 1 - Active Volcano Monitoring
+Sentinel-1 A	canParticipate	Mission 1 - Active Volcano Monitoring
+Landsat 8	canParticipate	Mission 1 - Active Volcano Monitoring
+Kanopus-V-IR	canParticipate	Mission 1 - Active Volcano Monitoring
+KOMPSAT-3	canParticipate	Mission 1 - Active Volcano Monitoring
+RADARSAT-2	canParticipate	Mission 1 - Active Volcano Monitoring
+Himawari-8	canParticipate	Mission 1 - Active Volcano Monitoring
+Suomi NPP	canParticipate	Mission 1 - Active Volcano Monitoring
+DMSP F-18	canParticipate	Mission 1 - Active Volcano Monitoring
+Sentinel-5 precursor	canParticipate	Mission 1 - Active Volcano Monitoring
+RESOURCESAT-2	canParticipate	Mission 1 - Active Volcano Monitoring
+TerraSAR-X	canParticipate	Mission 1 - Active Volcano Monitoring
+Kanopus-V N4	canParticipate	Mission 1 - Active Volcano Monitoring
+Himawari-9	canParticipate	Mission 1 - Active Volcano Monitoring
+GF-1	canParticipate	Mission 1 - Active Volcano Monitoring
+ECOSTRESS-on-ISS	canParticipate	Mission 1 - Active Volcano Monitoring
+Metop-B	canParticipate	Mission 1 - Active Volcano Monitoring
+ALOS-2	canParticipate	Mission 1 - Active Volcano Monitoring
+Kanopus-V N3	canParticipate	Mission 1 - Active Volcano Monitoring
+HJ-1A	canParticipate	Mission 1 - Active Volcano Monitoring
+THEOS	canParticipate	Mission 1 - Active Volcano Monitoring
+Resurs-P N1	canParticipate	Mission 1 - Active Volcano Monitoring
+KOMPSAT-3A	canParticipate	Mission 1 - Active Volcano Monitoring
+CloudSat	canParticipate	Mission 1 - Active Volcano Monitoring
+DMSP F-17	canParticipate	Mission 1 - Active Volcano Monitoring
+RCM-3	canParticipate	Mission 1 - Active Volcano Monitoring
+GOES-14	canParticipate	Mission 1 - Active Volcano Monitoring
+FY-4A	canParticipate	Mission 1 - Active Volcano Monitoring
+Landsat 7	canParticipate	Mission 1 - Active Volcano Monitoring
+DMSP F-14	canParticipate	Mission 1 - Active Volcano Monitoring
+Sentinel-3 B	canParticipate	Mission 1 - Active Volcano Monitoring
+Meteosat-8	canParticipate	Mission 1 - Active Volcano Monitoring
+RESOURCESAT-2A	canParticipate	Mission 1 - Active Volcano Monitoring
+Meteor-M N2	canParticipate	Mission 1 - Active Volcano Monitoring
+ZY-3-02	canParticipate	Mission 1 - Active Volcano Monitoring
+FY-3D	canParticipate	Mission 1 - Active Volcano Monitoring
+Meteosat-9	canParticipate	Mission 1 - Active Volcano Monitoring
+Meteosat-11	canParticipate	Mission 1 - Active Volcano Monitoring
+FY-3C	canParticipate	Mission 1 - Active Volcano Monitoring
+Pleiades 1A	canParticipate	Mission 1 - Active Volcano Monitoring
+GOES-15	canParticipate	Mission 1 - Active Volcano Monitoring
+CARTOSAT-2E	canParticipate	Mission 1 - Active Volcano Monitoring
+CARTOSAT-2B	canParticipate	Mission 1 - Active Volcano Monitoring
+CBERS-4	canParticipate	Mission 1 - Active Volcano Monitoring
+JPSS-1	canParticipate	Mission 1 - Active Volcano Monitoring
+TanDEM-X	canParticipate	Mission 1 - Active Volcano Monitoring
+GOES-17	canParticipate	Mission 1 - Active Volcano Monitoring
+GF-2	canParticipate	Mission 1 - Active Volcano Monitoring
+NOAA-19	canParticipate	Mission 1 - Active Volcano Monitoring
+COSMO-SkyMed 1	canParticipate	Mission 1 - Active Volcano Monitoring
+CARTOSAT-2A	canParticipate	Mission 1 - Active Volcano Monitoring
+MEGHA-TROPIQUES	canParticipate	Mission 1 - Active Volcano Monitoring
+Terra	canParticipate	Mission 1 - Active Volcano Monitoring
+COSMO-SkyMed 2	canParticipate	Mission 1 - Active Volcano Monitoring
+ZY-3-01	canParticipate	Mission 1 - Active Volcano Monitoring
+DSCOVR	canParticipate	Mission 1 - Active Volcano Monitoring
+Aura	canParticipate	Mission 1 - Active Volcano Monitoring
