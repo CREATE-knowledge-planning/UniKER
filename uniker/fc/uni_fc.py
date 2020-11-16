@@ -208,13 +208,7 @@ class ForwardChain(object):
                 tt = self.id2ent[t]
                 w.write(str(hh) + '\t' + str(rr) + '\t' + str(tt) + '\n')
 
-
-
-
-
 if __name__ == '__main__':
-
-
     dataset = sys.argv[1]
     if (len(sys.argv) == 3):
         rule_name = sys.argv[2]

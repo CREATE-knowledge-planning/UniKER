@@ -1,0 +1,1663 @@
+HRMX	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+FY-3B	HOSTS	FY-3B|ERM-1
+FY-4A	HOSTS	FY-4A|AGRI
+IKFS-2	SENSORRULE	TIR High-resolution nadir-scanning IR spectrometer
+AMSR2	OBSERVES	Atmospheric specific humidity (column/profile)
+NOAA-18	HOSTS	NOAA-18|AVHRR/3
+MERSI-2	SENSORTYPE	Multi-purpose imaging Vis/IR radiometer
+NOAA-19|AVHRR/3	isInstanceOf	AVHRR/3
+NOAA-19|HIRS/4	isInstanceOf	HIRS/4
+MISR	SENSORRULE	NIR Multi-channel/direction/polarisation radiometer
+SORCE	HOSTS	SORCE|SOLSTICE
+FY-3C	HOSTS	FY-3C|SES
+IRAS	SENSORBAND	TIR
+ES	OBSERVES	Total electron content (TEC)
+NIR Ocean colour instruments	TYPEOBSERVES	Vegetation type
+SSJ/5	SENSORTYPE	Space environment monitor
+FY-3B|SEM	isInstanceOf	SEM
+GOES-14|SEM (GOES)	isInstanceOf	SEM (GOES)
+GGAK-E	OBSERVES	Magnetic field (vector)
+DMSP F-16|SSI/ES-3	isInstanceOf	SSI/ES-3
+GSA (1)	SENSORTYPE	Multi-channel/direction/polarisation radiometer
+TIR Atmospheric temperature and humidity sounders	TYPEOBSERVES	Ozone profile
+FY-3D	HOSTS	FY-3D|MWTS-2
+Suomi NPP|CERES	isInstanceOf	CERES
+Aqua|HSB	isInstanceOf	HSB
+Terra|CERES	isInstanceOf	CERES
+Suomi NPP	HOSTS	Suomi NPP|CERES
+GOES-13	HOSTS	GOES-13|GOES Comms
+VHRI-100	SENSORBAND	NIR
+AHI	OBSERVES	Water vapour imagery
+MSU-MR	OBSERVES	Sea surface temperature
+MISR	OBSERVES	Downwelling (Incoming) short-wave radiation at the Earth surface
+OLI	SENSORRULE	VIS High resolution optical imager
+MS (GISTDA)	SENSORBAND	VIS
+DMSP F-15|SSM/T-2	isInstanceOf	SSM/T-2
+HSI (HJ-1A)	OBSERVES	Cloud imagery
+SLSTR	SENSORRULE	TIR Multi-channel/direction/polarisation radiometer
+SAR-X	SENSORTYPE	Imaging radar (SAR)
+NigeriaSat X Remote Sensing (Medium Resolution)	OBSERVES	Earth surface albedo
+STSAT-3	HOSTS	STSAT-3|COMIS
+DMSP F-16|SSM/IS	isInstanceOf	SSM/IS
+SSM/T-2	SENSORTYPE	Atmospheric temperature and humidity sounders
+HIRS/4	SENSORBAND	MWIR
+MWRI	OBSERVES	Cloud type
+SAGE-III	OBSERVES	Atmospheric Chemistry - OClO (column/profile)
+MODIS	OBSERVES	Atmospheric temperature (column/profile)
+DMSP F-14	HOSTS	DMSP F-14|SSM
+STELLA	HOSTS	STELLA|Laser Reflectors
+GOES-14|GOES Comms	isInstanceOf	GOES Comms
+FY-3B	HOSTS	FY-3B|IRAS
+RRA	SENSORBAND	N/A
+GOES-16|Magnetometer (NOAA)	isInstanceOf	Magnetometer (NOAA)
+Imager	OBSERVES	Upwelling (Outgoing) long-wave radiation at TOA
+SGLI	OBSERVES	Cloud cover
+LRIT	SENSORTYPE	Communications
+Metop-B|ASCAT	isInstanceOf	ASCAT
+X-Band SAR	SENSORRULE	MW Imaging microwave radars
+GOES-13	HOSTS	GOES-13|SXI
+JPSS-1|VIIRS	isInstanceOf	VIIRS
+VHRI-100	SENSORTYPE	High resolution optical imager
+VIS Atmospheric temperature and humidity sounders	TYPEOBSERVES	Cloud top height
+ZY-3-02|MUX (ZY-3-02)	isInstanceOf	MUX (ZY-3-02)
+DESIS	SENSORRULE	NIR Medium-resolution spectro-radiometer
+MODIS	OBSERVES	Normalized Differential Vegetation Index (NDVI)
+IR (HJ-1B)	SENSORTYPE	Multi-purpose imaging Vis/IR radiometer
+ATMS	OBSERVES	Wind speed over sea surface (horizontal)
+MSI	OBSERVES	Earth surface albedo
+SSB/X-2	SENSORTYPE	Space environment
+ABI	OBSERVES	Sea surface temperature
+SEVIRI	OBSERVES	Cloud top height
+SAR-L	OBSERVES	Above Ground Biomass (AGB)
+Spectrometer (OCO-2)	SENSORTYPE	Atmospheric chemistry
+CALIOP	SENSORRULE	VIS Atmospheric lidar
+OLI	SENSORTYPE	Imaging multi-spectral radiometers (vis/IR)
+DMSP F-15	HOSTS	DMSP F-15|SSM
+GIIRS	SENSORBAND	SWIR
+Metop-A|SEM (POES)	isInstanceOf	SEM (POES)
+DSCOVR	HOSTS	DSCOVR|EPIC
+MUX (CBERS-4)	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+Metop-A|S&R (NOAA)	isInstanceOf	S&R (NOAA)
+Metop-A|AMSU-A	isInstanceOf	AMSU-A
+MAESTRO	SENSORRULE	UV Limb-scanning SW spectrometer
+Kanopus-V-IR|PSS	inVisibilityOfTarget	Mauna Loa
+UVNS (Sentinel-5 precursor)	SENSORTYPE	High-resolution nadir-scanning SW spectrometer
+ePOP on CASSIOPE	HOSTS	ePOP on CASSIOPE|RRI
+Scatterometer (Scatsat-1)	SENSORTYPE	Scatterometers
+LMI	OBSERVES	Atmospheric Chemistry - NO (column/profile)
+SAR (RADARSAT-2)	OBSERVES	Fire area
+OLI	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+TSIS-1-on-ISS|TSIS-1/TIM	isInstanceOf	TSIS-1/TIM
+ASTER	SENSORTYPE	High resolution optical imager
+GOES-13	HOSTS	GOES-13|SEM (GOES)
+NigeriaSat X Remote Sensing (Medium Resolution)	SENSORTYPE	High resolution optical imager
+LCCRA	SENSORTYPE	Laser retroreflector
+Vegetation	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+X-Band SAR	OBSERVES	Snow cover
+SLIM-6-22	OBSERVES	Leaf Area Index (LAI)
+DMSP F-16|SSM/IS	isInstanceOf	SSM/IS
+Meteor-M N2|KMSS	isInstanceOf	KMSS
+FY-3D	HOSTS	FY-3D|GAS
+Aqua	HOSTS	Aqua|MODIS
+NOAA-18|S&R (NOAA)	isInstanceOf	S&R (NOAA)
+Himawari-8	HOSTS	Himawari-8|Himawari Comms
+Sounder	SENSORRULE	TIR Atmospheric temperature and humidity sounders
+MWI	SENSORRULE	MW Satellite-to-satellite ranging system
+DMSP F-17|SSI/ES-3	isInstanceOf	SSI/ES-3
+GOES-15	HOSTS	GOES-15|SXI
+IRAS	SENSORRULE	VIS Atmospheric temperature and humidity sounders
+Metop-A|ASCAT	isInstanceOf	ASCAT
+SIM	SENSORRULE	SWIR Earth radiation budget radiometers
+FY-3D	HOSTS	FY-3D|GNOS
+OCM (Oceansat-2)	SENSORRULE	NIR Ocean colour instruments
+MIRAS (SMOS)	SENSORBAND	MW
+FY-3B	HOSTS	FY-3B|MWTS-1
+Meteosat-8	HOSTS	Meteosat-8|MSG Comms
+MWIR Atmospheric chemistry	TYPEOBSERVES	Ozone profile
+MUX (ZY-3-02)	SENSORRULE	NIR High resolution optical imager
+HYC	SENSORTYPE	Medium-resolution IR spectrometer
+OLS	OBSERVES	Cloud type
+Metop-B|HIRS/4	isInstanceOf	HIRS/4
+MISR	OBSERVES	Aerosol optical depth (column/profile)
+FY-3C|ERM-1	isInstanceOf	ERM-1
+SAR (RADARSAT-2)	OBSERVES	Vegetation type
+Scatterometer (Oceansat-2)	SENSORTYPE	Radar scatterometer
+Metop-C|AMSU-A	isInstanceOf	AMSU-A
+DMSP F-15	HOSTS	DMSP F-15|SSM
+DMSP F-15|SSM	isInstanceOf	SSM
+SRAL	SENSORRULE	MW Radar altimeter
+DMSP F-18	HOSTS	DMSP F-18|SSULI
+Suomi NPP	HOSTS	Suomi NPP|VIIRS
+MODIS	SENSORRULE	SWIR Imaging multi-spectral radiometers (vis/IR)
+Metop-C	HOSTS	Metop-C|GOME-2
+AEISS	OBSERVES	Land surface imagery
+SWIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Aerosol optical depth (column/profile)
+PAN (GISTDA)	SENSORRULE	VIS High resolution optical imager
+TANSO-CAI	SENSORBAND	VIS
+Metop-A|AVHRR/3	isInstanceOf	AVHRR/3
+CARTOSAT-2B	HOSTS	CARTOSAT-2B|PAN (Cartosat-2A/2B)
+HJ-1B|CCD (HJ)	isInstanceOf	CCD (HJ)
+Jason-3	HOSTS	Jason-3|GPSP
+Meteor-M N2-2|MSU-MR	inVisibilityOfTarget	Mauna Loa
+SWIR Hyperspectral imagers	TYPEOBSERVES	Land surface imagery
+FY-3C|IRAS	isInstanceOf	IRAS
+FY-3C	HOSTS	FY-3C|MWTS-2
+SIM	SENSORRULE	SWIR Solar irradiance monitor
+Magnetometer (NOAA)	SENSORTYPE	Magnetic field
+NOAA-19|MHS	isInstanceOf	MHS
+DMSP F-15|SSM/I	isInstanceOf	SSM/I
+TIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	TIR Radiance
+SIM	SENSORBAND	FIR
+VHRI-100	SENSORRULE	NIR High resolution optical imager
+CBERS-4|MUX (CBERS-4)	inVisibilityOfTarget	Mauna Loa
+DMSP F-18	HOSTS	DMSP F-18|SSM/IS
+FY-3D|MWRI	isInstanceOf	MWRI
+Swarm|ACC	isInstanceOf	ACC
+MSS	SENSORRULE	VIS High resolution optical imagers
+CryoSat-2	HOSTS	CryoSat-2|SIRAL
+DMSP F-18|SSULI	isInstanceOf	SSULI
+Spectrometer (OCO-2)	SENSORRULE	SWIR High-resolution nadir-scanning SW spectrometer
+GOES-14	HOSTS	GOES-14|A-DCS4
+ATLAS	SENSORRULE	VIS Lidars
+HRMX	SENSORTYPE	High resolution optical imager
+OLS	SENSORTYPE	Multi-purpose imaging Vis/IR radiometer
+HY-1C	HOSTS	HY-1C|CZI
+FY-3C	HOSTS	FY-3C|IRAS
+SCAT	SENSORRULE	Ku-Band Radar scatterometer
+FY-3C	HOSTS	FY-3C|MWHS-2
+MWIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Cloud top height
+FAI	SENSORBAND	NIR
+Aqua	HOSTS	Aqua|AMSR-E
+HIRS/4	SENSORRULE	TIR Narrow-band channel IR radiometer
+GMI	SENSORRULE	MW Imaging multi-spectral radiometers (passive microwave)
+Suomi NPP|VIIRS	isInstanceOf	VIIRS
+Aqua	HOSTS	Aqua|AMSU-A
+MI	OBSERVES	Cloud type
+Metop-A|S&R (NOAA)	isInstanceOf	S&R (NOAA)
+MTVZA-GY	OBSERVES	Sea surface temperature
+LISS-IV	OBSERVES	Earth surface albedo
+OCO-3-on-ISS|Spectrometer (OCO-3)	isInstanceOf	Spectrometer (OCO-3)
+FY-3B	HOSTS	FY-3B|SEM
+GOES-13	HOSTS	GOES-13|A-DCS4
+Metop-B	HOSTS	Metop-B|HIRS/4
+SEVIRI	SENSORTYPE	Multi-purpose imaging Vis/IR radiometer
+ZACube-1	HOSTS	ZACube-1|VGA Matrix Camera
+ASTER	SENSORBAND	TIR
+Sounder	OBSERVES	Cloud top height
+HSI (HJ-1A)	OBSERVES	Snow cover
+VIS High resolution optical imagers	TYPEOBSERVES	Vegetation type
+VNIR (GF-4)	SENSORBAND	NIR
+AEISS	OBSERVES	Land surface topography
+Metop-A	HOSTS	Metop-A|S&R (NOAA)
+GOES-14|GOES Comms	isInstanceOf	GOES Comms
+SIM-2	SENSORRULE	UV Earth radiation budget radiometers
+ERM-1	SENSORRULE	VIS Broad-band radiometer
+Suomi NPP	HOSTS	Suomi NPP|CERES
+CSG SAR	OBSERVES	Soil moisture at the surface
+HIRS/4	SENSORBAND	NIR
+OLI	OBSERVES	Sea-ice surface temperature
+Swarm	HOSTS	Swarm|ASM
+ECOSTRESS	SENSORRULE	TIR Imaging multi-spectral radiometers (vis/IR)
+MODIS	SENSORRULE	MWIR Medium-resolution spectro-radiometer
+MSI	SENSORBAND	VIS
+TIR Atmospheric temperature and humidity sounders	TYPEOBSERVES	Cloud top height
+DMSP F-14	HOSTS	DMSP F-14|SSJ/4
+C-Band Imaging microwave radars	TYPEOBSERVES	Bathymetry
+HiRI	SENSORBAND	VIS
+PAN (Cartosat-2)	OBSERVES	Land surface topography
+CCD (ZY-1-02C and ZY-3)	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+NORSAT-1|AIS	isInstanceOf	AIS
+HY-2A	HOSTS	HY-2A|RAD
+HIRS/4	SENSORTYPE	Narrow-band channel IR radiometer
+Metop-C	HOSTS	Metop-C|SEM (POES)
+MSU-MR	SENSORRULE	NIR Imaging multi-spectral radiometers (vis/IR)
+Suomi NPP	HOSTS	Suomi NPP|OMPS
+AVHRR/3	SENSORBAND	MWIR
+GOCI	SENSORTYPE	Multi-purpose imaging Vis/IR radiometer
+GOES-15|GOES Comms	isInstanceOf	GOES Comms
+K-line Imager	SENSORTYPE	High resolution optical imager
+MI	OBSERVES	Upwelling (Outgoing) long-wave radiation at TOA
+Himawari-8|Himawari Comms	isInstanceOf	Himawari Comms
+FY-3C|VIRR	isInstanceOf	VIRR
+AIRS	OBSERVES	Land surface temperature
+FY-4A|SEP	isInstanceOf	SEP
+OLS	OBSERVES	Snow cover
+HJ-1A|HSI (HJ-1A)	isInstanceOf	HSI (HJ-1A)
+Metop-A	HOSTS	Metop-A|MHS
+VISSR-2	SENSORRULE	MWIR Imaging multi-spectral radiometers (vis/IR)
+TIRS	OBSERVES	Sea-ice surface temperature
+MW Imaging microwave radars	TYPEOBSERVES	Glacier cover
+Metop-A|HIRS/4	isInstanceOf	HIRS/4
+Magnetometer (NOAA)	OBSERVES	Magnetic field (scalar)
+SSM	SENSORRULE	TBD Magnetic field
+X-Band SAR	SENSORRULE	X-Band Imaging radar (SAR)
+DSCOVR|PlasMag	isInstanceOf	PlasMag
+MSS	SENSORTYPE	High resolution optical imager
+Kanopus-V N6|MSS	isInstanceOf	MSS
+GOES-14|A-DCS4	isInstanceOf	A-DCS4
+BJ-2|MSI (BJ-2)	isInstanceOf	MSI (BJ-2)
+Sounder	OBSERVES	Aerosol absorption optical depth (column/profile)
+Suomi NPP	HOSTS	Suomi NPP|CERES
+DMSP F-16	HOSTS	DMSP F-16|SSI/ES-3
+AIRS	SENSORRULE	VIS Medium-resolution IR spectrometer
+AIRS	SENSORRULE	MWIR Medium-resolution IR spectrometer
+FY-3B	HOSTS	FY-3B|IRAS
+OCEANSAT-2	HOSTS	OCEANSAT-2|Scatterometer (Oceansat-2)
+HYC	SENSORRULE	SWIR Imaging multi-spectral radiometers (vis/IR)
+DSCOVR|FC	isInstanceOf	FC
+NOAA-19|AVHRR/3	isInstanceOf	AVHRR/3
+FY-3D|MERSI-2	isInstanceOf	MERSI-2
+FY-3C|MWRI	isInstanceOf	MWRI
+DMSP F-17	HOSTS	DMSP F-17|SSULI
+MSI (BJ-2)	OBSERVES	Land surface imagery
+VISSR-2	SENSORRULE	TIR Imaging multi-spectral radiometers (vis/IR)
+PROBA|HRC	isInstanceOf	HRC
+KMSS	OBSERVES	Snow cover
+AEISS-A	SENSORRULE	MWIR High resolution optical imager
+ASCAT	SENSORRULE	MW Scatterometers
+GOSAT	HOSTS	GOSAT|TANSO-CAI
+Suomi NPP|OMPS	isInstanceOf	OMPS
+GOES-16	HOSTS	GOES-16|Magnetometer (NOAA)
+LRA (LAGEOS)	OBSERVES	Gravity field
+DPR	SENSORBAND	Ku-Band
+DMSP F-15|SSJ/4	isInstanceOf	SSJ/4
+Jason-3|DORIS-NG	isInstanceOf	DORIS-NG
+NigeriaSat-2	HOSTS	NigeriaSat-2|NigeriaSat 2 Remote Sensing (Med and High Res)
+FY-3C	HOSTS	FY-3C|GNOS
+MSI	SENSORTYPE	High resolution optical imagers
+CBERS-4|MUX (CBERS-4)	isInstanceOf	MUX (CBERS-4)
+FY-3B	HOSTS	FY-3B|MWRI
+CHRIS	SENSORTYPE	High resolution optical imager
+Metop-A|AMSU-A	isInstanceOf	AMSU-A
+C-Band SAR	SENSORRULE	C-Band Imaging microwave radars
+DMSP F-18	HOSTS	DMSP F-18|SSULI
+DMSP F-14|OLS	isInstanceOf	OLS
+FY-3C|MERSI	isInstanceOf	MERSI
+FY-3C	HOSTS	FY-3C|SES
+PALSAR-2	SENSORRULE	MW Imaging radar (SAR)
+GOES-15	HOSTS	GOES-15|GOES Comms
+NOAA-18	HOSTS	NOAA-18|S&R (NOAA)
+ACE-FTS	SENSORBAND	TIR
+GOES-15	HOSTS	GOES-15|A-DCS4
+TIR Atmospheric chemistry	TYPEOBSERVES	Atmospheric Chemistry - CFC-12 (column/profile)
+LISS-IV	SENSORBAND	VIS
+Meteor-M N2	HOSTS	Meteor-M N2|IKFS-2
+Advanced MI	OBSERVES	Cloud top height
+DMSP F-16	HOSTS	DMSP F-16|SSULI
+AVHRR/3	OBSERVES	Upwelling (Outgoing) long-wave radiation at TOA
+Sentinel-3 A	HOSTS	Sentinel-3 A|SRAL
+FY-3C	HOSTS	FY-3C|MWRI
+Meteor-M N2-2|KMSS	isInstanceOf	KMSS
+MIRAS (SMOS)	OBSERVES	Ocean salinity
+Swarm	HOSTS	Swarm|ACC
+GOSAT-2|TANSO-CAI-2	isInstanceOf	TANSO-CAI-2
+Metop-A	HOSTS	Metop-A|ASCAT
+SRAL	SENSORBAND	MW
+AWiFS	SENSORBAND	VIS
+CryoSat-2|Laser Reflectors (ESA)	isInstanceOf	Laser Reflectors (ESA)
+ABI	SENSORRULE	VIS Multi-purpose imaging Vis/IR radiometer
+NOAA-19|HIRS/4	isInstanceOf	HIRS/4
+OCM (Oceansat-2)	SENSORRULE	VIS Ocean colour instruments
+Sounder (INSAT)	OBSERVES	Atmospheric temperature (column/profile)
+GERB	SENSORBAND	NIR
+Meteor-M N2-2	HOSTS	Meteor-M N2-2|KMSS
+Metop-B	HOSTS	Metop-B|IASI
+Metop-A	HOSTS	Metop-A|S&R (NOAA)
+Suomi NPP	HOSTS	Suomi NPP|CERES
+GIIRS	OBSERVES	Atmospheric specific humidity (column/profile)
+SEVIRI	OBSERVES	Cloud imagery
+Landsat 8|OLI	isInstanceOf	OLI
+RCM-2|AIS (RCM)	inVisibilityOfTarget	Mauna Loa
+MI	OBSERVES	Cloud top temperature
+GOSAT	HOSTS	GOSAT|TANSO-CAI
+GOES-13	HOSTS	GOES-13|S&R (GOES)
+IIR	SENSORRULE	TIR Imaging multi-spectral radiometers (vis/IR)
+Sentinel-3 B|OLCI	isInstanceOf	OLCI
+JPSS-1	HOSTS	JPSS-1|CERES
+SIM	SENSORRULE	FIR Earth radiation budget radiometers
+GCOM-C|SGLI	isInstanceOf	SGLI
+Metop-B	HOSTS	Metop-B|GOME-2
+DMSP F-18	HOSTS	DMSP F-18|SSUSI
+DSCOVR|ES	isInstanceOf	ES
+Metop-A	HOSTS	Metop-A|AVHRR/3
+HIRAS	SENSORTYPE	Imaging multi-spectral radiometers (passive microwave)
+NOAA-19	HOSTS	NOAA-19|NOAA Comms
+MSI (BJ-2)	SENSORRULE	NIR High resolution optical imager
+NIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Vegetation type
+GLM	SENSORBAND	NIR
+HY-1C	HOSTS	HY-1C|COCTS
+DESIS	SENSORBAND	NIR
+GOES-15	HOSTS	GOES-15|A-DCS4
+Jason-3|GPSP	isInstanceOf	GPSP
+HY-2A|DORIS-NG	isInstanceOf	DORIS-NG
+Advanced MI	OBSERVES	Cloud mask
+FY-3C	HOSTS	FY-3C|SIM-2
+DMSP F-14|SSB/X-2	isInstanceOf	SSB/X-2
+ePOP on CASSIOPE|FAI	isInstanceOf	FAI
+DMSP F-15	HOSTS	DMSP F-15|SSJ/4
+SRAL	OBSERVES	Sea-ice thickness
+THEOS	HOSTS	THEOS|MS (GISTDA)
+Landsat 8	HOSTS	Landsat 8|OLI
+RESOURCESAT-2|AWiFS	isInstanceOf	AWiFS
+COCTS	SENSORRULE	VIS Ocean colour instruments
+COSI	OBSERVES	Land cover
+DMSP F-17|OLS	isInstanceOf	OLS
+ROSA	SENSORTYPE	Atmospheric temperature and humidity sounders
+FY-3B	HOSTS	FY-3B|IRAS
+DMSP F-15|SSJ/4	isInstanceOf	SSJ/4
+FY-3D|GAS	inVisibilityOfTarget	Mauna Loa
+Jason-3|GPSP	isInstanceOf	GPSP
+DCS	SENSORRULE	TBD Data collection system
+Metop-C|GOME-2	isInstanceOf	GOME-2
+PALSAR-2	OBSERVES	Glacier motion
+MODIS	OBSERVES	Atmospheric specific humidity (column/profile)
+MEGHA-TROPIQUES|SAPHIR	isInstanceOf	SAPHIR
+Sentinel-3 A	HOSTS	Sentinel-3 A|OLCI
+Metop-A|GOME-2	isInstanceOf	GOME-2
+AMSR-E	SENSORTYPE	Imaging multi-spectral radiometers (passive microwave)
+VIS Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Sea surface temperature
+RESOURCESAT-2A|LISS-IV	inVisibilityOfTarget	Mauna Loa
+NOAA-19|AVHRR/3	inVisibilityOfTarget	Mauna Loa
+VGA Matrix Camera	SENSORBAND	VIS
+VISSR-2	OBSERVES	Short-wave Earth surface bi-directional reflectance
+NOAA-19	HOSTS	NOAA-19|MHS
+ABI	OBSERVES	Cloud ice content (at cloud top)
+VSC	OBSERVES	Photosynthetically Active Radiation (PAR)
+ACE-FTS	OBSERVES	Height of tropopause
+GOME-2	SENSORRULE	VIS High-resolution nadir-scanning SW spectrometer
+FY-3B|MWHS-1	isInstanceOf	MWHS-1
+CrIS	SENSORTYPE	Atmospheric temperature and humidity sounders
+SMR	OBSERVES	Atmospheric Chemistry - CO (column/profile)
+Kanopus-V N6	HOSTS	Kanopus-V N6|PSS
+DSCOVR	HOSTS	DSCOVR|FC
+PROBA	HOSTS	PROBA|CHRIS
+Metop-B|AVHRR/3	isInstanceOf	AVHRR/3
+CloudSat	HOSTS	CloudSat|CPR (CloudSat)
+DSCOVR	HOSTS	DSCOVR|NISTAR
+Vegetation	OBSERVES	Land surface imagery
+Metop-B	HOSTS	Metop-B|IASI
+Aura	HOSTS	Aura|TES
+Metop-B|ASCAT	isInstanceOf	ASCAT
+DMSP F-18|SSUSI	isInstanceOf	SSUSI
+MODIS	OBSERVES	Cloud drop size (at cloud top)
+MUX (GF-2)	SENSORRULE	NIR High resolution optical imager
+SOLSTICE	SENSORRULE	UV Solar irradiance monitor
+SIM	SENSORRULE	UV Earth radiation budget radiometers
+AIRS	OBSERVES	Sea-ice cover
+Advanced MI	OBSERVES	Snow cover
+VNIR (GF-4)	OBSERVES	Land surface imagery
+Terra|MISR	isInstanceOf	MISR
+MSS	SENSORBAND	NIR
+FY-4A|AGRI	isInstanceOf	AGRI
+TIRS	OBSERVES	Fire temperature
+DMSP F-14|SSI/ES-2	isInstanceOf	SSI/ES-2
+SHMSA-VR	SENSORRULE	NIR Imaging multi-spectral radiometers (vis/IR)
+MSU-MR	OBSERVES	Aerosol Extinction / Backscatter (column/profile)
+GOES-14	HOSTS	GOES-14|S&R (GOES)
+MW Imaging multi-spectral radiometers (passive microwave)	TYPEOBSERVES	Snow cover
+MISR	OBSERVES	Aerosol absorption optical depth (column/profile)
+SGLI	OBSERVES	Fractionally absorbed PAR (FPAR)
+AGRI	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+FY-3C|TOU/SBUS	isInstanceOf	TOU/SBUS
+Kanopus-V N6	HOSTS	Kanopus-V N6|MSS
+AltiKa	SENSORBAND	K-Band
+Metop-B|AMSU-A	isInstanceOf	AMSU-A
+Aqua	HOSTS	Aqua|CERES
+HiRDLS	SENSORBAND	FIR
+Sentinel-3 A|SRAL	isInstanceOf	SRAL
+HIRAS	SENSORBAND	TIR
+TIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	TIR Radiance
+Aqua	HOSTS	Aqua|MODIS
+Sounder (INSAT)	SENSORBAND	VIS
+Jason-3|POSEIDON-3B Altimeter	inVisibilityOfTarget	Mauna Loa
+Kanopus-V N4|MSU-IK-SR	isInstanceOf	MSU-IK-SR
+DSCOVR	HOSTS	DSCOVR|PHA
+Metop-C	HOSTS	Metop-C|SEM (POES)
+ACGS	SENSORRULE	SWIR Atmospheric chemistry
+MWIR Atmospheric temperature and humidity sounders	TYPEOBSERVES	Atmospheric Chemistry - CH4 (column/profile)
+Advanced MI	SENSORTYPE	Multi-purpose imaging Vis/IR radiometer
+DMSP F-18	HOSTS	DMSP F-18|SSI/ES-3
+GOES-13|A-DCS4	isInstanceOf	A-DCS4
+Meteor-M N2-2|KMSS	isInstanceOf	KMSS
+SGLI	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+DMSP F-15	HOSTS	DMSP F-15|OLS
+FY-3D|ASI	isInstanceOf	ASI
+ZY-3-01	HOSTS	ZY-3-01|CCD (ZY-1-02C and ZY-3)
+MISR	OBSERVES	Earth surface albedo
+FY-3D	HOSTS	FY-3D|MWRI
+MWIR (GF-4)	SENSORTYPE	Imaging multi-spectral radiometers (vis/IR)
+NOAA-19|HIRS/4	inVisibilityOfTarget	Mauna Loa
+NOAA-19|NOAA Comms	isInstanceOf	NOAA Comms
+DMSP F-14|SSM	isInstanceOf	SSM
+MSC	SENSORRULE	VIS High resolution optical imagers
+Metop-A	HOSTS	Metop-A|ASCAT
+GOES-15|S&R (GOES)	isInstanceOf	S&R (GOES)
+Metop-B|ASCAT	isInstanceOf	ASCAT
+Metop-B	HOSTS	Metop-B|AVHRR/3
+TIR Atmospheric chemistry	TYPEOBSERVES	Atmospheric Chemistry - CO2 (column/profile)
+TIRS	OBSERVES	Land surface temperature
+C-Band Imaging microwave radars	TYPEOBSERVES	Significant wave height
+DMSP F-18	HOSTS	DMSP F-18|SSUSI
+OLCI	OBSERVES	Normalized Differential Vegetation Index (NDVI)
+Scatterometer (Scatsat-1)	SENSORRULE	MW Radar scatterometer
+SAPHIR	SENSORRULE	MW Absorption-band MW radiometer/spectrometer
+CHRIS	SENSORRULE	NIR Imaging multi-spectral radiometers (vis/IR)
+C-SAR	SENSORTYPE	Imaging microwave radars
+MSU-MR	OBSERVES	Cloud top height
+Metop-B	HOSTS	Metop-B|ASCAT
+Jason-3	HOSTS	Jason-3|POSEIDON-3B Altimeter
+HY-2A|RAD	isInstanceOf	RAD
+PAN (CBERS-4)	SENSORBAND	NIR
+SHMSA-SR	OBSERVES	Land surface imagery
+MSU-IK-SR	SENSORRULE	TIR Multi-purpose imaging Vis/IR radiometer
+DMSP F-15|SSJ/4	isInstanceOf	SSJ/4
+VIIRS	SENSORBAND	MWIR
+SAR (RADARSAT-2)	OBSERVES	Glacier topography
+Ku-Band Radar altimeters	TYPEOBSERVES	Sea level
+FY-3C|MWHS-2	isInstanceOf	MWHS-2
+DMSP F-16	HOSTS	DMSP F-16|OLS
+AEISS-A	SENSORTYPE	High resolution optical imager
+HIRS/4	SENSORRULE	VIS Atmospheric temperature and humidity sounders
+AVHRR/3	SENSORTYPE	Multi-purpose imaging Vis/IR radiometer
+FY-3C	HOSTS	FY-3C|SES
+Metop-A|MHS	isInstanceOf	MHS
+NOAA-19|HIRS/4	isInstanceOf	HIRS/4
+FY-3B	HOSTS	FY-3B|SEM
+OLI	OBSERVES	Long-wave Earth surface emissivity
+FY-3C	HOSTS	FY-3C|MWRI
+Terra	HOSTS	Terra|CERES
+FY-3B	HOSTS	FY-3B|ERM-1
+PSS	SENSORTYPE	High resolution optical imager
+CBERS-4|IRS	inVisibilityOfTarget	Mauna Loa
+Sounder (INSAT)	SENSORBAND	MWIR
+Aqua	HOSTS	Aqua|HSB
+NOAA-19	HOSTS	NOAA-19|A-DCS4
+GOES-15	HOSTS	GOES-15|A-DCS4
+FY-3C	HOSTS	FY-3C|GNOS
+VGA Matrix Camera	SENSORTYPE	Data collection system
+CHRIS	OBSERVES	Atmospheric temperature (column/profile)
+Kanopus-V-IR|MSU-IK-SR	isInstanceOf	MSU-IK-SR
+TIRS	OBSERVES	Cloud cover
+ASTER	SENSORBAND	VIS
+NIR Atmospheric chemistry	TYPEOBSERVES	Aerosol optical depth (column/profile)
+DMSP F-17|SSUSI	isInstanceOf	SSUSI
+Metop-C|GOME-2	isInstanceOf	GOME-2
+Metop-A|ASCAT	isInstanceOf	ASCAT
+FY-3C|SIM-2	inVisibilityOfTarget	Mauna Loa
+Jason-3	HOSTS	Jason-3|GPSP
+DMSP F-14	HOSTS	DMSP F-14|OLS
+VIS Atmospheric chemistry	TYPEOBSERVES	Atmospheric specific humidity (column/profile)
+FY-3B|MWHS-1	isInstanceOf	MWHS-1
+VGA Matrix Camera	SENSORTYPE	Other
+HF Beacon Transmitter	OBSERVES	Electric Field (vector)
+MSI	SENSORBAND	NIR
+FY-3C|VIRR	isInstanceOf	VIRR
+MX (Cartosat-3)	SENSORTYPE	Imaging multi-spectral radiometers (vis/IR)
+MSU-GS	OBSERVES	Short-wave Earth surface bi-directional reflectance
+HJ-1A	HOSTS	HJ-1A|HSI (HJ-1A)
+NOAA-18	HOSTS	NOAA-18|SEM (POES)
+MSI	OBSERVES	Land surface imagery
+VIS Earth radiation budget radiometers	TYPEOBSERVES	Upwelling (Outgoing) long-wave radiation at TOA
+Metop-A|AVHRR/3	isInstanceOf	AVHRR/3
+Meteor-M N2|KMSS	isInstanceOf	KMSS
+HYC	SENSORRULE	VIS Hyperspectral imagers
+GOES-14|S&R (GOES)	isInstanceOf	S&R (GOES)
+MI	OBSERVES	Downwelling (Incoming) short-wave radiation at the Earth surface
+C-Band Imaging microwave radars	TYPEOBSERVES	Ocean imagery and water leaving radiance
+DMSP F-16|SSM	isInstanceOf	SSM
+Metop-A|ASCAT	isInstanceOf	ASCAT
+BJ-2|MSI (BJ-2)	isInstanceOf	MSI (BJ-2)
+SIM	SENSORRULE	FIR Solar irradiance monitor
+MUX (ZY-3-02)	OBSERVES	Vegetation type
+SIRAL	OBSERVES	Land surface topography
+AGRI	OBSERVES	Sea surface temperature
+GOES-17	HOSTS	GOES-17|ABI
+ATLAS	SENSORBAND	VIS
+TIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	TIR Radiance
+UVNS (Sentinel-5 precursor)	OBSERVES	Atmospheric Chemistry - BrO (column/profile)
+SRAL	SENSORTYPE	Radar altimeter
+FY-3B|VIRR	inVisibilityOfTarget	Mauna Loa
+GOME-2	OBSERVES	Atmospheric specific humidity (column/profile)
+GOES-15	HOSTS	GOES-15|GOES Comms
+HYC	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+DSCOVR|FC	isInstanceOf	FC
+Imager (INSAT 3D)	SENSORRULE	TIR Multi-purpose imaging Vis/IR radiometer
+SSJ/5	SENSORBAND	TBD
+DMSP F-15|SSI/ES-2	isInstanceOf	SSI/ES-2
+AEISS-A	SENSORRULE	VIS High resolution optical imagers
+COSMIC-2A (Equatorial)	HOSTS	COSMIC-2A (Equatorial)|TGRS
+A-DCS4	SENSORTYPE	Data collection
+S-band SAR	OBSERVES	Land surface imagery
+MERSI-2	OBSERVES	Land cover
+CryoSat-2	HOSTS	CryoSat-2|DORIS-NG
+FY-3D	HOSTS	FY-3D|MWHS-2
+RASAT|RASAT VIS Panchromatic	isInstanceOf	RASAT VIS Panchromatic
+SSB/X-2	SENSORRULE	TBD Space environment
+IRS	SENSORRULE	SWIR Imaging multi-spectral radiometers (vis/IR)
+ATLAS	OBSERVES	Ice sheet topography
+ePOP on CASSIOPE|RRI	isInstanceOf	RRI
+DSCOVR	HOSTS	DSCOVR|ES
+GOES-13	HOSTS	GOES-13|S&R (GOES)
+JPSS-1	HOSTS	JPSS-1|CrIS
+NOAA-19	HOSTS	NOAA-19|MHS
+SMAP	HOSTS	SMAP|L-band Radiometer (SMAP)
+TIR Atmospheric chemistry	TYPEOBSERVES	TIR Radiance
+CCD (HJ)	SENSORRULE	VIS Multi-purpose imaging Vis/IR radiometer
+FY-3C	HOSTS	FY-3C|MERSI
+CIRC	SENSORBAND	TIR
+LISS-IV	OBSERVES	Land surface imagery
+NOAA-18	HOSTS	NOAA-18|AVHRR/3
+SCD-1|DCS	isInstanceOf	DCS
+GF-2	HOSTS	GF-2|MUX (GF-2)
+FY-3C|SES	isInstanceOf	SES
+GERB	SENSORRULE	VIS Broad-band radiometer
+PALSAR-2	SENSORRULE	L-Band Imaging microwave radars
+MUX (ZY-3-01)	SENSORTYPE	Imaging multi-spectral radiometers (vis/IR)
+DMSP F-14	HOSTS	DMSP F-14|SSM/T-2
+NOAA-19	HOSTS	NOAA-19|MHS
+HSI (HJ-1A)	OBSERVES	Photosynthetically Active Radiation (PAR)
+SAR-X	SENSORRULE	MW Imaging radar (SAR)
+MEGHA-TROPIQUES|ScaRaB	isInstanceOf	ScaRaB
+IASI	OBSERVES	Atmospheric Chemistry - CO (column/profile)
+PAN (Cartosat-3)	SENSORBAND	VIS
+SIM	SENSORRULE	VIS Earth radiation budget radiometers
+CALIOP	SENSORRULE	NIR Atmospheric lidar
+Imager	OBSERVES	Fire temperature
+PAN (BJ-2)	OBSERVES	Earth surface albedo
+SAR (RCM)	OBSERVES	Sea-ice sheet topography
+ZACube-2|AIS Receiver	isInstanceOf	AIS Receiver
+VGA Matrix Camera	SENSORRULE	VIS Data collection system
+GOSAT-2	HOSTS	GOSAT-2|TANSO-CAI-2
+SWIR Atmospheric temperature and humidity sounders	TYPEOBSERVES	Land surface temperature
+DMSP F-16	HOSTS	DMSP F-16|SSI/ES-3
+GERB	SENSORBAND	TIR
+Metop-A|ASCAT	isInstanceOf	ASCAT
+FY-3C	HOSTS	FY-3C|SES
+NOAA-19	HOSTS	NOAA-19|HIRS/4
+A-DCS4	SENSORRULE	MW Data collection
+ALT	SENSORTYPE	Radar altimeters
+AEISS	SENSORRULE	NIR High resolution optical imager
+COSMIC-2A (Equatorial)	HOSTS	COSMIC-2A (Equatorial)|TGRS
+Paz SAR-X	SENSORTYPE	Imaging radar (SAR)
+FY-3C	HOSTS	FY-3C|MWHS-2
+MWIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Downwelling (Incoming) long-wave radiation at the Earth surface
+VIIRS	SENSORTYPE	Ocean colour instruments
+SSM/T-1	SENSORRULE	MW Atmospheric temperature and humidity sounders
+FY-3D|HIRAS	isInstanceOf	HIRAS
+INSAT-3DR	HOSTS	INSAT-3DR|Imager (INSAT 3D)
+GF-4	HOSTS	GF-4|MWIR (GF-4)
+FY-3C|MWHS-2	isInstanceOf	MWHS-2
+CERES	SENSORRULE	UV Broad-band radiometer
+UV Atmospheric chemistry	TYPEOBSERVES	Aerosol absorption optical depth (column/profile)
+MSU-IK-SR	OBSERVES	Land surface temperature
+MUX (ZY-3-02)	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+GPM Core	HOSTS	GPM Core|DPR
+FY-3D|SES	inVisibilityOfTarget	Mauna Loa
+GAP	SENSORTYPE	GNSS radio-occultation receiver
+GF-2	HOSTS	GF-2|PAN (GF-2)
+MODIS	OBSERVES	Cloud ice content (at cloud top)
+Metop-C	HOSTS	Metop-C|ASCAT
+GOES-15	HOSTS	GOES-15|SXI
+FIR Earth radiation budget radiometers	TYPEOBSERVES	Downwelling (Incoming) solar radiation at TOA
+Metop-C	HOSTS	Metop-C|IASI
+DMSP F-14	HOSTS	DMSP F-14|SSM
+MSU-GS	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+NIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Leaf Area Index (LAI)
+SI	SENSORTYPE	Star tracker
+Meteor-M N2|BRLK	isInstanceOf	BRLK
+FY-3D|HIRAS	isInstanceOf	HIRAS
+DCS	SENSORBAND	TBD
+FY-3C	HOSTS	FY-3C|TOU/SBUS
+IASI	OBSERVES	Sea surface temperature
+RCM-3|SAR (RCM)	isInstanceOf	SAR (RCM)
+DMSP F-16	HOSTS	DMSP F-16|OLS
+Suomi NPP|OMPS	isInstanceOf	OMPS
+Resurs-P N3|Geoton-L1 (2)	inVisibilityOfTarget	Mauna Loa
+SEM (GOES)	SENSORRULE	TBD Space environment
+GOES-13|SXI	isInstanceOf	SXI
+IASI	OBSERVES	Long-wave Earth surface emissivity
+OCM (Oceansat-2)	SENSORTYPE	Ocean colour instruments
+CryoSat-2	HOSTS	CryoSat-2|SIRAL
+DSCOVR	HOSTS	DSCOVR|NISTAR
+ABI	OBSERVES	Aerosol optical depth (column/profile)
+GGAK-E	SENSORTYPE	Magnetic field
+MSU-GS	SENSORRULE	SWIR Multi-purpose imaging Vis/IR radiometer
+MUX (CBERS-4)	OBSERVES	Vegetation type
+AEISS-A	SENSORBAND	VIS
+GPM Core|GMI	isInstanceOf	GMI
+ePOP on CASSIOPE	HOSTS	ePOP on CASSIOPE|MGF
+EPIC	SENSORRULE	NIR Multi-purpose imaging Vis/IR radiometer
+CZI	SENSORRULE	VIS Multi-purpose imaging Vis/IR radiometer
+MicroDragon|MicroDragon SMI & TPI	isInstanceOf	MicroDragon SMI & TPI
+Swarm	HOSTS	Swarm|Laser Reflectors (ESA)
+DMSP F-14	HOSTS	DMSP F-14|SSB/X-2
+GOES-14|A-DCS4	isInstanceOf	A-DCS4
+Swarm	HOSTS	Swarm|ASM
+ERM-1	SENSORBAND	FIR
+SEM (GOES)	SENSORTYPE	Space environment
+HY-2A|SCAT	isInstanceOf	SCAT
+OSIRIS	OBSERVES	Atmospheric Chemistry - NO2 (column/profile)
+FY-3D|GNOS	isInstanceOf	GNOS
+AGRI	OBSERVES	Land surface imagery
+EFI	SENSORRULE	N/A Electric field sensor
+Metop-A	HOSTS	Metop-A|IASI
+PROBA	HOSTS	PROBA|HRC
+TIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	TIR Radiance
+RESOURCESAT-2	HOSTS	RESOURCESAT-2|AWiFS
+Meteosat-8	HOSTS	Meteosat-8|MSG Comms
+NigeriaSat-X	HOSTS	NigeriaSat-X|NigeriaSat X Remote Sensing (Medium Resolution)
+TIR Atmospheric chemistry	TYPEOBSERVES	TIR Radiance
+FY-3D|MWHS-2	isInstanceOf	MWHS-2
+SEVIRI	SENSORRULE	NIR Multi-purpose imaging Vis/IR radiometer
+Meteor-M N2	HOSTS	Meteor-M N2|MSU-MR
+SWIR Atmospheric chemistry	TYPEOBSERVES	Atmospheric temperature (column/profile)
+MISR	OBSERVES	Upwelling (Outgoing) short-wave radiation at TOA
+NORSAT-1	HOSTS	NORSAT-1|m-NLP
+Himawari-9|Himawari Comms	isInstanceOf	Himawari Comms
+SSM/T-2	SENSORTYPE	Absorption-band MW radiometer/spectrometer
+GOES-15	HOSTS	GOES-15|S&R (GOES)
+Aura|OMI	isInstanceOf	OMI
+Meteor-M N2-2	HOSTS	Meteor-M N2-2|KMSS
+CFOSAT	HOSTS	CFOSAT|SCAT
+DMSP F-18	HOSTS	DMSP F-18|SSM
+GOES-14	HOSTS	GOES-14|A-DCS4
+TCTE	HOSTS	TCTE|TIM
+TIR Atmospheric chemistry	TYPEOBSERVES	TIR Radiance
+NOAA-19|S&R (NOAA)	isInstanceOf	S&R (NOAA)
+NigeriaSat X Remote Sensing (Medium Resolution)	SENSORTYPE	Imaging multi-spectral radiometers (vis/IR)
+RCM-2|SAR (RCM)	isInstanceOf	SAR (RCM)
+FY-3B	HOSTS	FY-3B|MWRI
+AWiFS	OBSERVES	Land surface imagery
+MUX (CBERS-4)	OBSERVES	Land surface imagery
+Metop-B|AVHRR/3	isInstanceOf	AVHRR/3
+OSIRIS	SENSORBAND	SWIR
+CAPI	SENSORRULE	NIR Multi-channel/direction/polarisation radiometer
+FY-3D|MWHS-2	inVisibilityOfTarget	Mauna Loa
+NOAA-19|S&R (NOAA)	inVisibilityOfTarget	Mauna Loa
+OLI	OBSERVES	Vegetation type
+SAR (RCM)	SENSORRULE	MW Imaging microwave radars
+HY-2A	HOSTS	HY-2A|SCAT
+MSG Comms	SENSORRULE	MW Communications
+GOES-15|A-DCS4	inVisibilityOfTarget	Mauna Loa
+GOES-13	HOSTS	GOES-13|S&R (GOES)
+Metop-B|MHS	isInstanceOf	MHS
+VISSR-2	OBSERVES	Ocean imagery and water leaving radiance
+MSG Comms	SENSORTYPE	Communications system
+Kanopus-V|PSS	isInstanceOf	PSS
+MSU-MR	OBSERVES	Ocean imagery and water leaving radiance
+VIS Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Downwelling (Incoming) short-wave radiation at the Earth surface
+CERES	SENSORRULE	SWIR Earth radiation budget radiometers
+Meteor-M N2-2|BRLK	isInstanceOf	BRLK
+ATMS	OBSERVES	Precipitation rate (liquid) at the surface
+GERB	SENSORRULE	VIS Earth radiation budget radiometers
+GOME-2	SENSORTYPE	Atmospheric chemistry
+Meteor-M N2-2	HOSTS	Meteor-M N2-2|DCS
+SUVI	SENSORTYPE	Other
+SIM	SENSORRULE	UV Solar irradiance monitor
+Swarm	HOSTS	Swarm|Laser Reflectors (ESA)
+NORSAT-1|m-NLP	isInstanceOf	m-NLP
+FY-3C|MERSI	isInstanceOf	MERSI
+SAR-X	SENSORRULE	X-Band Imaging microwave radars
+GPM Core	HOSTS	GPM Core|GMI
+Swarm	HOSTS	Swarm|VFM
+ScaRaB	SENSORRULE	FIR Earth radiation budget radiometers
+SAR (RADARSAT-2)	OBSERVES	Snow cover
+GOES-15|SEM (GOES)	inVisibilityOfTarget	Mauna Loa
+SWIM	SENSORRULE	Ku-Band Scatterometers
+ePOP on CASSIOPE	HOSTS	ePOP on CASSIOPE|RRI
+Advanced MI	OBSERVES	Ocean imagery and water leaving radiance
+Landsat 7|ETM+	isInstanceOf	ETM+
+RCM-1	HOSTS	RCM-1|SAR (RCM)
+SRAL	OBSERVES	Sea-ice sheet topography
+TGRS	SENSORTYPE	GNSS radio-occultation receiver
+Landsat 8	HOSTS	Landsat 8|OLI
+ABI	SENSORBAND	MWIR
+DMSP F-15|SSM/I	inVisibilityOfTarget	Mauna Loa
+Kanopus-V N3|PSS	isInstanceOf	PSS
+RapidEye|MSI	isInstanceOf	MSI
+NOAA-19	HOSTS	NOAA-19|SEM (POES)
+MSU-IK-SR	OBSERVES	Cloud type
+FY-3C|MWTS-2	isInstanceOf	MWTS-2
+FY-3B	HOSTS	FY-3B|SIM
+SAR 2000	SENSORRULE	X-Band Imaging radar (SAR)
+MI	OBSERVES	Cloud mask
+DMSP F-15|OLS	isInstanceOf	OLS
+NOAA-18	HOSTS	NOAA-18|S&R (NOAA)
+NOAA-18|HIRS/4	isInstanceOf	HIRS/4
+STR	SENSORRULE	N/A Precision orbit
+SORCE|XPS	isInstanceOf	XPS
+FY-3B	HOSTS	FY-3B|MWRI
+Suomi NPP	HOSTS	Suomi NPP|OMPS
+MERSI-2	OBSERVES	Vegetation type
+SWIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Photosynthetically Active Radiation (PAR)
+ASTER	SENSORRULE	TIR High resolution optical imager
+Sounder	SENSORBAND	MWIR
+CryoSat-2	HOSTS	CryoSat-2|Laser Reflectors (ESA)
+Jason-3|LRA	isInstanceOf	LRA
+AMSU-A	OBSERVES	Snow water equivalent
+STSAT-3|MIRIS	isInstanceOf	MIRIS
+MWHS-2	SENSORTYPE	Absorption-band MW radiometer/spectrometer
+NOAA-19|A-DCS4	isInstanceOf	A-DCS4
+Metop-C|ASCAT	isInstanceOf	ASCAT
+GOES-16	HOSTS	GOES-16|GLM
+TANSO-FTS	OBSERVES	Ozone profile
+NOAA-19|S&R (NOAA)	isInstanceOf	S&R (NOAA)
+NORSAT-2|VDES Test Mission	isInstanceOf	VDES Test Mission
+HiRDLS	OBSERVES	Aerosol optical depth (column/profile)
+VIS Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Short-wave Earth surface bi-directional reflectance
+IASI	SENSORRULE	MWIR Atmospheric temperature and humidity sounders
+DMSP F-16	HOSTS	DMSP F-16|SSULI
+MIRAS (SMOS)	SENSORRULE	MW Imaging multi-spectral radiometers (passive microwave)
+HiRDLS	SENSORBAND	TIR
+XPS	SENSORRULE	UV Solar irradiance monitor
+NIR Atmospheric chemistry	TYPEOBSERVES	Cloud top height
+Jason-3|LRA	isInstanceOf	LRA
+SWIR Atmospheric chemistry	TYPEOBSERVES	Aerosol absorption optical depth (column/profile)
+Sentinel-3 A|OLCI	inVisibilityOfTarget	Mauna Loa
+SWIM	OBSERVES	Dominant wave direction
+ALOS-2	HOSTS	ALOS-2|CIRC
+DMSP F-14	HOSTS	DMSP F-14|SSM/I
+Metop-C|MHS	isInstanceOf	MHS
+HSI (HJ-1A)	SENSORRULE	NIR Multi-purpose imaging Vis/IR radiometer
+Advanced MI	SENSORRULE	TIR Imaging multi-spectral radiometers (vis/IR)
+FY-3B	HOSTS	FY-3B|MWRI
+Metop-A	HOSTS	Metop-A|ASCAT
+SLIM-6-22	SENSORBAND	VIS
+SIM	SENSORBAND	UV
+Imager (INSAT 3D)	SENSORBAND	MWIR
+DMC3	HOSTS	DMC3|VHRI-100
+SIM-2	OBSERVES	Downwelling (Incoming) solar radiation at TOA
+NORSAT-2	HOSTS	NORSAT-2|AIS
+FY-3D	HOSTS	FY-3D|HIRAS
+GRACE instrument	SENSORRULE	MW Gravity instruments
+ABI	SENSORRULE	NIR Multi-purpose imaging Vis/IR radiometer
+ROSA	SENSORBAND	N/A
+GF-1	HOSTS	GF-1|PAN (GF-1)
+FY-3C|ERM-1	isInstanceOf	ERM-1
+AMSR-E	OBSERVES	Precipitation rate (liquid) at the surface
+SSI/ES-2	OBSERVES	Ion Density, Drift Velocity, and Temperature
+HYC	SENSORRULE	NIR Hyperspectral imagers
+MWHS-2	OBSERVES	Atmospheric specific humidity (column/profile)
+FY-3B	HOSTS	FY-3B|MWHS-1
+FY-3C|MWTS-2	isInstanceOf	MWTS-2
+ePOP on CASSIOPE	HOSTS	ePOP on CASSIOPE|SEI
+UV Atmospheric chemistry	TYPEOBSERVES	Cloud top height
+Metop-C	HOSTS	Metop-C|GOME-2
+KOMPSAT-3	HOSTS	KOMPSAT-3|AEISS
+PALSAR-2	SENSORRULE	MW Imaging microwave radars
+GSA (1)	SENSORRULE	NIR Multi-channel/direction/polarisation radiometer
+ePOP on CASSIOPE	HOSTS	ePOP on CASSIOPE|RRI
+MW Imaging microwave radars	TYPEOBSERVES	Snow cover
+ALADIN	OBSERVES	Cloud optical depth
+DMSP F-18	HOSTS	DMSP F-18|SSM/IS
+ALT	SENSORTYPE	Radar altimeter
+Metop-B|GOME-2	isInstanceOf	GOME-2
+GOCI	SENSORBAND	VIS
+MWTS-1	SENSORTYPE	Absorption-band MW radiometer/spectrometer
+Metop-B	HOSTS	Metop-B|ASCAT
+Suomi NPP|OMPS	isInstanceOf	OMPS
+COMS|GOCI	isInstanceOf	GOCI
+Metop-A	HOSTS	Metop-A|AMSU-A
+IASI	OBSERVES	Upwelling (Outgoing) long-wave radiation at Earth surface
+GOES-14|GOES Comms	isInstanceOf	GOES Comms
+NIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Ocean chlorophyll concentration
+SSM/I	OBSERVES	Cloud liquid water (column/profile)
+NOAA-19|S&R (NOAA)	isInstanceOf	S&R (NOAA)
+X-Band Imaging microwave radars	TYPEOBSERVES	Sea-ice cover
+Kanopus-V	HOSTS	Kanopus-V|PSS
+FY-3D|MERSI-2	isInstanceOf	MERSI-2
+Suomi NPP|CERES	isInstanceOf	CERES
+ASI	SENSORTYPE	Atmospheric temperature and humidity sounders
+RASAT VIS Panchromatic	SENSORRULE	VIS High resolution optical imager
+VIS Hyperspectral imagers	TYPEOBSERVES	Land surface imagery
+TANSO-CAI-2	SENSORBAND	SWIR
+SMAP|L-band Radiometer (SMAP)	isInstanceOf	L-band Radiometer (SMAP)
+CPR (CloudSat)	SENSORRULE	MW Cloud profile and rain radars
+FY-3C	HOSTS	FY-3C|MERSI
+DMSP F-17	HOSTS	DMSP F-17|OLS
+Metop-A|GOME-2	isInstanceOf	GOME-2
+Suomi NPP|ATMS	isInstanceOf	ATMS
+ePOP on CASSIOPE	HOSTS	ePOP on CASSIOPE|SEI
+FY-3D	HOSTS	FY-3D|MWHS-2
+VIS Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Cloud top height
+Sounder	SENSORBAND	VIS
+MERSI	OBSERVES	Ocean chlorophyll concentration
+NOAA-19|S&R (NOAA)	isInstanceOf	S&R (NOAA)
+AMR	OBSERVES	Atmospheric specific humidity (column/profile)
+m-NLP	SENSORTYPE	Space environment monitor
+HY-1C|COCTS	isInstanceOf	COCTS
+MWTS-1	SENSORRULE	MW Atmospheric temperature and humidity sounders
+UV Atmospheric chemistry	TYPEOBSERVES	Atmospheric Chemistry - SO2 (column/profile)
+DMSP F-14|SSJ/4	isInstanceOf	SSJ/4
+MWI	SENSORRULE	MW Gravity instruments
+GOES-15	HOSTS	GOES-15|A-DCS4
+SAGE-III	SENSORRULE	SWIR Limb-scanning SW spectrometer
+DMSP F-15	HOSTS	DMSP F-15|SSI/ES-2
+UVNS (Sentinel-5 precursor)	OBSERVES	Atmospheric Chemistry - CH4 (column/profile)
+CER	SENSORTYPE	Space environment
+Meteosat-11|MSG Comms	isInstanceOf	MSG Comms
+ECOSTRESS	SENSORTYPE	High-resolution nadir-scanning IR spectrometer
+FY-3D	HOSTS	FY-3D|ASI
+ZACube-2|K-line Imager	isInstanceOf	K-line Imager
+Sentinel-3 B|OLCI	isInstanceOf	OLCI
+OLI	OBSERVES	Sea-ice cover
+UVNS (Sentinel-5 precursor)	OBSERVES	Cloud top height
+CFOSAT	HOSTS	CFOSAT|SWIM
+OSIRIS	SENSORBAND	UV
+Scatterometer (Scatsat-1)	SENSORTYPE	Radar scatterometer
+AMSU-A	OBSERVES	Atmospheric specific humidity (column/profile)
+IASI	OBSERVES	Downwelling (Incoming) long-wave radiation at the Earth surface
+IASI	SENSORRULE	MWIR Medium-resolution IR spectrometer
+BJ-2	HOSTS	BJ-2|PAN (BJ-2)
+ACC	OBSERVES	Gravity field
+ATLAS	SENSORTYPE	Lidars
+SGLI	SENSORBAND	SWIR
+MSU-IK-SR	OBSERVES	Snow cover
+NOAA-18|SEM (POES)	isInstanceOf	SEM (POES)
+Terra	HOSTS	Terra|MODIS
+Metop-A|GOME-2	isInstanceOf	GOME-2
+MODIS	SENSORRULE	VIS Ocean colour instruments
+VIRR	SENSORBAND	SWIR
+MWIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Fire temperature
+ePOP on CASSIOPE|IRM	isInstanceOf	IRM
+AEISS-A	OBSERVES	Land surface imagery
+ePOP on CASSIOPE	HOSTS	ePOP on CASSIOPE|NMS
+SAR (RADARSAT-2)	OBSERVES	Glacier motion
+Landsat 8|OLI	isInstanceOf	OLI
+CARTOSAT-3	HOSTS	CARTOSAT-3|PAN (Cartosat-3)
+Aqua	HOSTS	Aqua|AIRS
+MI	OBSERVES	Sea surface temperature
+DMSP F-14	HOSTS	DMSP F-14|SSB/X-2
+SIM	OBSERVES	Upwelling (Outgoing) short-wave radiation at TOA
+FY-3D	HOSTS	FY-3D|MERSI-2
+MSU-MR	SENSORRULE	VIS Multi-purpose imaging Vis/IR radiometer
+Swarm|STR	isInstanceOf	STR
+Swarm|VFM	isInstanceOf	VFM
+ACE-FTS	SENSORBAND	SWIR
+DCS (GOES-R Series)	SENSORTYPE	Data collection
+GPSRO (Terra-SAR)	SENSORTYPE	GNSS radio-occultation receiver
+CYGNSS|DDMI (CYGNSS)	isInstanceOf	DDMI (CYGNSS)
+OMPS	SENSORRULE	SWIR High-resolution nadir-scanning SW spectrometer
+AEISS	SENSORBAND	VIS
+SIM-2	SENSORRULE	UV Solar irradiance monitor
+Meteor-M N2	HOSTS	Meteor-M N2|KMSS
+Suomi NPP	HOSTS	Suomi NPP|ATMS
+GOES-13|SEM (GOES)	isInstanceOf	SEM (GOES)
+DMSP F-16|OLS	isInstanceOf	OLS
+Metop-C|GOME-2	isInstanceOf	GOME-2
+Landsat 8	HOSTS	Landsat 8|TIRS
+Suomi NPP|CERES	isInstanceOf	CERES
+Jason-3	HOSTS	Jason-3|POSEIDON-3B Altimeter
+Metop-A|AMSU-A	isInstanceOf	AMSU-A
+DMSP F-14|OLS	isInstanceOf	OLS
+GOME-2	OBSERVES	Ozone profile
+AEISS-A	SENSORBAND	NIR
+FY-3B|IRAS	isInstanceOf	IRAS
+SSM/IS	SENSORRULE	MW Atmospheric temperature and humidity sounders
+WFV	OBSERVES	Land cover
+PAN (CBERS-4)	SENSORTYPE	High resolution optical imager
+NIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Normalized Differential Vegetation Index (NDVI)
+DESIS	SENSORRULE	VIS Medium-resolution spectro-radiometer
+MI	OBSERVES	Cloud imagery
+Metop-B	HOSTS	Metop-B|AVHRR/3
+Metop-B	HOSTS	Metop-B|IASI
+ABI	OBSERVES	Land surface temperature
+MSU-MR	SENSORBAND	NIR
+NOAA-19	HOSTS	NOAA-19|A-DCS4
+MWIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Vegetation type
+FY-3C	HOSTS	FY-3C|TOU/SBUS
+ACE-FTS	OBSERVES	Atmospheric Chemistry - NO (column/profile)
+Metop-A|IASI	isInstanceOf	IASI
+CHRIS	OBSERVES	Ocean suspended sediment concentration
+NOAA-18|AVHRR/3	isInstanceOf	AVHRR/3
+ATMS	OBSERVES	Atmospheric pressure (over sea surface)
+VIIRS	OBSERVES	Ocean imagery and water leaving radiance
+Meteor-M N2|DCS	isInstanceOf	DCS
+Metop-C|IASI	isInstanceOf	IASI
+TOU/SBUS	SENSORBAND	UV
+COCTS	SENSORTYPE	Ocean colour instruments
+DMSP F-15	HOSTS	DMSP F-15|SSM/T-1
+COSMIC-1 FM1	HOSTS	COSMIC-1 FM1|TIP
+SEVIRI	SENSORRULE	SWIR Imaging multi-spectral radiometers (vis/IR)
+PAN (GISTDA)	OBSERVES	Land surface imagery
+CARTOSAT-2|PAN (Cartosat-2)	isInstanceOf	PAN (Cartosat-2)
+Metop-B	HOSTS	Metop-B|HIRS/4
+MSU-MR	SENSORRULE	SWIR Imaging multi-spectral radiometers (vis/IR)
+Sounder (INSAT)	SENSORRULE	VIS Narrow-band channel IR radiometer
+Metop-B	HOSTS	Metop-B|GOME-2
+Suomi NPP|CERES	isInstanceOf	CERES
+HyperScout	SENSORTYPE	Imaging multi-spectral radiometers (vis/IR)
+MLS (EOS-Aura)	OBSERVES	Atmospheric Chemistry - SO2 (column/profile)
+Kanopus-V|MSS	isInstanceOf	MSS
+COSMIC-2A (Equatorial)|RF Beacon	isInstanceOf	RF Beacon
+Metop-A	HOSTS	Metop-A|GOME-2
+Metop-B	HOSTS	Metop-B|MHS
+SEM (GOES)	SENSORRULE	TBD Space environment monitor
+DMSP F-14|SSB/X-2	isInstanceOf	SSB/X-2
+NIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Aerosol optical depth (column/profile)
+FY-3C	HOSTS	FY-3C|MWTS-2
+OLCI	OBSERVES	Atmospheric pressure (over sea surface)
+SAR (RADARSAT-2)	OBSERVES	Ocean imagery and water leaving radiance
+MSG Comms	SENSORRULE	MW Communications system
+GOES-14	HOSTS	GOES-14|A-DCS4
+SSJ/4	SENSORRULE	TBD Magnetic field
+Metop-A	HOSTS	Metop-A|AMSU-A
+TerraSAR-X	HOSTS	TerraSAR-X|X-Band SAR
+INSAT-3D	HOSTS	INSAT-3D|Imager (INSAT 3D)
+FY-3D	HOSTS	FY-3D|GAS
+MWIR Atmospheric temperature and humidity sounders	TYPEOBSERVES	Sea surface temperature
+TANSO-FTS-2	SENSORRULE	MWIR Atmospheric chemistry
+GOES-15	HOSTS	GOES-15|GOES Comms
+SAR (RADARSAT-2)	SENSORBAND	MW
+Metop-B	HOSTS	Metop-B|HIRS/4
+SSJ/5	SENSORRULE	TBD Magnetic field
+NOAA-18|SEM (POES)	isInstanceOf	SEM (POES)
+ERM-1	SENSORRULE	UV Broad-band radiometer
+Aqua|AMSU-A	isInstanceOf	AMSU-A
+ECOSTRESS	SENSORRULE	TIR High-resolution nadir-scanning IR spectrometer
+Jason-3	HOSTS	Jason-3|LRA
+FY-3D	HOSTS	FY-3D|HIRAS
+Terra|ASTER	isInstanceOf	ASTER
+HY-2A|RAD	isInstanceOf	RAD
+OMPS-L	SENSORRULE	UV Limb-scanning SW spectrometer
+NOAA-19	HOSTS	NOAA-19|SEM (POES)
+SGLI	SENSORRULE	SWIR Imaging multi-spectral radiometers (vis/IR)
+SOLSTICE	SENSORBAND	UV
+NOAA-18|AMSU-A	isInstanceOf	AMSU-A
+SAR (RADARSAT-2)	OBSERVES	Sea-ice cover
+Metop-A	HOSTS	Metop-A|HIRS/4
+TanSat|ACGS	isInstanceOf	ACGS
+GOES-15|S&R (GOES)	isInstanceOf	S&R (GOES)
+TIR Atmospheric chemistry	TYPEOBSERVES	TIR Radiance
+GOES-13|SXI	isInstanceOf	SXI
+CBERS-4	HOSTS	CBERS-4|DCS
+FY-3B	HOSTS	FY-3B|MWTS-1
+RCM-2	HOSTS	RCM-2|AIS (RCM)
+TANSO-FTS	SENSORRULE	TIR Atmospheric chemistry
+CZI	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+IASI	SENSORRULE	MWIR Atmospheric chemistry
+MISR	SENSORRULE	UV Multi-channel/direction/polarisation radiometer
+Swarm	HOSTS	Swarm|EFI
+SGLI	OBSERVES	Land surface imagery
+FY-3D	HOSTS	FY-3D|MWTS-2
+VIS Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Cloud type
+FY-3B	HOSTS	FY-3B|MERSI
+AMSR-E	OBSERVES	Cloud liquid water (column/profile)
+MIRIS	OBSERVES	Land surface imagery
+Kanopus-V N3	HOSTS	Kanopus-V N3|PSS
+FY-3C|GNOS	isInstanceOf	GNOS
+Sentinel-3 A	HOSTS	Sentinel-3 A|SRAL
+GRAS	SENSORRULE	MW Precision orbit
+Sentinel-3 A	HOSTS	Sentinel-3 A|OLCI
+VIIRS	OBSERVES	Ocean chlorophyll concentration
+Geoton-L1 (2)	SENSORRULE	NIR High resolution optical imager
+CrIS	SENSORRULE	MWIR Atmospheric temperature and humidity sounders
+DCS	SENSORRULE	TBD Data collection
+Mission 1 - Active Volcano Monitoring	HASLOCATION	Mauna Loa
+PAN (Cartosat-2)	OBSERVES	Earth surface albedo
+MI	SENSORRULE	VIS Multi-purpose imaging Vis/IR radiometer
+Terra	HOSTS	Terra|MISR
+DMSP F-14|SSI/ES-2	isInstanceOf	SSI/ES-2
+Himawari-9	HOSTS	Himawari-9|Himawari DCS
+MUX (GF-1)	SENSORRULE	VIS High resolution optical imager
+MSU-MR	SENSORBAND	MWIR
+CZI	OBSERVES	Sea-ice cover
+GGAK-M	OBSERVES	Magnetic field (vector)
+FY-3B	HOSTS	FY-3B|VIRR
+Metop-C	HOSTS	Metop-C|SEM (POES)
+NORSAT-2|VDES Test Mission	isInstanceOf	VDES Test Mission
+Meteor-M N2-2|MSU-MR	isInstanceOf	MSU-MR
+NOAA-18|AVHRR/3	isInstanceOf	AVHRR/3
+COCTS	SENSORRULE	NIR Ocean colour instruments
+DMSP F-17	HOSTS	DMSP F-17|SSULI
+PAN (Cartosat-2E)	SENSORTYPE	High resolution optical imager
+PALSAR-2	OBSERVES	Land surface topography
+Metop-A|MHS	inVisibilityOfTarget	Mauna Loa
+Metop-B|IASI	isInstanceOf	IASI
+CHRIS	SENSORRULE	VIS High resolution optical imager
+Himawari-9|Himawari DCS	isInstanceOf	Himawari DCS
+Imager	OBSERVES	Sea surface temperature
+Resurs-P N1	HOSTS	Resurs-P N1|Geoton-L1 (2)
+GOES-15|A-DCS4	isInstanceOf	A-DCS4
+FY-3D|MWRI	isInstanceOf	MWRI
+SSM/I	OBSERVES	Snow cover
+LISS-IV	SENSORBAND	NIR
+Swarm|ASM	isInstanceOf	ASM
+GOES Comms	SENSORTYPE	Communications
+OLCI	OBSERVES	Cloud cover
+FY-3C|VIRR	isInstanceOf	VIRR
+GOES-15	HOSTS	GOES-15|GOES Comms
+EPIC	OBSERVES	Atmospheric Chemistry - SO2 (column/profile)
+RRI	OBSERVES	ULF-HF Electromagnetic Waves
+Kanopus-V-IR|MSU-IK-SR	isInstanceOf	MSU-IK-SR
+MSI (Sentinel-2)	OBSERVES	Soil type
+Pleiades 1B|HiRI	isInstanceOf	HiRI
+GOSAT-2|TANSO-FTS-2	isInstanceOf	TANSO-FTS-2
+MWRI	SENSORRULE	MW Imaging multi-spectral radiometers (passive microwave)
+Meteor-M N2-2|MSU-MR	isInstanceOf	MSU-MR
+TIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	TIR Radiance
+Swarm	HOSTS	Swarm|VFM
+CARTOSAT-2E	HOSTS	CARTOSAT-2E|PAN (Cartosat-2E)
+DESIS	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+Advanced MI	OBSERVES	Downwelling (Incoming) short-wave radiation at the Earth surface
+NOAA-19|SEM (POES)	isInstanceOf	SEM (POES)
+MODIS	OBSERVES	Land cover
+FY-3D	HOSTS	FY-3D|SES
+NOAA-18	HOSTS	NOAA-18|S&R (NOAA)
+CALIPSO	HOSTS	CALIPSO|IIR
+TIR Atmospheric temperature and humidity sounders	TYPEOBSERVES	TIR Radiance
+AHI	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+KOMPSAT-2	HOSTS	KOMPSAT-2|MSC
+DMSP F-17|SSM/IS	isInstanceOf	SSM/IS
+ERM-1	SENSORRULE	VIS Earth radiation budget radiometers
+RCM-3|SAR (RCM)	inVisibilityOfTarget	Mauna Loa
+GOES-15|GOES Comms	isInstanceOf	GOES Comms
+ePOP on CASSIOPE|RRI	isInstanceOf	RRI
+HY-2A|SCAT	isInstanceOf	SCAT
+Vegetation	SENSORTYPE	Medium-resolution spectro-radiometer
+FY-3C|MWHS-2	isInstanceOf	MWHS-2
+NOAA-19	HOSTS	NOAA-19|S&R (NOAA)
+MUX (ZY-3-02)	OBSERVES	Earth surface albedo
+NORSAT-2|AIS	isInstanceOf	AIS
+Kanopus-V	HOSTS	Kanopus-V|MSS
+SWIM	OBSERVES	Significant wave height
+LISS-III (Resourcesat)	SENSORRULE	NIR High resolution optical imagers
+NOAA-18	HOSTS	NOAA-18|NOAA Comms
+AIRS	OBSERVES	Atmospheric Chemistry - CO2 (column/profile)
+FY-3C|GNOS	isInstanceOf	GNOS
+FY-3B|MERSI	isInstanceOf	MERSI
+SGLI	SENSORTYPE	Imaging multi-spectral radiometers (vis/IR)
+WFI (CBERS-4)	OBSERVES	Land surface imagery
+MHS	SENSORBAND	MW
+GRAS	SENSORRULE	MW Atmospheric temperature and humidity sounders
+SAR (RADARSAT-2)	OBSERVES	Soil type
+DMSP F-15	HOSTS	DMSP F-15|SSM/I
+Landsat 8|OLI	inVisibilityOfTarget	Mauna Loa
+MWIR Atmospheric temperature and humidity sounders	TYPEOBSERVES	Atmospheric specific humidity (column/profile)
+Metop-A|AVHRR/3	inVisibilityOfTarget	Mauna Loa
+GOME-2	SENSORRULE	NIR Atmospheric chemistry
+GOES-13|S&R (GOES)	isInstanceOf	S&R (GOES)
+GMI	SENSORBAND	MW
+JPSS-1|CrIS	isInstanceOf	CrIS
+FY-3D	HOSTS	FY-3D|HIRAS
+FY-3D	HOSTS	FY-3D|MWTS-2
+Sentinel-3 B	HOSTS	Sentinel-3 B|OLCI
+SHMSA-VR	SENSORBAND	NIR
+CARTOSAT-2E|PAN (Cartosat-2E)	isInstanceOf	PAN (Cartosat-2E)
+Vegetation	SENSORBAND	NIR
+SHMSA-VR	OBSERVES	Land surface imagery
+GPS Receiver (Swarm)	SENSORRULE	MW GNSS receiver
+CARTOSAT-2B|PAN (Cartosat-2A/2B)	isInstanceOf	PAN (Cartosat-2A/2B)
+HSI (HJ-1A)	SENSORRULE	VIS Multi-purpose imaging Vis/IR radiometer
+FY-3B|MERSI	isInstanceOf	MERSI
+Metop-B	HOSTS	Metop-B|GOME-2
+FY-3B|ERM-1	isInstanceOf	ERM-1
+Metop-B|IASI	isInstanceOf	IASI
+MSU-MR	OBSERVES	Normalized Differential Vegetation Index (NDVI)
+Meteor-M N2|DCS	isInstanceOf	DCS
+DMSP F-18|SSM/IS	isInstanceOf	SSM/IS
+VIS Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Iceberg height
+VIS High resolution optical imagers	TYPEOBSERVES	Land cover
+GOES-13	HOSTS	GOES-13|SXI
+DMSP F-14	HOSTS	DMSP F-14|SSM/T-2
+DMSP F-14	HOSTS	DMSP F-14|SSM/T-2
+A-DCS4	SENSORRULE	MW Data collection system
+PALSAR-2	OBSERVES	Earth surface albedo
+MISR	SENSORRULE	UV Multiple direction/polarisation radiometers
+OCM (Oceansat-2)	OBSERVES	Ocean suspended sediment concentration
+ePOP on CASSIOPE|SEI	isInstanceOf	SEI
+C-SAR	OBSERVES	Land surface imagery
+Metop-A	HOSTS	Metop-A|S&R (NOAA)
+Swarm|VFM	isInstanceOf	VFM
+LCCRA	SENSORRULE	VIS Precision orbit
+Sentinel-5 precursor	HOSTS	Sentinel-5 precursor|UVNS (Sentinel-5 precursor)
+Metop-C	HOSTS	Metop-C|ASCAT
+SCD-2|DCS	isInstanceOf	DCS
+K-line Imager	OBSERVES	Fire area
+FY-3C	HOSTS	FY-3C|TOU/SBUS
+SEI	SENSORTYPE	Space environment monitor
+NOAA-19	HOSTS	NOAA-19|HIRS/4
+ePOP on CASSIOPE	HOSTS	ePOP on CASSIOPE|SEI
+MEGHA-TROPIQUES	HOSTS	MEGHA-TROPIQUES|MADRAS
+Metop-B	HOSTS	Metop-B|AMSU-A
+FY-3B|SEM	isInstanceOf	SEM
+VIS Earth radiation budget radiometers	TYPEOBSERVES	Downwelling (Incoming) solar radiation at TOA
+ROSA	SENSORRULE	L-Band Precision orbit
+COSMO-SkyMed 3|SAR 2000	inVisibilityOfTarget	Mauna Loa
+SAGE-III	SENSORTYPE	Atmospheric chemistry
+DMSP F-16|SSM	isInstanceOf	SSM
+Paz SAR-X	SENSORRULE	MW Imaging radar (SAR)
+SSJ/5	SENSORTYPE	Magnetic field
+FY-3D	HOSTS	FY-3D|GNOS
+NISTAR	SENSORRULE	NIR Solar irradiance monitor
+DMSP F-15	HOSTS	DMSP F-15|SSI/ES-2
+DMSP F-17	HOSTS	DMSP F-17|SSUSI
+MOPITT	OBSERVES	Atmospheric Chemistry - CO (column/profile)
+Terra|CERES	isInstanceOf	CERES
+GERB	SENSORRULE	MWIR Broad-band radiometer
+ATLAS	SENSORRULE	VIS Lidar altimeter
+TIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	TIR Radiance
+HSI (HJ-1A)	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+ePOP on CASSIOPE	HOSTS	ePOP on CASSIOPE|MGF
+RRA	SENSORRULE	TBD Laser retroreflector
+SWIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Volcanic ash
+CERES	SENSORRULE	UV Earth radiation budget radiometers
+VIS Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Iceberg fractional cover
+SWIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Ozone profile
+FC	SENSORTYPE	Space environment
+NIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Long-wave Earth surface emissivity
+GERB	SENSORRULE	NIR Earth radiation budget radiometers
+ePOP on CASSIOPE	HOSTS	ePOP on CASSIOPE|IRM
+GOES-15|GOES Comms	isInstanceOf	GOES Comms
+VIS Ocean colour instruments	TYPEOBSERVES	Cloud optical depth
+DSCOVR	HOSTS	DSCOVR|FC
+SAR (RADARSAT-2)	OBSERVES	Significant wave height
+ASCAT	SENSORTYPE	Radar scatterometer
+CrIS	SENSORRULE	MWIR Medium-resolution IR spectrometer
+NIR Atmospheric chemistry	TYPEOBSERVES	Atmospheric Chemistry - HNO3 (column/profile)
+MODIS	SENSORRULE	SWIR Ocean colour instruments
+LCCRA	SENSORTYPE	Precision orbit
+DCS	SENSORTYPE	Data collection system
+NORSAT-1|m-NLP	isInstanceOf	m-NLP
+NOAA-18|S&R (NOAA)	isInstanceOf	S&R (NOAA)
+Kanopus-V N5	HOSTS	Kanopus-V N5|MSS
+DPR	SENSORBAND	MW
+AMSU-A	OBSERVES	Atmospheric temperature (column/profile)
+Sentinel-2 A	HOSTS	Sentinel-2 A|MSI (Sentinel-2)
+CryoSat-2	HOSTS	CryoSat-2|DORIS-NG
+CrIS	SENSORBAND	MWIR
+Resurs-P N1|Geoton-L1 (2)	inVisibilityOfTarget	Mauna Loa
+GOES-13	HOSTS	GOES-13|A-DCS4
+PALSAR-2	OBSERVES	Iceberg fractional cover
+SLSTR	SENSORRULE	SWIR Multi-channel/direction/polarisation radiometer
+LISS-IV	SENSORRULE	NIR High resolution optical imager
+NOAA-18	HOSTS	NOAA-18|HIRS/4
+JPSS-1	HOSTS	JPSS-1|ATMS
+Metop-B|AVHRR/3	inVisibilityOfTarget	Mauna Loa
+TIR Atmospheric chemistry	TYPEOBSERVES	Atmospheric Chemistry - CO (column/profile)
+SAR-L	OBSERVES	Glacier cover
+RESOURCESAT-2A	HOSTS	RESOURCESAT-2A|LISS-IV
+GOES-16|Magnetometer (NOAA)	isInstanceOf	Magnetometer (NOAA)
+Terra|MISR	isInstanceOf	MISR
+GOES-16|Magnetometer (NOAA)	isInstanceOf	Magnetometer (NOAA)
+FY-3D|GAS	isInstanceOf	GAS
+UV Earth radiation budget radiometers	TYPEOBSERVES	Upwelling (Outgoing) long-wave radiation at TOA
+ETM+	OBSERVES	Glacier topography
+EFI	SENSORRULE	N/A Gravity instruments
+Metop-B	HOSTS	Metop-B|MHS
+AHI	SENSORBAND	NIR
+NOAA-19|MHS	isInstanceOf	MHS
+AIRS	OBSERVES	Cloud cover
+UK-DMC2	HOSTS	UK-DMC2|SLIM-6-22
+DubaiSat-2	HOSTS	DubaiSat-2|HiRAIS
+DSCOVR|FC	isInstanceOf	FC
+PAN (CBERS-4)	SENSORBAND	VIS
+TANSO-CAI-2	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+TIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	TIR Radiance
+BRLK	SENSORRULE	X-Band Imaging radar (SAR)
+FY-3C|IRAS	isInstanceOf	IRAS
+Suomi NPP|OMPS	isInstanceOf	OMPS
+KOMPSAT-3A|AEISS-A	inVisibilityOfTarget	Mauna Loa
+Metop-A|IASI	isInstanceOf	IASI
+GOES-13|SXI	isInstanceOf	SXI
+CLARA	OBSERVES	Downwelling (Incoming) solar radiation at TOA
+NOAA-19	HOSTS	NOAA-19|HIRS/4
+Kanopus-V-IR	HOSTS	Kanopus-V-IR|MSS
+MWI	SENSORTYPE	Gravity instruments
+MEGHA-TROPIQUES	HOSTS	MEGHA-TROPIQUES|SAPHIR
+MUX (GF-1)	OBSERVES	Land surface imagery
+COSMIC-2A (Equatorial)|TGRS	isInstanceOf	TGRS
+DMSP F-15	HOSTS	DMSP F-15|SSM/T-2
+MGF	SENSORTYPE	Magnetometer
+MWRI	SENSORTYPE	Multi-purpose imaging MW radiometer
+DMSP F-18	HOSTS	DMSP F-18|SSUSI
+SAR 2000	OBSERVES	Glacier motion
+Advanced MI	OBSERVES	Snow detection (mask)
+UV Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Aerosol optical depth (column/profile)
+DMSP F-17	HOSTS	DMSP F-17|SSULI
+OLI	OBSERVES	Cloud imagery
+NOAA-19	HOSTS	NOAA-19|A-DCS4
+DMSP F-14	HOSTS	DMSP F-14|SSI/ES-2
+TANSO-FTS	SENSORRULE	SWIR Atmospheric chemistry
+VIS Atmospheric chemistry	TYPEOBSERVES	Aerosol optical depth (column/profile)
+SSTL S1-4	HOSTS	SSTL S1-4|VHRI-100
+PALSAR-2	SENSORBAND	L-Band
+HY-2B	HOSTS	HY-2B|ALT
+GOES-15	HOSTS	GOES-15|A-DCS4
+Terra|ASTER	isInstanceOf	ASTER
+FY-3C|VIRR	isInstanceOf	VIRR
+FY-3D	HOSTS	FY-3D|GAS
+DSCOVR|EPIC	isInstanceOf	EPIC
+Metop-C|ASCAT	inVisibilityOfTarget	Mauna Loa
+Sounder (INSAT)	SENSORRULE	TIR Narrow-band channel IR radiometer
+VIIRS	OBSERVES	Land cover
+RESOURCESAT-2|LISS-III (Resourcesat)	isInstanceOf	LISS-III (Resourcesat)
+DMSP F-14	HOSTS	DMSP F-14|OLS
+TANSO-FTS	OBSERVES	Chlorophyll Fluorescence from Vegetation on Land
+Imager (INSAT 3D)	SENSORRULE	TIR Imaging multi-spectral radiometers (vis/IR)
+TIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Land cover
+SCAT	SENSORRULE	Ku-Band Scatterometers
+NOAA-19	HOSTS	NOAA-19|AMSU-A
+SAR (RADARSAT-2)	OBSERVES	Oil spill cover
+CBERS-4	HOSTS	CBERS-4|PAN (CBERS-4)
+SCATSAT-1|Scatterometer (Scatsat-1)	isInstanceOf	Scatterometer (Scatsat-1)
+FY-3D|MWHS-2	isInstanceOf	MWHS-2
+Jason-3|LRA	isInstanceOf	LRA
+X-Band SAR	SENSORRULE	X-Band Imaging microwave radars
+SSUSI	SENSORTYPE	Space environment
+DMSP F-14|SSM/T-1	isInstanceOf	SSM/T-1
+AIRS	OBSERVES	Long-wave Earth surface emissivity
+OMPS	SENSORBAND	NIR
+Meteor-M N2-2|IKFS-2	isInstanceOf	IKFS-2
+MX (Cartosat-3)	SENSORRULE	NIR Imaging multi-spectral radiometers (vis/IR)
+ePOP on CASSIOPE|NMS	isInstanceOf	NMS
+TANSO-FTS-2	SENSORRULE	SWIR High-resolution nadir-scanning IR spectrometer
+FY-4A|AGRI	isInstanceOf	AGRI
+AHI	OBSERVES	Cloud imagery
+Jason-3|POSEIDON-3B Altimeter	isInstanceOf	POSEIDON-3B Altimeter
+GOES-14	HOSTS	GOES-14|SXI
+JPSS-1	HOSTS	JPSS-1|OMPS
+MUX (ZY-3-01)	OBSERVES	Earth surface albedo
+FAI	SENSORRULE	NIR Space environment monitor
+GOES-14	HOSTS	GOES-14|S&R (GOES)
+FY-3C	HOSTS	FY-3C|VIRR
+GOES-13|S&R (GOES)	isInstanceOf	S&R (GOES)
+GOES-15|A-DCS4	isInstanceOf	A-DCS4
+SWIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Land surface topography
+Metop-C	HOSTS	Metop-C|AMSU-A
+OMPS	SENSORRULE	VIS Atmospheric chemistry
+Kanopus-V N6	HOSTS	Kanopus-V N6|MSU-IK-SR
+ATMS	OBSERVES	Land surface temperature
+Imager (INSAT 3D)	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+TIR Atmospheric chemistry	TYPEOBSERVES	TIR Radiance
+TIR Atmospheric temperature and humidity sounders	TYPEOBSERVES	Cloud cover
+RRA	OBSERVES	Gravity field
+GOES-15|SEM (GOES)	isInstanceOf	SEM (GOES)
+NigeriaSat X Remote Sensing (Medium Resolution)	SENSORRULE	NIR Imaging multi-spectral radiometers (vis/IR)
+PAN CAMERA	SENSORRULE	VIS High resolution optical imagers
+DMSP F-18	HOSTS	DMSP F-18|SSI/ES-3
+Sentinel-3 A|SLSTR	isInstanceOf	SLSTR
+Sentinel-5 precursor|UVNS (Sentinel-5 precursor)	isInstanceOf	UVNS (Sentinel-5 precursor)
+OCEANSAT-2|Scatterometer (Oceansat-2)	isInstanceOf	Scatterometer (Oceansat-2)
+OMI	SENSORRULE	UV High-resolution nadir-scanning SW spectrometer
+GIIRS	SENSORBAND	VIS
+Metop-A|ASCAT	isInstanceOf	ASCAT
+MW Imaging microwave radars	TYPEOBSERVES	Iceberg fractional cover
+ALT	OBSERVES	Significant wave height
+DMSP F-15	HOSTS	DMSP F-15|OLS
+COMIS	SENSORTYPE	High resolution optical imager
+PAN (GF-1)	OBSERVES	Land surface imagery
+Pleiades 1A|HiRI	inVisibilityOfTarget	Mauna Loa
+DMSP F-17	HOSTS	DMSP F-17|SSULI
+GSA (1)	SENSORRULE	NIR Other
+DMSP F-14	HOSTS	DMSP F-14|SSM/T-2
+HY-2B|RAD	isInstanceOf	RAD
+Jason-3|AMR	isInstanceOf	AMR
+SAR (RCM)	OBSERVES	Oil spill cover
+ePOP on CASSIOPE	HOSTS	ePOP on CASSIOPE|IRM
+SAR (RADARSAT-2)	OBSERVES	Earth surface albedo
+Swarm|EFI	isInstanceOf	EFI
+FY-3B|SEM	isInstanceOf	SEM
+GOES-16	HOSTS	GOES-16|GLM
+HRMX	OBSERVES	Land surface topography
+RAD	OBSERVES	Atmospheric specific humidity (column/profile)
+DSCOVR|PHA	isInstanceOf	PHA
+Meteor-M N2|MSU-MR	isInstanceOf	MSU-MR
+MOPITT	SENSORBAND	NIR
+FY-3C|VIRR	isInstanceOf	VIRR
+FY-3B|SIM	isInstanceOf	SIM
+TES	OBSERVES	Atmospheric specific humidity (column/profile)
+CryoSat-2|DORIS-NG	isInstanceOf	DORIS-NG
+Meteor-M N2	HOSTS	Meteor-M N2|BRLK
+S&R (GOES)	SENSORRULE	MW Other
+FY-3C|GNOS	isInstanceOf	GNOS
+STR	SENSORTYPE	Star tracker
+LISS-IV	OBSERVES	Snow cover
+FY-3D	HOSTS	FY-3D|ASI
+SGLI	SENSORRULE	NIR Medium-resolution spectro-radiometer
+NOAA-19|SEM (POES)	isInstanceOf	SEM (POES)
+ePOP on CASSIOPE	HOSTS	ePOP on CASSIOPE|GAP
+Metop-A	HOSTS	Metop-A|MHS
+Advanced MI	OBSERVES	Earth surface albedo
+DPR	SENSORRULE	Ku-Band Cloud profile and rain radars
+HIRS/4	OBSERVES	Atmospheric temperature (column/profile)
+NOAA-19|HIRS/4	isInstanceOf	HIRS/4
+TIR Atmospheric chemistry	TYPEOBSERVES	Atmospheric Chemistry - CFC-11 (column/profile)
+SIRAL	OBSERVES	Sea-ice thickness
+ZACube-1|HF Beacon Transmitter	isInstanceOf	HF Beacon Transmitter
+GOES-13|S&R (GOES)	isInstanceOf	S&R (GOES)
+JPSS-1	HOSTS	JPSS-1|CERES
+FY-3B	HOSTS	FY-3B|MWTS-1
+TANSO-FTS-2	SENSORBAND	TIR
+MSU-MR	OBSERVES	Precipitation rate (liquid) at the surface
+DSCOVR	HOSTS	DSCOVR|ES
+ABI	OBSERVES	Precipitation rate (liquid) at the surface
+AGRI	SENSORRULE	TIR Multi-purpose imaging Vis/IR radiometer
+AWiFS	OBSERVES	Snow cover
+Metop-B	HOSTS	Metop-B|ASCAT
+SGLI	OBSERVES	Snow Grain Size
+ZACube-2	HOSTS	ZACube-2|K-line Imager
+DPR	SENSORBAND	Ka-Band
+FY-3B|MWRI	isInstanceOf	MWRI
+DMSP F-16	HOSTS	DMSP F-16|SSM/IS
+Metop-B|AMSU-A	isInstanceOf	AMSU-A
+CHRIS	OBSERVES	Leaf Area Index (LAI)
+GOES-15|SEM (GOES)	isInstanceOf	SEM (GOES)
+FY-3D|HIRAS	isInstanceOf	HIRAS
+FY-3B|ERM-1	isInstanceOf	ERM-1
+Metop-A|AMSU-A	isInstanceOf	AMSU-A
+Metop-C|IASI	isInstanceOf	IASI
+CBERS-4|PAN (CBERS-4)	isInstanceOf	PAN (CBERS-4)
+Metop-C|SEM (POES)	isInstanceOf	SEM (POES)
+POSEIDON-3B Altimeter	SENSORRULE	C-Band Radar altimeter
+Meteor-M N2	HOSTS	Meteor-M N2|DCS
+AMSU-A	OBSERVES	Wind speed over sea surface (horizontal)
+NOAA-19	HOSTS	NOAA-19|HIRS/4
+Aqua	HOSTS	Aqua|AMSR-E
+TIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Wind profile (horizontal)
+Meteor-M N2-2|DCS	isInstanceOf	DCS
+VIS Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Wind profile (horizontal)
+DMSP F-18	HOSTS	DMSP F-18|SSM/IS
+MSU-GS	SENSORBAND	NIR
+FY-3D	HOSTS	FY-3D|MERSI-2
+DMSP F-16|SSULI	isInstanceOf	SSULI
+HJ-1A	HOSTS	HJ-1A|CCD (HJ)
+VISSR-2	OBSERVES	Vegetation type
+DSCOVR	HOSTS	DSCOVR|ES
+COSMO-SkyMed 1|SAR 2000	isInstanceOf	SAR 2000
+TSIS-1-on-ISS	HOSTS	TSIS-1-on-ISS|TSIS-1/TIM
+JPSS-1|CrIS	isInstanceOf	CrIS
+L-band Radiometer (SMAP)	SENSORTYPE	Multi-purpose imaging MW radiometer
+FY-3D|SES	isInstanceOf	SES
+HIRS/4	OBSERVES	Land surface temperature
+UVNS (Sentinel-5 precursor)	OBSERVES	Atmospheric Chemistry - SO2 (column/profile)
+NIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Cloud top height
+TIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Long-wave Earth surface emissivity
+Swarm	HOSTS	Swarm|VFM
+RRI	SENSORTYPE	Space environment
+HiRDLS	OBSERVES	Atmospheric specific humidity (column/profile)
+RESOURCESAT-2A|LISS-IV	isInstanceOf	LISS-IV
+MUX (GF-2)	SENSORTYPE	Imaging multi-spectral radiometers (vis/IR)
+MODIS	SENSORRULE	NIR Imaging multi-spectral radiometers (vis/IR)
+ABI	OBSERVES	Downwelling (Incoming) long-wave radiation at the Earth surface
+GOES-13	HOSTS	GOES-13|SXI
+FY-3B|VIRR	isInstanceOf	VIRR
+Aqua	HOSTS	Aqua|HSB
+NigeriaSat X Remote Sensing (Medium Resolution)	OBSERVES	Land surface imagery
+ePOP on CASSIOPE|SEI	isInstanceOf	SEI
+Kanopus-V-IR|MSS	isInstanceOf	MSS
+MW Radar altimeters	TYPEOBSERVES	Land surface topography
+HiRAIS	SENSORTYPE	High resolution optical imager
+Metop-B|MHS	isInstanceOf	MHS
+Metop-A|HIRS/4	isInstanceOf	HIRS/4
+Kanopus-V N4	HOSTS	Kanopus-V N4|MSS
+DMSP F-14|SSM	isInstanceOf	SSM
+GOES-17	HOSTS	GOES-17|ABI
+DMSP F-16	HOSTS	DMSP F-16|SSJ/5
+DCS	SENSORRULE	MW Data collection system
+XPS	OBSERVES	Downwelling (Incoming) solar radiation at TOA
+Metop-A|HIRS/4	isInstanceOf	HIRS/4
+FY-3D	HOSTS	FY-3D|ASI
+HSI (HJ-1A)	OBSERVES	Sea-ice cover
+TIP	SENSORTYPE	Space environment
+MWIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Atmospheric stability index
+Scatterometer (Oceansat-2)	SENSORRULE	MW Radar scatterometer
+RASAT VIS Multispectral	SENSORRULE	VIS High resolution optical imager
+SSM/I	SENSORBAND	MW
+FY-3B	HOSTS	FY-3B|ERM-1
+MODIS	OBSERVES	Vegetation type
+VIS Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Vegetation type
+HYC	OBSERVES	Land surface imagery
+FY-3D	HOSTS	FY-3D|HIRAS
+HIRAS	SENSORRULE	NIR Imaging multi-spectral radiometers (passive microwave)
+Metop-B|HIRS/4	isInstanceOf	HIRS/4
+PALSAR-2	OBSERVES	Fire area
+Imager (INSAT 3D)	SENSORTYPE	Imaging multi-spectral radiometers (vis/IR)
+TerraSAR-X|X-Band SAR	isInstanceOf	X-Band SAR
+Metop-C|AVHRR/3	isInstanceOf	AVHRR/3
+AMSR-E	OBSERVES	Snow water equivalent
+SAR (RCM)	OBSERVES	Above Ground Biomass (AGB)
+DMSP F-14	HOSTS	DMSP F-14|SSB/X-2
+NOAA-18|S&R (NOAA)	inVisibilityOfTarget	Mauna Loa
+DMSP F-14|SSM/T-1	isInstanceOf	SSM/T-1
+GOES-14|SXI	isInstanceOf	SXI
+Aqua|CERES	inVisibilityOfTarget	Mauna Loa
+DMSP F-15	HOSTS	DMSP F-15|SSI/ES-2
+Terra|MOPITT	isInstanceOf	MOPITT
+DMSP F-17|OLS	isInstanceOf	OLS
+SSM	SENSORTYPE	Magnetometer
+FY-3D	HOSTS	FY-3D|GAS
+AMSU-A	SENSORRULE	MW Absorption-band MW radiometer/spectrometer
+SGLI	OBSERVES	Vegetation type
+NOAA-19	HOSTS	NOAA-19|AVHRR/3
+Terra|ASTER	inVisibilityOfTarget	Mauna Loa
+Terra	HOSTS	Terra|MOPITT
+Aqua|AIRS	isInstanceOf	AIRS
+ETM+	OBSERVES	Snow cover
+NOAA-18|AVHRR/3	isInstanceOf	AVHRR/3
+DSCOVR	HOSTS	DSCOVR|PHA
+Jason-3|DORIS-NG	isInstanceOf	DORIS-NG
+M1 - Volcano Temperature (SWIR)	OBSERVEDPROPERTY	Fire temperature
+MSU-GS	OBSERVES	Sea surface temperature
+COSMIC-2A (Equatorial)	HOSTS	COSMIC-2A (Equatorial)|RF Beacon
+Elektro-L N2|DCS	isInstanceOf	DCS
+Swarm|ACC	isInstanceOf	ACC
+NOAA-19|NOAA Comms	isInstanceOf	NOAA Comms
+DMSP F-17	HOSTS	DMSP F-17|SSM/IS
+JPSS-1|ATMS	isInstanceOf	ATMS
+TANSO-FTS	SENSORTYPE	Atmospheric chemistry
+PAN CAMERA	SENSORTYPE	High resolution optical imagers
+MWIR Atmospheric temperature and humidity sounders	TYPEOBSERVES	Ozone profile
+FY-3B|MWRI	isInstanceOf	MWRI
+ASTER	OBSERVES	Earth surface albedo
+MSU-GS	SENSORRULE	VIS Multi-purpose imaging Vis/IR radiometer
+FY-3D|MERSI-2	isInstanceOf	MERSI-2
+GOES-15	HOSTS	GOES-15|SEM (GOES)
+Sounder	SENSORTYPE	Narrow-band channel IR radiometer
+Jason-3|POSEIDON-3B Altimeter	isInstanceOf	POSEIDON-3B Altimeter
+MW Imaging microwave radars	TYPEOBSERVES	Wind vector over sea surface (horizontal)
+ScaRaB	SENSORBAND	FIR
+AHI	OBSERVES	Cloud type
+CPR (CloudSat)	SENSORRULE	W-Band Cloud profile and rain radars
+COSMIC-1 FM6|TIP	isInstanceOf	TIP
+DMSP F-18|SSULI	isInstanceOf	SSULI
+FY-4A|SEP	isInstanceOf	SEP
+CryoSat-2|Laser Reflectors (ESA)	isInstanceOf	Laser Reflectors (ESA)
+TOU/SBUS	SENSORRULE	UV Atmospheric temperature and humidity sounders
+Meteor-M N2|IKFS-2	isInstanceOf	IKFS-2
+Metop-A|SEM (POES)	isInstanceOf	SEM (POES)
+MUX (GF-2)	SENSORTYPE	High resolution optical imager
+Metop-B	HOSTS	Metop-B|AMSU-A
+Metop-A|GOME-2	isInstanceOf	GOME-2
+Metop-B|S&R (NOAA)	isInstanceOf	S&R (NOAA)
+SAR (RADARSAT-2)	OBSERVES	Land surface imagery
+NovaSAR-1|S-band SAR	isInstanceOf	S-band SAR
+Jason-3|LRA	isInstanceOf	LRA
+S&R (NOAA)	SENSORBAND	C-Band
+ZY-3-01|CCD (ZY-1-02C and ZY-3)	isInstanceOf	CCD (ZY-1-02C and ZY-3)
+RASAT	HOSTS	RASAT|RASAT VIS Panchromatic
+MUX (GF-1)	SENSORRULE	NIR High resolution optical imager
+Advanced MI	SENSORTYPE	Imaging multi-spectral radiometers (vis/IR)
+SCAT	SENSORRULE	MW Radar scatterometer
+MSI	OBSERVES	Land cover
+Metop-B	HOSTS	Metop-B|AVHRR/3
+SAR-L	OBSERVES	Ocean surface currents (vector)
+HYC	OBSERVES	Volcanic ash
+GOES-14|S&R (GOES)	isInstanceOf	S&R (GOES)
+DMSP F-16	HOSTS	DMSP F-16|SSJ/5
+GOES-13|GOES Comms	isInstanceOf	GOES Comms
+AGRI	SENSORTYPE	Multi-purpose imaging Vis/IR radiometer
+DMSP F-17	HOSTS	DMSP F-17|SSM
+COSMIC-1 FM1	HOSTS	COSMIC-1 FM1|TIP
+OCEANSAT-2|OCM (Oceansat-2)	isInstanceOf	OCM (Oceansat-2)
+OMPS	SENSORRULE	TIR High-resolution nadir-scanning SW spectrometer
+VIS Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Aerosol absorption optical depth (column/profile)
+GOES-15|GOES Comms	isInstanceOf	GOES Comms
+Metop-B	HOSTS	Metop-B|S&R (NOAA)
+PAN CAMERA	OBSERVES	Land cover
+GOES-17|GLM	isInstanceOf	GLM
+SWIR Atmospheric chemistry	TYPEOBSERVES	Atmospheric Chemistry - CO (column/profile)
+SWIR High resolution optical imagers	TYPEOBSERVES	Vegetation type
+Kanopus-V N4|MSS	isInstanceOf	MSS
+CBERS-4	HOSTS	CBERS-4|PAN (CBERS-4)
+GOES-13|SXI	isInstanceOf	SXI
+HiRDLS	SENSORRULE	TIR Limb-scanning IR spectrometer
+NIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Upwelling (Outgoing) long-wave radiation at TOA
+Metop-C	HOSTS	Metop-C|AMSU-A
+FY-3B|MWHS-1	isInstanceOf	MWHS-1
+Suomi NPP	HOSTS	Suomi NPP|VIIRS
+Metop-B|ASCAT	isInstanceOf	ASCAT
+Sounder	OBSERVES	Atmospheric stability index
+HY-2A	HOSTS	HY-2A|ALT
+IRM	OBSERVES	Ion Density, Drift Velocity, and Temperature
+SAR-L	OBSERVES	Snow detection (mask)
+HEPD	SENSORTYPE	Space environment monitor
+JPSS-1|OMPS	isInstanceOf	OMPS
+Imager	OBSERVES	Wind profile (horizontal)
+FY-3D	HOSTS	FY-3D|MWHS-2
+SSM/T-1	SENSORTYPE	Absorption-band MW radiometer/spectrometer
+HRMX	OBSERVES	Glacier topography
+MI	SENSORRULE	TIR Imaging multi-spectral radiometers (vis/IR)
+DMSP F-17	HOSTS	DMSP F-17|SSUSI
+SEVIRI	OBSERVES	Downwelling (Incoming) long-wave radiation at the Earth surface
+DMSP F-18	HOSTS	DMSP F-18|OLS
+DMSP F-18|SSUSI	isInstanceOf	SSUSI
+RCM-3|SAR (RCM)	isInstanceOf	SAR (RCM)
+SSJ/5	OBSERVES	Magnetic field (vector)
+FY-3C|MWRI	isInstanceOf	MWRI
+SEVIRI	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+Advanced MI	SENSORBAND	VIS
+PALSAR-2	SENSORRULE	L-Band Imaging radar (SAR)
+GOES-17|Magnetometer (NOAA)	isInstanceOf	Magnetometer (NOAA)
+FY-3B|TOU/SBUS	isInstanceOf	TOU/SBUS
+Himawari DCS	SENSORTYPE	Data collection
+CBERS-4|PAN (CBERS-4)	inVisibilityOfTarget	Mauna Loa
+GOES-13|SEM (GOES)	isInstanceOf	SEM (GOES)
+ePOP on CASSIOPE|NMS	isInstanceOf	NMS
+FY-3B	HOSTS	FY-3B|MWHS-1
+MLS (EOS-Aura)	SENSORTYPE	Atmospheric temperature and humidity sounders
+MI	OBSERVES	Land surface imagery
+Vegetation	OBSERVES	Photosynthetically Active Radiation (PAR)
+GOES-17|GLM	inVisibilityOfTarget	Mauna Loa
+Suomi NPP	HOSTS	Suomi NPP|ATMS
+JPSS-1	HOSTS	JPSS-1|VIIRS
+MODIS	OBSERVES	Cloud top height
+PALSAR-2	OBSERVES	Ocean imagery and water leaving radiance
+DSCOVR	HOSTS	DSCOVR|FC
+SSUSI	SENSORRULE	TBD Space environment monitor
+Geoton-L1 (2)	OBSERVES	Land surface topography
+PROBA	HOSTS	PROBA|CHRIS
+CSG SAR	OBSERVES	Snow cover
+VHRI-100	OBSERVES	Land surface imagery
+GMI	OBSERVES	Long-wave Earth surface emissivity
+Kanopus-V N3|MSU-IK-SR	isInstanceOf	MSU-IK-SR
+BRLK	OBSERVES	Land cover
+KOMPSAT-3|AEISS	isInstanceOf	AEISS
+MIRAS (SMOS)	SENSORTYPE	Multiple direction/polarisation radiometers
+Kanopus-V N3|MSS	isInstanceOf	MSS
+SGLI	SENSORRULE	VIS Ocean colour instruments
+NOAA-19	HOSTS	NOAA-19|AVHRR/3
+C-SAR	SENSORRULE	C-Band Imaging radar (SAR)
+COSMIC-2A (Equatorial)|RF Beacon	isInstanceOf	RF Beacon
+ePOP on CASSIOPE	HOSTS	ePOP on CASSIOPE|GAP
+FY-3C|MWRI	isInstanceOf	MWRI
+ABI	OBSERVES	Fire temperature
+Elektro-L N3|DCS	isInstanceOf	DCS
+MAESTRO	SENSORTYPE	Atmospheric chemistry
+SWIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Sea-ice cover
+SIM	SENSORBAND	VIS
+GOSAT-2|TANSO-CAI-2	isInstanceOf	TANSO-CAI-2
+Metop-A	HOSTS	Metop-A|IASI
+PALSAR-2	OBSERVES	Crustal Motion
+IRS	SENSORRULE	SWIR High-resolution nadir-scanning IR spectrometer
+SIRAL	SENSORRULE	Ku-Band Radar altimeter
+MWIR (GF-4)	SENSORRULE	MWIR Multi-purpose imaging Vis/IR radiometer
+COSMIC-2A (Equatorial)|TGRS	isInstanceOf	TGRS
+PAN (Cartosat-2E)	SENSORBAND	VIS
+VIIRS	OBSERVES	Leaf Area Index (LAI)
+GPSRO (Terra-SAR)	SENSORBAND	N/A
+Meteosat-11|MSG Comms	isInstanceOf	MSG Comms
+AVHRR/3	OBSERVES	Land surface imagery
+FY-3B	HOSTS	FY-3B|VIRR
+ACE-FTS	SENSORRULE	TIR Atmospheric chemistry
+GOES-14|SEM (GOES)	inVisibilityOfTarget	Mauna Loa
+SAR (RADARSAT-2)	OBSERVES	Bathymetry
+PAN (CBERS-4)	SENSORRULE	VIS High resolution optical imagers
+FY-3D|SES	isInstanceOf	SES
+NOAA-18	HOSTS	NOAA-18|MHS
+MUX (ZY-3-01)	SENSORRULE	VIS High resolution optical imager
+MWTS-2	OBSERVES	Atmospheric specific humidity (column/profile)
+DMSP F-17|SSUSI	isInstanceOf	SSUSI
+NOAA-19|A-DCS4	isInstanceOf	A-DCS4
+DMSP F-16|SSI/ES-3	isInstanceOf	SSI/ES-3
+Sentinel-3 A	HOSTS	Sentinel-3 A|SLSTR
+CHRIS	SENSORRULE	NIR High resolution optical imager
+VFM	SENSORBAND	N/A
+VIIRS	SENSORRULE	TIR Ocean colour instruments
+ALADIN	OBSERVES	Cloud top height
+FY-3D|MWRI	isInstanceOf	MWRI
+FY-3C	HOSTS	FY-3C|MWHS-2
+Meteor-M N2|MSU-MR	isInstanceOf	MSU-MR
+TANSO-FTS-2	OBSERVES	Atmospheric pressure (over land surface)
+TIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	TIR Radiance
+FY-3D|HIRAS	isInstanceOf	HIRAS
+OMPS	OBSERVES	Aerosol optical depth (column/profile)
+DMSP F-16|OLS	isInstanceOf	OLS
+ETM+	SENSORTYPE	Imaging multi-spectral radiometers (vis/IR)
+VIIRS	OBSERVES	Cloud cover
+MW Imaging microwave radars	TYPEOBSERVES	Land surface topography
+FY-3C	HOSTS	FY-3C|MERSI
+LIS-on-ISS	HOSTS	LIS-on-ISS|LIS
+GMI	SENSORTYPE	Imaging multi-spectral radiometers (passive microwave)
+Aqua|CERES	isInstanceOf	CERES
+FY-3C|SIM-2	isInstanceOf	SIM-2
+VIRR	SENSORRULE	VIS Imaging multi-spectral radiometers (vis/IR)
+FY-3B	HOSTS	FY-3B|MWRI
+CALIPSO	HOSTS	CALIPSO|IIR
+DSCOVR	HOSTS	DSCOVR|NISTAR
+Terra|MODIS	isInstanceOf	MODIS
+Sentinel-3 B|SLSTR	isInstanceOf	SLSTR
+MWIR Atmospheric chemistry	TYPEOBSERVES	Atmospheric Chemistry - HNO3 (column/profile)
+GOES-15	HOSTS	GOES-15|SXI
+FY-3B|IRAS	isInstanceOf	IRAS
+SAR (RADARSAT-2)	SENSORRULE	C-Band Imaging microwave radars
+ERM-1	SENSORBAND	VIS
+Metop-A|AVHRR/3	isInstanceOf	AVHRR/3
+TANSO-FTS-2	SENSORRULE	TIR Atmospheric chemistry
+FY-3D	HOSTS	FY-3D|GNOS
+DMSP F-17	HOSTS	DMSP F-17|SSUSI
+Magnetometer (NOAA)	SENSORTYPE	Magnetometer
+Meteor-M N2|MSU-MR	inVisibilityOfTarget	Mauna Loa
+OMPS	SENSORRULE	TIR Atmospheric chemistry
+RESOURCESAT-2|LISS-IV	isInstanceOf	LISS-IV
+GF-1	HOSTS	GF-1|PAN (GF-1)
+TIR Atmospheric chemistry	TYPEOBSERVES	Aerosol Extinction / Backscatter (column/profile)
+Sentinel-2 B	HOSTS	Sentinel-2 B|MSI (Sentinel-2)
+SSM	OBSERVES	Magnetic field (vector)
+Himawari-9	HOSTS	Himawari-9|Himawari Comms
+GOES-17|GLM	isInstanceOf	GLM
+CER	OBSERVES	Electron density profile
+GOES-14	HOSTS	GOES-14|SXI
+GF-1	HOSTS	GF-1|MUX (GF-1)
+FY-3C	HOSTS	FY-3C|VIRR
+SUVI	SENSORTYPE	Solar irradiance monitor
+MADRAS	OBSERVES	Wind speed over sea surface (horizontal)
+Meteor-M N2|DCS	inVisibilityOfTarget	Mauna Loa
+Metop-A	HOSTS	Metop-A|AVHRR/3
+DMSP F-17|SSULI	isInstanceOf	SSULI
+HiRDLS	SENSORTYPE	Limb-scanning IR spectrometer
+CPR (CloudSat)	OBSERVES	Cloud imagery
+ECOSTRESS-on-ISS	HOSTS	ECOSTRESS-on-ISS|ECOSTRESS
+FY-3C|MWHS-2	isInstanceOf	MWHS-2
+AHI	OBSERVES	Cloud cover
+DMSP F-14	HOSTS	DMSP F-14|SSM/T-1
+SAR (RCM)	SENSORRULE	C-Band Imaging radar (SAR)
+HYC	SENSORTYPE	Imaging multi-spectral radiometers (vis/IR)
+SWIR Imaging multi-spectral radiometers (vis/IR)	TYPEOBSERVES	Fractionally absorbed PAR (FPAR)
+SWIM	OBSERVES	Wave directional energy frequency spectrum
+OCM (Oceansat-2)	SENSORBAND	VIS
+DMSP F-15	HOSTS	DMSP F-15|SSJ/4
+Sentinel-3 B	HOSTS	Sentinel-3 B|SRAL
+OLS	OBSERVES	Cloud top height
+OCEANSAT-2|Scatterometer (Oceansat-2)	isInstanceOf	Scatterometer (Oceansat-2)
+GOES-14|SXI	inVisibilityOfTarget	Mauna Loa

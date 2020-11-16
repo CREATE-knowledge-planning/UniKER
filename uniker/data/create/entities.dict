@@ -1,0 +1,1316 @@
+0	STSAT-3|MIRIS
+1	FY-3C|TOU/SBUS
+2	Sentinel-3 B|SRAL
+3	UV Ocean colour instruments
+4	ECOSTRESS-on-ISS|ECOSTRESS
+5	WFC
+6	Jason-3|POSEIDON-3B Altimeter
+7	MSU-IK-SR
+8	Paz SAR-X
+9	Ocean salinity
+10	Satellite-to-satellite ranging system
+11	C-Band Radar scatterometer
+12	C-Band Scatterometers
+13	SWIR Medium-resolution IR spectrometer
+14	DMSP F-18|SSM/IS
+15	MIRIS
+16	TIR Medium-resolution spectro-radiometer
+17	MicroDragon|MicroDragon SMI & TPI
+18	GERB
+19	MWIR Atmospheric temperature and humidity sounders
+20	L-Band
+21	MSG Comms
+22	NIR Lidar altimeter
+23	Sea-ice sheet topography
+24	UV Atmospheric temperature and humidity sounders
+25	SHMSA-VR
+26	Wind speed over sea surface (horizontal)
+27	FY-3D|HIRAS
+28	Ku-Band Cloud profile and rain radars
+29	ePOP on CASSIOPE|MGF
+30	Pleiades 1B
+31	MWIR High-resolution nadir-scanning SW spectrometer
+32	Himawari DCS
+33	DMSP F-17|SSULI
+34	VHRI-100
+35	MSI (Sentinel-2)
+36	Electron Energy and Pitch Angle Distribution
+37	GOSAT-2
+38	ALT
+39	SCD-2
+40	MUX (ZY-3-02)
+41	Spectrometer (OCO-3)
+42	COSMO-SkyMed 3
+43	COMS|GOCI
+44	Meteosat-8
+45	Data collection
+46	FY-3B|MERSI
+47	GPSRO (Terra-SAR)
+48	Kanopus-V N4
+49	NORSAT-1|m-NLP
+50	Cloud profile and rain radars
+51	K-Band Radar altimeter
+52	GOES-17
+53	N/A Space environment
+54	GNSS receiver
+55	FY-2D
+56	SWIR Limb-scanning IR spectrometer
+57	TBD Data collection system
+58	FY-4A|SEP
+59	CZI
+60	CALIPSO|IIR
+61	CARTOSAT-2B|PAN (Cartosat-2A/2B)
+62	SORCE
+63	MSU-GS
+64	PRISMA|PAN CAMERA
+65	PROBA-V|Vegetation
+66	CryoSat-2
+67	GOES-15
+68	Space environment
+69	Swarm|EFI
+70	UV Broad-band radiometer
+71	GOSAT
+72	VIRR
+73	NIR Lightning imager
+74	MW Cloud profile and rain radars
+75	CloudSat|CPR (CloudSat)
+76	ALOS-2
+77	DMSP F-18|OLS
+78	NOAA-18|NOAA Comms
+79	MW Satellite-to-satellite ranging system
+80	TIR Radiance
+81	Snow cover
+82	DMSP F-14|OLS
+83	PAZ|Paz SAR-X
+84	Cloud ice content (at cloud top)
+85	Aura
+86	SCD-1
+87	GOES-15|A-DCS4
+88	Electric field sensor
+89	UV Laser retroreflector
+90	K-Band Radar altimeters
+91	FY-2E
+92	L-Band Imaging microwave radars
+93	CALIOP
+94	SWIR High resolution optical imagers
+95	Pleiades 1A
+96	THEOS|PAN (GISTDA)
+97	Oil spill cover
+98	SEM
+99	RRI
+100	AISSat-2|AIS
+101	Himawari-9|Himawari DCS
+102	DMSP F-16|OLS
+103	ePOP on CASSIOPE|NMS
+104	Glacier topography
+105	GLM
+106	HJ-1A
+107	NIR Atmospheric temperature and humidity sounders
+108	Sentinel-1 B|C-Band SAR
+109	Atmospheric Chemistry - N2O (column/profile)
+110	Kanopus-V N4|PSS
+111	DSCOVR|PlasMag
+112	RESOURCESAT-2|AWiFS
+113	TBD Data collection
+114	UV High-resolution nadir-scanning SW spectrometer
+115	INSAT-3DR
+116	Medium-resolution IR spectrometer
+117	TIR Earth radiation budget radiometers
+118	RAD
+119	Scatterometers
+120	FY-3B|MWTS-1
+121	IIR
+122	EFI
+123	DMSP F-17
+124	Odin
+125	Ocean suspended sediment concentration
+126	CBERS-4|PAN (CBERS-4)
+127	Meteor-M N2|BRLK
+128	Hyperspectral imagers
+129	COSMIC-2A (Equatorial)|RF Beacon
+130	DMSP F-14|SSM
+131	Sea-ice type
+132	NigeriaSat-X|NigeriaSat X Remote Sensing (Medium Resolution)
+133	COSMO-SkyMed 2
+134	S-Band Data collection
+135	OMI
+136	Snow melting status (wet/dry)
+137	AISSat-1
+138	Total electron content (TEC)
+139	CYGNSS
+140	Land surface imagery
+141	UV Medium-resolution spectro-radiometer
+142	VIS Medium-resolution spectro-radiometer
+143	DPR
+144	Mauna Loa
+145	UV Doppler lidar
+146	GNOS
+147	Ka-Band Radar altimeter
+148	OMPS
+149	Gravity instruments
+150	UV Limb-scanning SW spectrometer
+151	LRA
+152	HY-2B|RAD
+153	UV Atmospheric chemistry
+154	VNREDSat-1 MS
+155	Meteor-M N2
+156	GF-2|MUX (GF-2)
+157	X-Band Imaging radar (SAR)
+158	Sea level
+159	Dominant wave period
+160	Metop-B
+161	FY-3C|MERSI
+162	TIM
+163	Imager (INSAT 3D)
+164	MWHS-1
+165	Advanced MI
+166	Atmospheric Chemistry - OClO (column/profile)
+167	TIR Medium-resolution IR spectrometer
+168	FY-3C|MWHS-2
+169	NOAA Comms
+170	N/A GNSS receiver
+171	IRM
+172	Terra|MOPITT
+173	High-resolution nadir-scanning IR spectrometer
+174	AMSR2
+175	DSCOVR|PHA
+176	NigeriaSat-2
+177	VIS Atmospheric temperature and humidity sounders
+178	Wind profile (horizontal)
+179	Multi-channel/direction/polarisation radiometer
+180	VFM
+181	MWIR
+182	SWIR Earth radiation budget radiometers
+183	MW Radar scatterometer
+184	COSMO-SkyMed 4|SAR 2000
+185	Atmospheric Chemistry - HDO (column/profile)
+186	Atmospheric Chemistry - BrO (column/profile)
+187	OLI
+188	COSMIC-1 FM1
+189	Meteor-M N2|KMSS
+190	Himawari-9
+191	MWIR Broad-band radiometer
+192	MWIR Imaging multi-spectral radiometers (vis/IR)
+193	MW Imaging multi-spectral radiometers (passive microwave)
+194	TCTE
+195	WAI
+196	NOAA-19
+197	DMSP F-17|SSUSI
+198	Gravity gradients
+199	RASAT|RASAT VIS Multispectral
+200	Sentinel-2 B|MSI (Sentinel-2)
+201	Atmospheric Chemistry - HCFC-22 (column/profile)
+202	Sounder (INSAT)
+203	Suomi NPP|CERES
+204	DSCOVR|ES
+205	GPSP
+206	Atmospheric Chemistry - CHOCHO (column/profile)
+207	SAOCOM 1A
+208	C-Band Communications system
+209	MEGHA-TROPIQUES|MADRAS
+210	CARTOSAT-3
+211	INSAT-3D
+212	MW GNSS receiver
+213	GCOM-W|AMSR2
+214	TanSat|ACGS
+215	CFOSAT
+216	N/A Laser retroreflector
+217	Himawari-8|Himawari DCS
+218	Cloud base height
+219	AISSat-1|AIS
+220	RCM-3|AIS (RCM)
+221	VIS High resolution optical imagers
+222	FY-3C|GNOS
+223	Swarm|STR
+224	Jason-3
+225	COSMO-SkyMed 1
+226	Sentinel-3 A|OLCI
+227	Suomi NPP|ATMS
+228	L-Band Multi-purpose imaging MW radiometer
+229	Meteor-M N2-2|KMSS
+230	Atmospheric Chemistry - CH4 (column/profile)
+231	N/A
+232	Ku-Band
+233	CSG-1|CSG SAR
+234	HSI (HJ-1A)
+235	Elektro-L N3
+236	ZY-3-02|CCD (ZY-1-02C and ZY-3)
+237	Aqua|CERES
+238	LRI
+239	Metop-A|GOME-2
+240	Cloud type
+241	Earth surface albedo
+242	Jason-3|LRA
+243	Kanopus-V N5|PSS
+244	SARAL|AltiKa
+245	ICESat-2
+246	Sentinel-3 B|SLSTR
+247	CBERS-4|MUX (CBERS-4)
+248	VENµS
+249	Auroral Emissions
+250	MW Multiple direction/polarisation radiometers
+251	SWIR Imaging multi-spectral radiometers (vis/IR)
+252	NOAA-18|AMSU-A
+253	MWHS-2
+254	Kanopus-V-IR
+255	Ozone profile
+256	Space environment monitor
+257	Sounder
+258	RapidEye|MSI
+259	SWIR Ocean colour instruments
+260	DMSP F-18|SSI/ES-3
+261	FY-4A
+262	CrIS
+263	L-Band Multiple direction/polarisation radiometers
+264	CARTOSAT-3|PAN (Cartosat-3)
+265	MWIR High resolution optical imagers
+266	Electron density profile
+267	BJ-2
+268	GOES-13|A-DCS4
+269	SAR-X
+270	RESOURCESAT-2A|AWiFS
+271	Kanopus-V N3|MSS
+272	HJ-1B|IR (HJ-1B)
+273	DMSP F-15|SSM/I
+274	SORCE|SIM
+275	COSMO-SkyMed 2|SAR 2000
+276	FY-3C|MWRI
+277	NOAA-19|AMSU-A
+278	DMSP F-18|SSM
+279	Terra|CERES
+280	FIR Multi-purpose imaging Vis/IR radiometer
+281	NISTAR
+282	ADM-Aeolus|ALADIN
+283	TIR Imaging multi-spectral radiometers (passive microwave)
+284	Laser Reflectors
+285	GOES-13
+286	Ka-Band
+287	VIS Atmospheric lidar
+288	SES
+289	SIM
+290	DMSP F-16|SSJ/5
+291	Lidar altimeter
+292	TCTE|TIM
+293	MS (GISTDA)
+294	L-Band Atmospheric temperature and humidity sounders
+295	GF-2
+296	Metop-C|SEM (POES)
+297	AIS (RCM)
+298	Atmospheric Chemistry - HCl (column/profile)
+299	L-Band GNSS receiver
+300	S-Band
+301	Kanopus-V N6|MSU-IK-SR
+302	N/A Gradiometer/accelerometer
+303	ZACube-2|AIS Receiver
+304	NOAA-18|HIRS/4
+305	ACGS
+306	GOMX4
+307	ZY-3-01
+308	Atmospheric Chemistry - NO2 (column/profile)
+309	UV Earth radiation budget radiometers
+310	Elektro-L N2|DCS
+311	OCEANSAT-2|Scatterometer (Oceansat-2)
+312	VIS Medium-resolution IR spectrometer
+313	Sentinel-3 A
+314	Wave directional energy frequency spectrum
+315	Atmospheric Chemistry - ClO (column/profile)
+316	SMOS|MIRAS (SMOS)
+317	Meteor-M N2-2|MSU-MR
+318	VIS Multi-purpose imaging Vis/IR radiometer
+319	HY-1C|CZI
+320	NOAA-19|HIRS/4
+321	Ion Density, Drift Velocity, and Temperature
+322	AGRI
+323	KhalifaSat|KHCS
+324	Terra|MODIS
+325	Meteor-M N2|IKFS-2
+326	HEPD
+327	RESOURCESAT-2|LISS-III (Resourcesat)
+328	ALOS-2|CIRC
+329	Other
+330	MW Cloud and precipitation radar
+331	GOES-15|SEM (GOES)
+332	SAOCOM 1A|SAR-L
+333	VIS Precision orbit
+334	TanDEM-X
+335	NOAA-18|SEM (POES)
+336	ROSA
+337	GOES-13|GOES Comms
+338	RCM-2
+339	HiRAIS
+340	CALIPSO
+341	FY-3B|IRAS
+342	HY-2B
+343	K-Band Data collection system
+344	Communications system
+345	Cloud optical depth
+346	CCD (HJ)
+347	FY-3C|SES
+348	Atmospheric Chemistry - CFC-12 (column/profile)
+349	Cloud and precipitation radar
+350	Meteor-M N2|DCS
+351	COSI
+352	GOSAT-2|TANSO-CAI-2
+353	HY-2B|ALT
+354	CARTOSAT-2B
+355	FIR Broad-band radiometer
+356	TBD
+357	COSMIC-1 FM6
+358	Doppler lidar
+359	Normalized Differential Vegetation Index (NDVI)
+360	DMSP F-15|SSJ/4
+361	IASI
+362	Meteor-M N2-2
+363	SSM
+364	JPSS-1|CrIS
+365	MODIS
+366	HRC
+367	X-Band
+368	SWIR Atmospheric chemistry
+369	NORSAT-2|AIS
+370	TIR
+371	Metop-B|MHS
+372	Meteosat-8|MSG Comms
+373	GOME-2
+374	MTVZA-GY
+375	SGLI
+376	GOES-14|A-DCS4
+377	KHCS
+378	VIS Limb-scanning SW spectrometer
+379	DMSP F-16|SSI/ES-3
+380	ADM-Aeolus
+381	COSMIC-1 FM6|TIP
+382	RESOURCESAT-2
+383	LRIT
+384	Kanopus-V-IR|MSU-IK-SR
+385	ACC
+386	Sea-ice surface temperature
+387	NIR Imaging multi-spectral radiometers (vis/IR)
+388	Glacier motion
+389	Metop-B|AMSU-A
+390	SWIR High-resolution nadir-scanning SW spectrometer
+391	Non-scanning MW radiometer
+392	NIR Ocean colour instruments
+393	SSTL S1-4|VHRI-100
+394	DMSP F-17|SSM/IS
+395	Sentinel-5 precursor
+396	Downwelling (Incoming) long-wave radiation at the Earth surface
+397	FY-3C
+398	Metop-C|MHS
+399	Scatterometer (Scatsat-1)
+400	Significant wave height
+401	DSCOVR
+402	CBERS-4|WFI (CBERS-4)
+403	RASAT|RASAT VIS Panchromatic
+404	Kanopus-V N5|MSU-IK-SR
+405	OSIRIS
+406	Atmospheric Chemistry - SO2 (column/profile)
+407	Swarm|Laser Reflectors (ESA)
+408	Resurs-P N3
+409	SBUV/2
+410	Cloud liquid water (column/profile)
+411	Metop-C|GOME-2
+412	OCO-3-on-ISS
+413	NIR Broad-band radiometer
+414	TOU/SBUS
+415	Spectrometer (OCO-2)
+416	VIS Atmospheric chemistry
+417	Star tracker
+418	DMSP F-17|SSM
+419	Limb-scanning IR spectrometer
+420	FY-3B|MWRI
+421	NigeriaSat-X
+422	Solar irradiance monitor
+423	SMAP
+424	WFV
+425	SSJ/4
+426	ASI
+427	SSM/IS
+428	Limb-scanning SW spectrometer
+429	HJ-1B|CCD (HJ)
+430	CryoSat-2|DORIS-NG
+431	Vegetation
+432	SSI/ES-2
+433	NIR Atmospheric chemistry
+434	Swarm|VFM
+435	GF-1|WFV
+436	SOLSTICE
+437	GEDI
+438	GF-1|MUX (GF-1)
+439	M1 - Volcano Temperature (TIR)
+440	Mission 1 - Active Volcano Monitoring
+441	STR
+442	Snow water equivalent
+443	NIR Multiple direction/polarisation radiometers
+444	FY-3D|MWTS-2
+445	CSES
+446	TIR Atmospheric chemistry
+447	AIS
+448	MIRAS (SMOS)
+449	SAR 2000
+450	HyperScout
+451	NIR Imaging multi-spectral radiometers (passive microwave)
+452	Atmospheric lidar
+453	L-Band Imaging radar (SAR)
+454	K-Band
+455	DMSP F-14|SSJ/4
+456	TGRS
+457	N/A Space environment monitor
+458	GOES-14|S&R (GOES)
+459	Sentinel-2 B
+460	LRA (LAGEOS)
+461	SSM/T-2
+462	Kanopus-V N6|PSS
+463	VIS Imaging multi-spectral radiometers (vis/IR)
+464	Suomi NPP|CrIS
+465	Upwelling (Outgoing) long-wave radiation at TOA
+466	N/A GNSS radio-occultation receiver
+467	RCM-2|SAR (RCM)
+468	VIIRS
+469	GOES-17|ABI
+470	Medium-resolution spectro-radiometer
+471	SMOS
+472	GSA (1)
+473	NIR Satellite-to-satellite ranging system
+474	UV Space environment
+475	Terra|ASTER
+476	N/A Magnetic field
+477	HJ-1A|HSI (HJ-1A)
+478	ULF-HF Electromagnetic Waves
+479	DMSP F-18|SSULI
+480	MW Imaging radar (SAR)
+481	MISR
+482	HYC
+483	Ka-Band Cloud and precipitation radar
+484	INSAT-3DR|Imager (INSAT 3D)
+485	DMSP F-17|OLS
+486	TANSO-FTS
+487	Ka-Band Radar altimeters
+488	Sea-ice cover
+489	THEOS|MS (GISTDA)
+490	SMAP|L-band Radar (SMAP)
+491	HiRI
+492	Landsat 8|TIRS
+493	Crustal Motion
+494	FIR Earth radiation budget radiometers
+495	PlasMag
+496	CARBONITE-2 Imager
+497	Cloud top temperature
+498	MSC
+499	LARES
+500	Ku-Band Radar altimeters
+501	OCO-3-on-ISS|Spectrometer (OCO-3)
+502	Radar altimeters
+503	Lightning sensors
+504	AIRS
+505	Himawari-8
+506	FY-2F
+507	Himawari Comms
+508	MW Precision orbit
+509	C-Band Radar altimeters
+510	DMSP F-14|SSB/X-2
+511	FY-3C|IRAS
+512	SARAL
+513	TIR Multi-purpose imaging Vis/IR radiometer
+514	Metop-B|ASCAT
+515	GOES-13|SXI
+516	MWIR Atmospheric chemistry
+517	VSC
+518	Cloud top height
+519	NORSAT-2
+520	Swarm|ASM
+521	Imaging multi-spectral radiometers (vis/IR)
+522	OLS
+523	Imaging radar (SAR)
+524	Atmospheric Chemistry - OH (column/profile)
+525	VIS High resolution optical imager
+526	Vegetation Canopy (height)
+527	ES
+528	Short-wave cloud reflectance
+529	Absorption-band MW radiometer/spectrometer
+530	Land surface topography
+531	SWIR Multi-channel/direction/polarisation radiometer
+532	MW Other
+533	ICESat-2|ATLAS
+534	Landsat 8|OLI
+535	SIM-2
+536	GMI
+537	GOES-16|GLM
+538	Scatterometer (Oceansat-2)
+539	Kanopus-V-IR|MSS
+540	HY-1C
+541	L-band Radiometer (SMAP)
+542	TBD Magnetometer
+543	PSS
+544	SORCE|XPS
+545	TSIS-1-on-ISS|TSIS-1/TIM
+546	Vegetation Cover
+547	MW Communications system
+548	CARTOSAT-2
+549	GOES Comms
+550	MW Gravity instruments
+551	PROBA
+552	HJ-1B
+553	RISAT-2
+554	RESOURCESAT-2A
+555	GOX
+556	FY-3B|SEM
+557	PAN CAMERA
+558	HIRAS
+559	GOSAT-2|TANSO-FTS-2
+560	Short-wave Earth surface bi-directional reflectance
+561	CARTOSAT-2E
+562	SAR-L
+563	CBERS-4|IRS
+564	FIR Limb-scanning MW spectrometer
+565	CAPI
+566	LISS-III (Resourcesat)
+567	Above Ground Biomass (AGB)
+568	SSUSI
+569	Dominant wave direction
+570	Lightning detection
+571	MWIR Narrow-band channel IR radiometer
+572	Water vapour imagery
+573	CSC FVM
+574	PROBA-V
+575	CLARA
+576	Upwelling (Outgoing) Short-wave Radiation at the Earth Surface
+577	TANSO-CAI-2
+578	NIR Multi-purpose imaging MW radiometer
+579	RESOURCESAT-2A|LISS-III (Resourcesat)
+580	HRMX
+581	Himawari-9|Himawari Comms
+582	TIR Multi-purpose imaging MW radiometer
+583	FY-3D|MERSI-2
+584	RCM-1
+585	FY-3C|VIRR
+586	Sea-ice thickness
+587	AHI
+588	PRISMA
+589	Upwelling (Outgoing) spectral radiance at TOA
+590	Jason-3|AMR
+591	FY-3D|ASI
+592	Metop-A|S&R (NOAA)
+593	Kanopus-V-IR|PSS
+594	Meteosat-9|MSG Comms
+595	JPSS-1|VIIRS
+596	NOAA-18
+597	CloudSat
+598	FIR Atmospheric chemistry
+599	Laser Reflectors (ESA)
+600	NIR High-resolution nadir-scanning SW spectrometer
+601	N/A Magnetometer
+602	Suomi NPP|OMPS
+603	PHA
+604	DubaiSat-2|HiRAIS
+605	KOMPSAT-2|MSC
+606	ASCAT
+607	GCOM-C|SGLI
+608	MW Atmospheric temperature and humidity sounders
+609	Metop-A|HIRS/4
+610	IVM
+611	Kanopus-V N6
+612	UK-DMC2|SLIM-6-22
+613	VIS Data collection system
+614	GCOM-W
+615	Atmospheric Chemistry - CO (column/profile)
+616	GGAK-M
+617	GOES-14|SXI
+618	SSULI
+619	ePOP on CASSIOPE
+620	Sentinel-2 A|MSI (Sentinel-2)
+621	S-Band Data collection system
+622	Radar scatterometer
+623	Atmospheric specific humidity (column/profile)
+624	Precipitation index (daily cumulative)
+625	CARTOSAT-2|PAN (Cartosat-2)
+626	JPSS-1
+627	SXI
+628	L-Band GNSS radio-occultation receiver
+629	MWIR Medium-resolution spectro-radiometer
+630	PROBA|CHRIS
+631	SCATSAT-1|Scatterometer (Scatsat-1)
+632	RASAT VIS Panchromatic
+633	OCEANSAT-2
+634	TIP
+635	Bathymetry
+636	THEOS
+637	NIR Space environment monitor
+638	Data collection system
+639	Snow surface temperature
+640	ALOS-2|PALSAR-2
+641	SORCE|SOLSTICE
+642	VGA Matrix Camera
+643	IR (HJ-1B)
+644	Aerosol effective radius (column/profile)
+645	Cloud ice effective radius (column/profile)
+646	DMSP F-15|SSM/T-1
+647	DMSP F-16|SSM/IS
+648	Pleiades 1A|HiRI
+649	N/A Electric field sensor
+650	GAS
+651	TIR Narrow-band channel IR radiometer
+652	OCM (Oceansat-2)
+653	SWIR Broad-band radiometer
+654	MWIR (GF-4)
+655	NORSAT-1|CLARA
+656	ASM
+657	DMSP F-15|OLS
+658	C-Band SAR
+659	KOMPSAT-3A|AEISS-A
+660	Ocean colour instruments
+661	FY-3D|GNOS
+662	SSTL S1-4
+663	N/A Solar irradiance monitor
+664	SLSTR
+665	DCS
+666	MW Non-scanning MW radiometer
+667	Sea surface temperature
+668	Wind vector over sea surface (horizontal)
+669	TIR High-resolution nadir-scanning IR spectrometer
+670	M1 - Volcano Plume
+671	Atmospheric Chemistry - ClONO2 (column/profile)
+672	STELLA
+673	HIRS/4
+674	VIS High-resolution nadir-scanning IR spectrometer
+675	VISSR-2
+676	Glacier cover
+677	NIR Earth radiation budget radiometers
+678	XPS
+679	NIR
+680	VIS
+681	GF-1
+682	UV Imaging multi-spectral radiometers (vis/IR)
+683	Atmospheric Chemistry - NO (column/profile)
+684	GOES-17|GLM
+685	ATMS
+686	Atmospheric stability index
+687	DMSP F-14|SSM/T-2
+688	DMC3|VHRI-100
+689	Diademe 1&2|RRA
+690	Sentinel-2 A
+691	Kanopus-V N3|MSU-IK-SR
+692	RESOURCESAT-2A|LISS-IV
+693	GEDI-on-ISS|GEDI
+694	S-Band Imaging radar (SAR)
+695	TBD Magnetic field
+696	ePOP on CASSIOPE|FAI
+697	SIRAL
+698	MEGHA-TROPIQUES|SAPHIR
+699	Elektro-L N2
+700	RESOURCESAT-2|LISS-IV
+701	ZACube-1|HF Beacon Transmitter
+702	MSI
+703	CER
+704	SHMSA-SR
+705	GPM Core|DPR
+706	S&R (NOAA)
+707	GCOM-C
+708	SAGE-III-on-ISS
+709	GPM Core
+710	DMSP F-16|SSM
+711	GRACE instrument
+712	RCM-1|SAR (RCM)
+713	Metop-A|AMSU-A
+714	CARTOSAT-2A|PAN (Cartosat-2A/2B)
+715	MUX (GF-1)
+716	SEP
+717	NOAA-19|S&R (NOAA)
+718	SWIR Medium-resolution spectro-radiometer
+719	Surface Coherent Change Detection
+720	K-line Imager
+721	ECOSTRESS
+722	NovaSAR-1
+723	Color dissolved organic matter (CDOM)
+724	Vegetation Canopy (cover)
+725	TanSat
+726	Soil type
+727	Cloud mask
+728	Permafrost
+729	Sentinel-1 A
+730	KOMPSAT-5
+731	ZY-3-02
+732	SWIM
+733	JPSS-1|ATMS
+734	Atmospheric Chemistry - CO2 (column/profile)
+735	Precipitation Profile (liquid or solid)
+736	VNIR (GF-4)
+737	UV Multiple direction/polarisation radiometers
+738	SCAT
+739	Kanopus-V N4|MSS
+740	MW Absorption-band MW radiometer/spectrometer
+741	SMAP|L-band Radiometer (SMAP)
+742	DESIS
+743	L-Band Imaging multi-spectral radiometers (passive microwave)
+744	Kanopus-V N3
+745	COMS
+746	MOPITT
+747	TIR Atmospheric temperature and humidity sounders
+748	BRLK
+749	Kanopus-V
+750	Ice sheet topography
+751	Precipitation rate (solid) at the surface
+752	SWIR Narrow-band channel IR radiometer
+753	Jason-3|GPSP
+754	Kanopus-V N3|PSS
+755	Atmospheric pressure (over land surface)
+756	Metop-A|MHS
+757	CSG SAR
+758	TBD Laser retroreflector
+759	UV Precision orbit
+760	DSCOVR|NISTAR
+761	TIR High-resolution nadir-scanning SW spectrometer
+762	POSEIDON-3B Altimeter
+763	ePOP on CASSIOPE|SEI
+764	AEISS
+765	TanSat|CAPI
+766	MSU-MR
+767	GF-1|PAN (GF-1)
+768	PAN (CBERS-4)
+769	W-Band
+770	SORCE|TIM
+771	LAGEOS-1
+772	Metop-B|S&R (NOAA)
+773	Meteor-M N2|MSU-MR
+774	High resolution optical imagers
+775	Aqua
+776	ASTER
+777	Atmospheric Chemistry - HNO3 (column/profile)
+778	C-Band Imaging microwave radars
+779	FY-3D|SES
+780	GOES-14|GOES Comms
+781	GOES-13|S&R (GOES)
+782	CIRC
+783	S-band SAR
+784	SSJ/5
+785	NIR High resolution optical imager
+786	CYGNSS|DDMI (CYGNSS)
+787	Aerosol optical depth (column/profile)
+788	COSMIC-2A (Equatorial)|IVM
+789	Diademe 1&2
+790	GF-4|MWIR (GF-4)
+791	Meteor-M N2-2|DCS
+792	M1 - Volcano Land Displacements
+793	OCO-2
+794	PAN (Cartosat-3)
+795	OCEANSAT-2|OCM (Oceansat-2)
+796	MWIR Limb-scanning IR spectrometer
+797	VIS Other
+798	HF Beacon Transmitter
+799	CHRIS
+800	ZACube-2
+801	NigeriaSat X Remote Sensing (Medium Resolution)
+802	SCISAT-1
+803	MW Multi-purpose imaging MW radiometer
+804	GEO-KOMPSAT-2A
+805	PAN (Cartosat-2E)
+806	Aqua|AMSR-E
+807	N/A Precision orbit
+808	GOES-16|Magnetometer (NOAA)
+809	Iceberg height
+810	SSB/X-2
+811	NIR Space environment
+812	Metop-C
+813	ePOP on CASSIOPE|GAP
+814	CryoSat-2|SIRAL
+815	SEISS
+816	GOES-14
+817	MUX (ZY-3-01)
+818	VIS Multiple direction/polarisation radiometers
+819	MW Limb-scanning MW spectrometer
+820	GOMX4|HyperScout
+821	KMSS
+822	LIS-on-ISS|LIS
+823	TerraSAR-X
+824	KOMPSAT-3|AEISS
+825	KOMPSAT-5|COSI
+826	TANSO-CAI
+827	Himawari-8|Himawari Comms
+828	RADARSAT-2
+829	Aqua|AIRS
+830	FY-3B|VIRR
+831	Multi-purpose imaging Vis/IR radiometer
+832	C-Band
+833	VIS Lidar altimeter
+834	ZACube-1|VGA Matrix Camera
+835	Vegetation type
+836	WFI (CBERS-4)
+837	UV Other
+838	NOAA-19|NOAA Comms
+839	Metop-C|IASI
+840	SSM/I
+841	MWIR Solar irradiance monitor
+842	KhalifaSat
+843	FY-4A|AGRI
+844	HY-2A|ALT
+845	Gravity field
+846	HJ-1A|CCD (HJ)
+847	GOES-13|SEM (GOES)
+848	CFOSAT|SWIM
+849	NovaSAR-1|S-band SAR
+850	COSMIC-2A (Equatorial)
+851	MWI
+852	Iceberg fractional cover
+853	Photosynthetically Active Radiation (PAR)
+854	L-Band Precision orbit
+855	CBERS-4
+856	PAN (Cartosat-2)
+857	M1 - Volcano Temperature (SWIR)
+858	FY-3B|TOU/SBUS
+859	K-Band Data collection
+860	NOAA-18|AVHRR/3
+861	Ka-Band Cloud profile and rain radars
+862	Multi-purpose imaging MW radiometer
+863	ECOSTRESS-on-ISS
+864	GOSAT|TANSO-CAI
+865	NOAA-19|SEM (POES)
+866	OLCI
+867	CARTOSAT-2A
+868	MADRAS
+869	COCTS
+870	Earth radiation budget radiometers
+871	Kanopus-V N4|MSU-IK-SR
+872	RCM-1|AIS (RCM)
+873	Fire temperature
+874	GPM Core|GMI
+875	STSAT-3
+876	HY-2A|DORIS-NG
+877	MERSI
+878	Sentinel-3 A|SLSTR
+879	TIR Other
+880	SCD-2|DCS
+881	MWIR High-resolution nadir-scanning IR spectrometer
+882	VIS Broad-band radiometer
+883	Land surface temperature
+884	VDES Test Mission
+885	DMSP F-14
+886	FY-3B|ERM-1
+887	NORSAT-1
+888	SAR (RCM)
+889	MW Data collection system
+890	HY-2A
+891	VIS Laser retroreflector
+892	GNSS radio-occultation receiver
+893	Atmospheric Chemistry - CH2O (column/profile)
+894	Fire area
+895	Volcanic ash
+896	MSI (BJ-2)
+897	C-Band Communications
+898	UV Space environment monitor
+899	DSCOVR|EPIC
+900	Meteosat-11|MSG Comms
+901	MW Communications
+902	GPS Receiver (Swarm)
+903	Resurs-P N1
+904	Sentinel-1 B
+905	DMSP F-16|SSUSI
+906	Pleiades 1B|HiRI
+907	SEI
+908	Magnetic field (scalar)
+909	Kanopus-V|PSS
+910	HY-1C|COCTS
+911	MWRI
+912	DESIS-on-ISS
+913	DMSP F-18
+914	TIR Ocean colour instruments
+915	SEVIRI
+916	Magnetic field
+917	Metop-A|AVHRR/3
+918	DESIS-on-ISS|DESIS
+919	Imaging multi-spectral radiometers (passive microwave)
+920	C-SAR
+921	GRACE-FO
+922	CARTOSAT-2E|PAN (Cartosat-2E)
+923	TANSO-FTS-2
+924	Lidars
+925	L-band Radar (SMAP)
+926	Atmospheric chemistry
+927	ATLAS
+928	ScaRaB
+929	Diffuse attenuation coefficient (DAC)
+930	M1 - Volcano Gases
+931	Broad-band radiometer
+932	SWIR High-resolution nadir-scanning IR spectrometer
+933	Precipitation rate (liquid) at the surface
+934	HY-2A|SCAT
+935	VIS Ocean colour instruments
+936	X-Band SAR
+937	Precision orbit
+938	Aerosol Extinction / Backscatter (column/profile)
+939	SUVI
+940	Landsat 8
+941	AVHRR/3
+942	ePOP on CASSIOPE|RRI
+943	Jason-3|DORIS-NG
+944	Terra
+945	SAR (RADARSAT-2)
+946	COSMO-SkyMed 4
+947	SWIR High resolution optical imager
+948	GPSRO (Oersted)
+949	DMSP F-17|SSI/ES-3
+950	DMSP F-14|SSM/I
+951	MERSI-2
+952	COSMIC-2A (Equatorial)|TGRS
+953	MWIR Earth radiation budget radiometers
+954	IKFS-2
+955	Atmospheric temperature (at surface)
+956	Metop-C|AMSU-A
+957	Metop-A|SEM (POES)
+958	L-Band Other
+959	TIR Solar irradiance monitor
+960	VIS Solar irradiance monitor
+961	VIS Earth radiation budget radiometers
+962	N/A Atmospheric temperature and humidity sounders
+963	Elektro-L N3|DCS
+964	CERES
+965	DORIS-NG
+966	NIR Other
+967	Neutral Particle Composition and Flow Velocity
+968	Sentinel-3 B
+969	PALSAR-2
+970	IRAS
+971	Downwelling (Incoming) solar radiation at TOA
+972	AMSU-A
+973	FY-3D|GAS
+974	UVNS (Sentinel-5 precursor)
+975	NigeriaSat-2|NigeriaSat 2 Remote Sensing (Med and High Res)
+976	ACE-FTS
+977	TIRS
+978	SWIR Hyperspectral imagers
+979	GOES-16
+980	NIR Lidars
+981	TSIS-1/SIM
+982	AMR
+983	Long-wave Earth surface emissivity
+984	SAGE-III
+985	HY-2A|RAD
+986	Aqua|HSB
+987	JPSS-1|CERES
+988	JPSS-1|OMPS
+989	CARBONITE-2
+990	Multiple direction/polarisation radiometers
+991	ePOP on CASSIOPE|IRM
+992	High resolution optical imager
+993	DSCOVR|FC
+994	Limb-scanning MW spectrometer
+995	MX (Cartosat-3)
+996	NORSAT-1|AIS
+997	SRAL
+998	Sentinel-5 precursor|UVNS (Sentinel-5 precursor)
+999	AIS Receiver
+1000	Atmospheric Chemistry - N2O5 (column/profile)
+1001	AMSR-E
+1002	LCCRA
+1003	UV Solar irradiance monitor
+1004	DMSP F-14|SSM/T-1
+1005	MWIR Multi-purpose imaging Vis/IR radiometer
+1006	NIR Narrow-band channel IR radiometer
+1007	LIS-on-ISS
+1008	FY-3B
+1009	RCM-3|SAR (RCM)
+1010	GIIRS
+1011	TIR High resolution optical imager
+1012	BJ-2|PAN (BJ-2)
+1013	NIR Hyperspectral imagers
+1014	FY-3C|ERM-1
+1015	Atmospheric Chemistry - C2H6 (column/profile)
+1016	Ocean dynamic topography
+1017	MWTS-1
+1018	FIR Limb-scanning IR spectrometer
+1019	Snow Grain Size
+1020	VIS Multi-channel/direction/polarisation radiometer
+1021	NOAA-18|S&R (NOAA)
+1022	DMSP F-16|SSULI
+1023	Cloud ice (column/profile)
+1024	SWIR Solar irradiance monitor
+1025	TIR High resolution optical imagers
+1026	TBD Space environment
+1027	PAN (GF-2)
+1028	TSIS-1-on-ISS|TSIS-1/SIM
+1029	ZY-3-01|CCD (ZY-1-02C and ZY-3)
+1030	SWIR
+1031	Metop-A|IASI
+1032	SLIM-6-22
+1033	N/A Star tracker
+1034	FY-3D|MWRI
+1035	Meteosat-11
+1036	VIS Hyperspectral imagers
+1037	Aerosol absorption optical depth (column/profile)
+1038	DMSP F-18|SSUSI
+1039	MWIR Medium-resolution IR spectrometer
+1040	Metop-B|IASI
+1041	Land cover
+1042	Atmospheric temperature and humidity sounders
+1043	Laser retroreflector
+1044	DCS (GOES-R Series)
+1045	Odin|SMR
+1046	Suomi NPP
+1047	Geoton-L1 (2)
+1048	MW Imaging microwave radars
+1049	TSIS-1-on-ISS
+1050	S-Band Imaging microwave radars
+1051	Metop-A|ASCAT
+1052	MWIR Ocean colour instruments
+1053	Wind profile (vertical)
+1054	CFOSAT|SCAT
+1055	N/A Gravity instruments
+1056	Radar altimeter
+1057	Narrow-band channel IR radiometer
+1058	RADARSAT-2|SAR (RADARSAT-2)
+1059	RASAT
+1060	HY-2B|SCAT
+1061	Aqua|MODIS
+1062	Height of tropopause
+1063	GGAK-E
+1064	Geoid
+1065	Meteosat-9
+1066	MAESTRO
+1067	RapidEye
+1068	Active Fire Detection
+1069	Meteor-M N2-2|BRLK
+1070	INSAT-3D|Imager (INSAT 3D)
+1071	CALIPSO|CALIOP
+1072	Kanopus-V|MSS
+1073	NOAA-19|A-DCS4
+1074	STARLETTE|Laser Reflectors
+1075	Metop-B|AVHRR/3
+1076	GF-2|PAN (GF-2)
+1077	Sentinel-3 A|SRAL
+1078	Suomi NPP|VIIRS
+1079	MW
+1080	Snow detection (mask)
+1081	NovaSAR-1|AIS
+1082	MW Data collection
+1083	COSMO-SkyMed 1|SAR 2000
+1084	NMS
+1085	NOAA-18|MHS
+1086	CryoSat-2|Laser Reflectors (ESA)
+1087	N/A Earth radiation budget radiometers
+1088	Magnetic field (vector)
+1089	Electric Field (vector)
+1090	HiRDLS
+1091	PAN (Cartosat-2A/2B)
+1092	AEISS-A
+1093	MEGHA-TROPIQUES|ScaRaB
+1094	NIR Lightning sensors
+1095	TSIS-1/TIM
+1096	NIR Limb-scanning SW spectrometer
+1097	SSI/ES-3
+1098	Downwelling (Incoming) short-wave radiation at the Earth surface
+1099	Landsat 7|ETM+
+1100	MW Atmospheric chemistry
+1101	Fractionally absorbed PAR (FPAR)
+1102	STSAT-3|COMIS
+1103	SEM (GOES)
+1104	Ku-Band Radar altimeter
+1105	NORSAT-2|VDES Test Mission
+1106	Leaf Area Index (LAI)
+1107	ETM+
+1108	Lightning imager
+1109	OMPS-L
+1110	Crustal plates positioning
+1111	NIR Atmospheric lidar
+1112	SCATSAT-1
+1113	Meteosat-10
+1114	Imaging microwave radars
+1115	Swarm|ACC
+1116	GOES-17|Magnetometer (NOAA)
+1117	FY-3B|SIM
+1118	Terra|MISR
+1119	PAN (GF-1)
+1120	DMSP F-15|SSI/ES-2
+1121	Sentinel-1 A|C-Band SAR
+1122	SAPHIR
+1123	DMSP F-15|SSM/T-2
+1124	Overhauser Magnetometer
+1125	TIR Limb-scanning IR spectrometer
+1126	MLS (EOS-Aura)
+1127	LAGEOS-2
+1128	Swarm
+1129	Cloud drop size (at cloud top)
+1130	FY-3C|MWTS-2
+1131	Radio-positioning system
+1132	Metop-B|HIRS/4
+1133	NOAA-19|MHS
+1134	Magnetometer (NOAA)
+1135	TIR Broad-band radiometer
+1136	VNREDSat-1|VNREDSat-1 MS
+1137	PAN (GISTDA)
+1138	MI
+1139	Ku-Band Cloud and precipitation radar
+1140	RRA
+1141	Atmospheric Chemistry - SF6 (column/profile)
+1142	FIR Imaging multi-spectral radiometers (vis/IR)
+1143	CSES|HEPD
+1144	GF-3
+1145	Resurs-P N1|Geoton-L1 (2)
+1146	COSMO-SkyMed 3|SAR 2000
+1147	ALADIN
+1148	A-DCS4
+1149	LIS
+1150	AWiFS
+1151	EXIS
+1152	CARBONITE-2|CARBONITE-2 Imager
+1153	Kanopus-V N6|MSS
+1154	Upwelling (Outgoing) short-wave radiation at TOA
+1155	Oersted
+1156	DMSP F-15
+1157	DMSP F-15|SSM
+1158	ERM-1
+1159	PRISMA|HYC
+1160	Upwelling (Outgoing) long-wave radiation at Earth surface
+1161	Metop-A
+1162	SSM/T-1
+1163	GAP
+1164	SI
+1165	MHS
+1166	K-Band Communications
+1167	FY-3B|MWHS-1
+1168	C-Band Imaging radar (SAR)
+1169	MWTS-2
+1170	DubaiSat-2
+1171	UK-DMC2
+1172	OCO-2|Spectrometer (OCO-2)
+1173	MW Scatterometers
+1174	GOES-15|SXI
+1175	Ocean imagery and water leaving radiance
+1176	FIR Solar irradiance monitor
+1177	GRAS
+1178	m-NLP
+1179	STARLETTE
+1180	Meteor-M N2-2|IKFS-2
+1181	ABI
+1182	NIR Medium-resolution spectro-radiometer
+1183	Resurs-P N3|Geoton-L1 (2)
+1184	NIR Medium-resolution IR spectrometer
+1185	GOES-15|GOES Comms
+1186	MicroDragon SMI & TPI
+1187	FAI
+1188	Sentinel-3 B|OLCI
+1189	Atmospheric temperature (column/profile)
+1190	VIS Lidars
+1191	ZACube-2|K-line Imager
+1192	FY-3D|MWHS-2
+1193	Metop-C|AVHRR/3
+1194	AltiKa
+1195	TIR Imaging multi-spectral radiometers (vis/IR)
+1196	MW Radar altimeters
+1197	SWIR Limb-scanning SW spectrometer
+1198	Cloud cover
+1199	ZACube-1
+1200	PROBA|HRC
+1201	Ocean surface currents (vector)
+1202	K-Band Communications system
+1203	LISS-IV
+1204	Kanopus-V N5|MSS
+1205	RCM-2|AIS (RCM)
+1206	Gradiometer/accelerometer
+1207	PAN (BJ-2)
+1208	Atmospheric pressure (over sea surface)
+1209	PAZ
+1210	Temperature of tropopause
+1211	TanDEM-X|X-Band SAR
+1212	SWIR Multi-purpose imaging Vis/IR radiometer
+1213	RF Beacon
+1214	TBD Space environment monitor
+1215	TES
+1216	TBD Precision orbit
+1217	Atmospheric Chemistry - CFC-11 (column/profile)
+1218	NIR Gravity instruments
+1219	High-resolution nadir-scanning SW spectrometer
+1220	W-Band Cloud profile and rain radars
+1221	NIR Multi-purpose imaging Vis/IR radiometer
+1222	SWIR Atmospheric temperature and humidity sounders
+1223	Metop-C|ASCAT
+1224	GF-4
+1225	SEM (POES)
+1226	MicroDragon
+1227	AISSat-2
+1228	EPIC
+1229	CBERS-4|DCS
+1230	FC
+1231	GOES-14|SEM (GOES)
+1232	Ku-Band Scatterometers
+1233	GOES-15|S&R (GOES)
+1234	A-DCS3
+1235	Wind vector over land surface (horizontal)
+1236	VIS Narrow-band channel IR radiometer
+1237	CSG-1
+1238	Soil moisture at the surface
+1239	Metop-B|GOME-2
+1240	MW GNSS radio-occultation receiver
+1241	COSMIC-1 FM1|TIP
+1242	Kanopus-V N5
+1243	NOAA-19|AVHRR/3
+1244	ZY-3-01|MUX (ZY-3-01)
+1245	DMSP F-14|SSI/ES-2
+1246	C-Band Radar altimeter
+1247	MEGHA-TROPIQUES
+1248	VIS High-resolution nadir-scanning SW spectrometer
+1249	ZY-3-02|MUX (ZY-3-02)
+1250	Chlorophyll Fluorescence from Vegetation on Land
+1251	Ku-Band Radar scatterometer
+1252	S&R (GOES)
+1253	Ocean chlorophyll concentration
+1254	Cloud imagery
+1255	IRS
+1256	BJ-2|MSI (BJ-2)
+1257	NigeriaSat 2 Remote Sensing (Med and High Res)
+1258	MUX (GF-2)
+1259	DMSP F-16
+1260	CCD (ZY-1-02C and ZY-3)
+1261	Landsat 7
+1262	Aqua|AMSU-A
+1263	Communications
+1264	CPR (CloudSat)
+1265	RCM-3
+1266	NIR High resolution optical imagers
+1267	Meteosat-10|MSG Comms
+1268	FY-3D
+1269	MSS
+1270	NIR Solar irradiance monitor
+1271	SCD-1|DCS
+1272	UV
+1273	KOMPSAT-2
+1274	FY-4A|GIIRS
+1275	LMI
+1276	DMC3
+1277	FIR
+1278	GOSAT|TANSO-FTS
+1279	TIR Multi-channel/direction/polarisation radiometer
+1280	Atmospheric Chemistry - C2H2 (column/profile)
+1281	MGF
+1282	HSB
+1283	Imager
+1284	COMIS
+1285	FY-3C|SIM-2
+1286	NIR Multi-channel/direction/polarisation radiometer
+1287	GOES-16|ABI
+1288	KOMPSAT-3A
+1289	Visibility
+1290	SMR
+1291	X-Band Imaging microwave radars
+1292	UV Multi-channel/direction/polarisation radiometer
+1293	KOMPSAT-3
+1294	STELLA|Laser Reflectors
+1295	DDMI (CYGNSS)
+1296	Magnetometer
+1297	W-Band Cloud and precipitation radar
+1298	MUX (CBERS-4)
+1299	GEDI-on-ISS
+1300	Aura|OMI
+1301	ePOP on CASSIOPE|CER
+1302	FY-4A|LMI
+1303	GOCI
+1304	RASAT VIS Multispectral
+1305	UV Multi-purpose imaging Vis/IR radiometer
+1306	UV Lidars
+1307	Metop-B|SEM (POES)
+1308	TerraSAR-X|X-Band SAR
+1309	MW Radar altimeter
+1310	MWIR High resolution optical imager
+1311	CALIPSO|WFC
+1312	NIR High-resolution nadir-scanning IR spectrometer
+1313	GF-3|C-SAR
+1314	Aura|TES
+1315	VNREDSat-1
