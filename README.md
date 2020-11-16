@@ -9,4 +9,5 @@ e.g., python run.py create 2 create_model TransE 2 0.0 0.2 0
 
 ## Output
 Please find the final inferred results in the folder
+
 record/create_model/final
