@@ -5,7 +5,7 @@ from __future__ import division
 from __future__ import print_function
 
 import logging
-import os
+
 import numpy as np
 import math
 
@@ -22,7 +22,7 @@ from uniker.kge.dataloader import TestDataset
 
 class KGEModel(nn.Module):
     def __init__(self, model_name, nentity, nrelation, hidden_dim, gamma, 
-                 double_entity_embedding=False, double_relation_embedding=False):
+                 double_entity_embedding=False, double_relation_embedding=False, entity_embedding = None, relation_embedding =None):
         super(KGEModel, self).__init__()
         self.model_name = model_name
         self.nentity = nentity
@@ -34,26 +34,27 @@ class KGEModel(nn.Module):
             torch.Tensor([gamma]), 
             requires_grad=False
         )
-        
+
         self.embedding_range = nn.Parameter(
-            torch.Tensor([(self.gamma.item() + self.epsilon) / hidden_dim]), 
+            torch.Tensor([(self.gamma.item() + self.epsilon) / hidden_dim]),
             requires_grad=False
         )
-        
-        self.entity_dim = hidden_dim*2 if double_entity_embedding else hidden_dim
-        self.relation_dim = hidden_dim*2 if double_relation_embedding else hidden_dim
-        
+
+        self.entity_dim = hidden_dim * 2 if double_entity_embedding else hidden_dim
+        self.relation_dim = hidden_dim * 2 if double_relation_embedding else hidden_dim
+
+
         self.entity_embedding = nn.Parameter(torch.zeros(nentity, self.entity_dim))
         nn.init.uniform_(
-            tensor=self.entity_embedding, 
-            a=-self.embedding_range.item(), 
+            tensor=self.entity_embedding,
+            a=-self.embedding_range.item(),
             b=self.embedding_range.item()
         )
-        
+
         self.relation_embedding = nn.Parameter(torch.zeros(nrelation, self.relation_dim))
         nn.init.uniform_(
-            tensor=self.relation_embedding, 
-            a=-self.embedding_range.item(), 
+            tensor=self.relation_embedding,
+            a=-self.embedding_range.item(),
             b=self.embedding_range.item()
         )
         
@@ -127,7 +128,7 @@ class KGEModel(nn.Module):
             
             head = torch.index_select(
                 self.entity_embedding, 
-                dim=0,
+                dim=0, 
                 index=head_part.long().view(-1)
             ).view(batch_size, negative_sample_size, -1)
             
@@ -161,7 +162,7 @@ class KGEModel(nn.Module):
             
             tail = torch.index_select(
                 self.entity_embedding, 
-                dim=0,
+                dim=0, 
                 index=tail_part.long().view(-1)
             ).view(batch_size, negative_sample_size, -1)
             
@@ -395,7 +396,6 @@ class KGEModel(nn.Module):
             test_dataset_list = [test_dataloader_head, test_dataloader_tail]
             
             logs = []
-            logs_for_ranks = []
 
             step = 0
             total_steps = sum([len(dataset) for dataset in test_dataset_list])
@@ -416,8 +416,6 @@ class KGEModel(nn.Module):
                         #Explicitly sort all the entities to ensure that there is no test exposure bias
                         argsort = torch.argsort(score, dim = 1, descending=True)
 
-                        logs_for_ranks.append(argsort.cpu())
-
                         if mode == 'head-batch':
                             positive_arg = positive_sample[:, 0]
                         elif mode == 'tail-batch':
@@ -426,7 +424,7 @@ class KGEModel(nn.Module):
                             raise ValueError('mode %s not supported' % mode)
 
                         for i in range(batch_size):
-                            # Notice that argsort is not ranking
+                            #Notice that argsort is not ranking
                             ranking = (argsort[i, :] == positive_arg[i]).nonzero()
                             assert ranking.size(0) == 1
 
@@ -448,10 +446,6 @@ class KGEModel(nn.Module):
             metrics = {}
             for metric in logs[0].keys():
                 metrics[metric] = sum([log[metric] for log in logs])/len(logs)
-
-            if args.do_save_ranks and args.is_test_step:
-                logs_for_ranks = np.vstack(logs_for_ranks)
-                np.save(os.path.join(args.logs_for_ranks_path, 'ranks.npy'), logs_for_ranks)
 
         return metrics
 
@@ -482,12 +476,109 @@ class KGEModel(nn.Module):
                 y_score.extend(model(sample).squeeze(1).cpu().numpy())
         y_score = np.array(y_score)
         y_idx = np.argsort(-y_score)
-        noise_num = args.noise_threshold * len(y_score)
+        noise_num = int(args.noise_threshold * len(y_score))
 
         with open(args.eliminate_noise_path, 'w') as w:
-            for i in y_idx[:int(noise_num)]:
+            for i in y_idx[:(noise_num)]:
                 h ,r, t = test_triples[i]
                 w.write(id2entity[h] + '\t' + id2relation[r] + '\t' + id2entity[t] + '\n')
         # print(y_score)
 
+    @staticmethod
+    def pred_score_step(model, test_triples, id2entity, id2relation, args):
+        '''
+        Evaluate the model on train datasets
+        '''
+        model.eval()
 
+        batch_num = math.ceil(len(test_triples) / args.batch_size)
+        logging.info('evaluate_step...%d batches' % len(test_triples))
+        y_score = []
+        for i in range(batch_num):
+            sample = list()
+            if i == batch_num -1:
+                for head, relation, tail in test_triples[i * args.batch_size: ]:
+                    sample.append((head, relation, tail))
+            else:
+                for head, relation, tail in test_triples[i*args.batch_size: (i+1)*args.batch_size]:
+                    sample.append((head, relation, tail))
+
+            sample = torch.LongTensor(sample)
+            if args.cuda:
+                sample = sample.cuda()
+
+            with torch.no_grad():
+                y_score.extend(model(sample).squeeze(1).cpu().numpy())
+        y_score = np.array(y_score)
+
+        with open(args.pred_score_path, 'w') as w:
+            for i in range(len(y_score)):
+                h ,r, t = test_triples[i]
+                w.write(id2entity[h] + '\t' + id2relation[r] + '\t' + 
+                    id2entity[t] + '\t' + str(y_score[i]) + '\n')
+        # print(y_score)
+
+    def top_k_percent_test_triples_score(self,model, test_triples, id2entity, id2relation, args):
+        '''
+        Evaluate the model on train datasets
+        '''
+        model.eval()
+
+        batch_num = math.ceil(len(test_triples) / args.batch_size)
+        logging.info('evaluate_step...%d batches' % len(test_triples))
+        y_score = []
+        for i in range(batch_num):
+            sample = list()
+            if i == batch_num -1:
+                for head, relation, tail in test_triples[i * args.batch_size: ]:
+                    sample.append((head, relation, tail))
+            else:
+                for head, relation, tail in test_triples[i*args.batch_size: (i+1)*args.batch_size]:
+                    sample.append((head, relation, tail))
+
+            sample = torch.LongTensor(sample)
+            if args.cuda:
+                sample = sample.cuda()
+
+            with torch.no_grad():
+                y_score.extend(model(sample).squeeze(1).cpu().numpy())
+        y_score = np.array(y_score)
+        y_idx = np.argsort(-y_score)
+        n_top_tests = int(args.top_k_percent * len(y_score))
+
+        return y_score[y_idx[n_top_tests]]
+
+    def select_hidden_triples(self, model, test_triples, hidden_triples, id2entity, id2relation, args):
+        '''
+        Evaluate the model on train datasets
+        '''
+        threshold = self.top_k_percent_test_triples_score(model, test_triples, id2entity, id2relation, args)
+        print (threshold)
+        model.eval()
+
+        batch_num = math.ceil(len(hidden_triples) / args.batch_size)
+        logging.info('evaluate_step...%d batches' % len(hidden_triples))
+        y_score = []
+        for i in range(batch_num):
+            sample = list()
+            if i == batch_num -1:
+                for head, relation, tail in hidden_triples[i * args.batch_size: ]:
+                    sample.append((head, relation, tail))
+            else:
+                for head, relation, tail in hidden_triples[i*args.batch_size: (i+1)*args.batch_size]:
+                    sample.append((head, relation, tail))
+
+            sample = torch.LongTensor(sample)
+            if args.cuda:
+                sample = sample.cuda()
+
+            with torch.no_grad():
+                y_score.extend(model(sample).squeeze(1).cpu().numpy())
+        y_score = np.array(y_score)
+
+        selected_idx = np.argwhere(y_score> threshold)[:,0]
+
+        with open(args.hidden_triples_path+"/selected_triples.txt", 'w') as w:
+            for i in selected_idx:
+                h ,r, t = hidden_triples[i]
+                w.write(id2entity[h] + '\t' + id2relation[r] + '\t' + id2entity[t] + '\n')

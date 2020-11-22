@@ -1,3 +1,4 @@
+from pathlib import Path
 import sys
 import numpy as np
 from scipy import sparse
@@ -8,14 +9,14 @@ from collections import defaultdict
 import random
 
 class SelectHiddenTriples(object):
-    def __init__(self, dict_path, train_path, hidden_triples_path, rule_name):
+    def __init__(self, dict_path: Path, train_path: Path, hidden_triples_path: Path, rule_name):
         self.data_path = dict_path
         self.train_path = train_path
         self.hidden_triples_path = hidden_triples_path
-        self.ent_path = dict_path + '/entities.dict'
-        self.rel_path = dict_path + '/relations.dict'
+        self.ent_path = dict_path  / 'entities.dict'
+        self.rel_path = dict_path / 'relations.dict'
         # self.test_path = dict_path + '/test.txt'
-        self.rule_path = dict_path + '/' + rule_name
+        self.rule_path = dict_path / rule_name
 
 
         self.n_raw_relation = 0
@@ -177,18 +178,20 @@ class SelectHiddenTriples(object):
 
     # top_k_threshold is defined in ../kge/run.py --top_k_percent
 
-    def eval(self,use_cuda, cuda, model_path, top_k_threshold=0.1):
+    def eval(self, use_cuda, cuda, model_path: Path, top_k_threshold=0.1):
         if use_cuda:
-            cmd = 'CUDA_VISIBLE_DEVICES={} python ./kge/run.py --cuda ' \
+            os.environ["CUDA_VISIBLE_DEVICES"] = cuda
+            cmd = 'python {} --cuda ' \
                   '--do_score_calculation --data_path {} --hidden_triples_path {} ' \
-                  '-init {} --top_k_percent {}'.format(cuda,
-                                                        self.data_path, self.hidden_triples_path, 
-                                                        model_path, top_k_threshold)
+                  '-init {} --top_k_percent {}'.format(Path("../UniKER/uniker/kge/run.py").resolve(),
+                                                       self.data_path.resolve(), self.hidden_triples_path.resolve(), 
+                                                       model_path.resolve(), top_k_threshold)
         else:
-            cmd = 'python ./kge/run.py --do_score_calculation ' \
+            cmd = 'python {} --do_score_calculation ' \
                   '--data_path {} --hidden_triples_path {} -init {} ' \
-                  '--top_k_percent {}}'.format(self.data_path, self.hidden_triples_path, 
-                    model_path, top_k_threshold)
+                  '--top_k_percent {}'.format(Path("../UniKER/uniker/kge/run.py").resolve(), 
+                                              self.data_path.resolve(), self.hidden_triples_path.resolve(), 
+                                              model_path.resolve(), top_k_threshold)
 
         os.system(cmd)
 
@@ -202,7 +205,7 @@ class SelectHiddenTriples(object):
 
         # print (self.infer_set)
         print('This hop inferred %d triples.' %(len(self.infer_set)))
-        with open(self.hidden_triples_path+'/hidden.txt', 'w') as w:
+        with open(self.hidden_triples_path / 'hidden.txt', 'w') as w:
             for r in self.infer_set:
                 if r< self.n_raw_relation:
                     for (h,t) in self.infer_set[r]:
